@@ -4,7 +4,7 @@ Projekt: \
 Autor: Simon Blum \
 Datum: 01.10.2024 \
 Zuletzt geändert \
-  von: Simon Blum \
+  von: Maximilian Rodler \
   am: 01.10.2024 \
 Version: 1 \
 Prüfer: \
@@ -12,25 +12,22 @@ Freigabe durch:
 
 ## Changelog
 
-1. 01.10.2024 / Simon Blum
+1. 01.10.2024 | Simon Blum
+2. 01.10.2024 | Maximilian Rodler
 
 ## Distribution List
 
-## Projektziele
+## Scope of Work / Projektziele
 
 - Verwaltung und Übersicht von Programmierprojekten
 - Erstellung eines "Manifeststandards" für Metadaten eines Projektes
 - Erstellung einer Kommandozeilenanwendung zum initialisieren/betrachten dieser Metadaten
 - Erstellung einer Graphischen Anwendung zur Verwaltung und Übersicht
 
-## Scope of Work
-
-- Unsicher
-
 ## Systemgrenzen
 
 - Interaktion mit Metadaten der Projekte
-- Keine Interaktion mit Projekten selbst (paketmanagement, deployment, etc)
+- Keine Interaktion mit Projekten selbst (Paketmanagement, Deployment, etc.)
 
 > [!Note]
 > Das Design der Anwendung soll flexibel genug sein um diesen Grenzen
@@ -39,14 +36,16 @@ Freigabe durch:
 
 ## Risiken
 
-- Vorerst keine Identifiziert
+- Vorerst keine identifiziert
 
 ## Stakeholder
 
-- Entwickler (wir)
+- Projektinterne Entwickler
 - Auftraggeber (Dozent)
-- Kunden
-  - Zielgruppe primär andere Entwickler (egal ob professionell, als hobby oder studentisch)
+- Kunden:
+  - Professionelle Entwickler
+  - Hobbyentwickler
+  - Studentische Entwickler
 
 ## Randbedingungen
 
