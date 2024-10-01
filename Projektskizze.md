@@ -1,3 +1,5 @@
+# Projektskizze
+
 ## Projektziele
 
 - Verwaltung und Übersicht von Programmierprojekten
@@ -7,8 +9,17 @@
 
 ## Scope of Work
 
+- Unsicher
+
+## Systemgrenzen
+
 - Interaktion mit Metadaten der Projekte
 - Keine Interaktion mit Projekten selbst (paketmanagement, deployment, etc)
+
+> [!Note]
+> Das Design der Anwendung soll flexibel genug sein um diesen Grenzen
+> in zukünftigen Aufwänden erweitern zu können und so mehr Funktionalität
+> einzubinden.
 
 ## Risiken
 
@@ -20,8 +31,6 @@
 - Auftraggeber (Dozent)
 - Kunden
   - Zielgruppe primär andere Entwickler (egal ob professionell, als hobby oder studentisch)
-
-## Glossar
 
 ## Randbedingungen
 
