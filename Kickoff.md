@@ -1,15 +1,4 @@
-# Kickoff
-
-- Define project goals
-  - Measurabilty
-- Identify stakeholders
-- Identify system borders
-  - New system should be created
-  - That system is part of an environment
-- Market analysis
-- _Optional_ Team organization
-
-## Project goals
+## Projekt Ziele
 
 | Ziel                         | Was soll erreicht werden?                       |
 | ---------------------------- | ----------------------------------------------- |
@@ -26,12 +15,21 @@
 ## Go - Checklist
 
 - [ ] Sind die Ziele klar und eindeutig?
+  - Ja
 - [ ] Sind die Ziele messbar?
+  - Messbar auf Basis von Feedback
+  - Aufwand manuell vs mit Andwendung
 - [ ] Bedeuten die Ziele einen klaren Vorteil für den Kunden/Anwender?
+  - Ja, Ziel ist es das Verwalten und die Übersicht von Projekten signifikant zu vereinfachen
 - [ ] Kann man die Ziele in der gegebenen Zeit und mit dem gegebenen Budget erreichen?
+  - Ja
 - [ ] Gibt es Risiken mit hoher Wahrscheinlichkeit, die es unmöglich machen das Projekt erfolgreich durchzuführen?
+  - Nein, wir sind flexibel und zuversichtlich alles überwinden zu können
 - [ ] Sind alle Stakeholder bereit mitzuarbeiten?
+  - ?
 - [ ] Gibt es weitere Untersuchungen, die vor dem Start durchgeführt werden müssen?
+  - Findung von Technologien etc.
+  - Marktanalyse - gibt es schon änhliche Produkte?
 
 ## Goal concept
 
@@ -43,7 +41,7 @@ Das System soll über eine standartisierte Manifestdatei ermöglicht werden.
 Folgende Funktionen sollen ermöglicht werden:
 
 - Übersicht über vorhandene Projekte
-  - Name, Pad...
+  - Name, Pfad...
 - Sortierung durch Kategorieren/Labels
 - Kreation und verwaltung von Projekten
 
@@ -56,6 +54,16 @@ Zusätzlich kann hierbei erweitert werden mit:
 - Statisktiken
 - Öffnen in favorisierter IDE
 - Möglichkeiten der Fernverwaltung
+
+## Systemgrenzen
+
+- Interaktion mit Metadaten der Projekte
+- Keine Interaktion mit Projekten selbst (paketmanagement, deployment, etc)
+
+> [!Note]
+> Das Design der Anwendung soll flexibel genug sein um diesen Grenzen
+> in zukünftigen Aufwänden erweitern zu können und so mehr Funktionalität
+> einzubinden.
 
 ## Todo:
 
