@@ -1,14 +1,14 @@
 # Projektskizze
 
-Projekt: 
-Autor: Simon Blum
-Datum: 01.10.2024
-Zuletzt geändert
-  von: Simon Blum
-  am: 01.10.2024
-Version: 1
-Prüfer: 
-Freigabe durch: 
+Projekt: \
+Autor: Simon Blum \
+Datum: 01.10.2024 \
+Zuletzt geändert \
+  von: Simon Blum \
+  am: 01.10.2024 \
+Version: 1 \
+Prüfer: \
+Freigabe durch: \
 
 ## Changelog
 
