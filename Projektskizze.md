@@ -6,14 +6,15 @@ Datum: 01.10.2024 \
 Zuletzt geändert \
   von: Maximilian Rodler \
   am: 01.10.2024 \
-Version: 2 \
+Version: 3 \
 Prüfer: \
 Freigabe durch:
 
 ## Changelog
 
 1. 01.10.2024 | Simon Blum
-2. 01.10.2024 | Maximilian Rodler
+2. 01.10.2024 | Paul Stöckle
+3. 01.10.2024 | Maximilian Rodler
 
 ## Distribution List
 
