@@ -1,5 +1,5 @@
 # Readme
 
-Markdown files can be found in **topics**!
+Markdown files can be found in **wiki/topics**!
 
 - TODO: Link
