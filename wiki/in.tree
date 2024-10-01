@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name" start-page="Projektskizze.md">
+                  name="Software Engineering 1" start-page="Projektskizze.md">
 
     <toc-element topic="Projektskizze.md"/>
     <toc-element toc-title="meetings">
