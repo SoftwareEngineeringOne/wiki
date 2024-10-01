@@ -24,21 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Git config
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "<>"
-          git config --global init.defaultBranch wiki
-          git config --global push.autoSetupRemote true
           git config --unset-all http.https://github.com/.extraheader
       - name: Run deployment script
         env:
           WIKI_TOKEN: ${{ secrets.WIKI_TOKEN }}
         run: |
-          rm .git -r
-          git init
-          git add .
-          git commit -m "Deployment $(date +'%d.%m.%Y')"
-          git push https://$WIKI_TOKEN@github.com/DefinitelyNotSimon13/wiki.git
+          git branch -m main wiki
+          git push --mirror https://$WIKI_TOKEN@github.com/DefinitelyNotSimon13/wiki.git
         shell: bash
