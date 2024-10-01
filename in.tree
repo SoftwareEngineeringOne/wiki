@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="Instance Name" start-page="Projektskizze.md">
+
+    <toc-element topic="Projektskizze.md"/>
+    <toc-element toc-title="meetings">
+        <toc-element topic="01-10-2024-planning.md"/>
+        <toc-element topic="01-10-2024-kickoff.md"/>
+    </toc-element>
+</instance-profile>
