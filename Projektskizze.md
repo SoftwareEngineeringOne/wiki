@@ -6,7 +6,7 @@ Datum: 01.10.2024 \
 Zuletzt geändert \
   von: Maximilian Rodler \
   am: 01.10.2024 \
-Version: 1 \
+Version: 2 \
 Prüfer: \
 Freigabe durch:
 
