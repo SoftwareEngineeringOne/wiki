@@ -27,10 +27,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: $WIKI_TOKEN
-          github-server-url: 'https://$WIKI_TOKEN@github.com/'
-          fetch-depth: 0
 
       - name: Build Writerside docs using Docker
         uses: JetBrains/writerside-github-action@v4
