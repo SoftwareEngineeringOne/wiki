@@ -8,7 +8,7 @@ Zuletzt geändert \
   am: 01.10.2024 \
 Version: 1 \
 Prüfer: \
-Freigabe durch: \
+Freigabe durch:
 
 ## Changelog
 
