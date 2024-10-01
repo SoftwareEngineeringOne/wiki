@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git push --mirror https://github.com/DefinitelyNotSimon13/wiki
+git push https://github.com/DefinitelyNotSimon13/wiki main:wiki
