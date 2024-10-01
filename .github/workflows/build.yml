@@ -28,8 +28,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          repository: DefinitelyNotSimon13/wiki
-          github-server-url: https://$WIKI_TOKEN@github.com/
+          github-server-url: 'https://$WIKI_TOKEN@github.com/'
           fetch-depth: 0
 
       - name: Build Writerside docs using Docker
