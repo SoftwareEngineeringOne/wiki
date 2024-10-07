@@ -4,17 +4,17 @@
 
 #### Metadaten
 
-Projekt: SPOMA (Software Project Overview and Management Application)
-Autor: Simon Blum \
-Datum: 01.10.2024 \
-Zuletzt geändert \
- von: Simon Blum \
- am: 07.10.2024 \
-Version: 3 \
-Prüfer: Ben Oeckl \
-Letzte Freigabe \
- durch: Ben Oeckl \
- am: 07.10.2024 \
+- Projekt: SPOMA (Software Project Overview and Management Application)
+- Autor: Simon Blum \
+- Datum: 01.10.2024 \
+- Zuletzt geändert \
+  - von: Simon Blum \
+  - am: 07.10.2024 \
+- Version: 3 \
+- Prüfer: Ben Oeckl \
+- Letzte Freigabe \
+  - durch: Ben Oeckl \
+  - am: 07.10.2024 \
 
 #### Changelog
 
