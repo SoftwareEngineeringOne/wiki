@@ -7,8 +7,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,6 +34,6 @@ jobs:
         env:
           WIKI_TOKEN: ${{ secrets.WIKI_TOKEN }}
         run: |
-          git branch -m wiki
+          git branch -m main wiki
           git push --mirror https://$WIKI_TOKEN@github.com/DefinitelyNotSimon13/wiki.git
         shell: bash
