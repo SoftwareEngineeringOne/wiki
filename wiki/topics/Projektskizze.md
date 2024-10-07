@@ -1,22 +1,47 @@
 # Projektskizze
 
-Projekt: \
+---
+
+#### Metadaten
+
+Projekt: SPOMA (Software Project Overview and Management Application)
 Autor: Simon Blum \
 Datum: 01.10.2024 \
 Zuletzt geändert \
-  von: Maximilian Rodler \
-  am: 01.10.2024 \
+ von: Simon Blum \
+ am: 07.10.2024 \
 Version: 3 \
-Prüfer: \
-Freigabe durch:
+Prüfer: Ben Oeckl \
+Letzte Freigabe \
+ durch: Ben Oeckl \
+ am: 07.10.2024 \
 
-## Changelog
+#### Changelog
 
-1. 01.10.2024 | Simon Blum
-2. 01.10.2024 | Paul Stöckle
-3. 01.10.2024 | Maximilian Rodler
+**01.10.2024 | Simon Blum**
 
-## Distribution List
+- Initiale Erstellung und Verfassung
+
+**01.10.2024 | Paul Stöckle**
+
+- Hinzufügen von Formalitäten
+
+**01.10.2024 | Maximilian Rodler**
+
+- Anpassung an Feedback nach "Go/No-Go" Meeting
+
+**07.10.2024 | Simon Blum**
+
+- Aktualisierung von Formalitäten
+
+### Distribution List
+
+- Simon Blum
+- Ben Oeckl
+- Maximilian Rodler
+- Paul Stöckle
+
+---
 
 ## Scope of Work / Projektziele
 
