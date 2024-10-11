@@ -28,6 +28,6 @@
 
 ### Relevante Dokumente
 
-- [Entwicklungsplan](../Entwicklungsplan.md)
+- [Entwicklungsplan](../Inkremente/00/Entwicklungsplan.md)
 
 ---
