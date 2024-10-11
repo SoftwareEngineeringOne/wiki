@@ -2,44 +2,37 @@
 
 ---
 
-#### Metadaten
+#### Übersicht
 
-- Projekt: Projekt Episko
-- Autor: Simon Blum
-- Datum: 01.10.2024
-- Zuletzt geändert
-  - von: Simon Blum
-  - am: 07.10.2024
-- Version: 3
-- Prüfer: Ben Oeckl
-- Letzte Freigabe
-  - durch: Ben Oeckl
-  - am: 07.10.2024
+**Projekt**: Projekt Episkos \
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektinitialisierung \
+**Autor**: Simon Blum \
+**Datum**: 01.10.2024 \
+**Zuletzt geändert**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024 \
+**Version**: 4 \
+**Letzte Freigabe**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024 \
 
 #### Changelog
 
-**01.10.2024 | Simon Blum**
+| Datum      | Verfasser         | Kurzbeschreibung                              |
+| ---------- | ----------------- | --------------------------------------------- |
+| 01.10.2024 | Simon Blum        | Initiales Erstellen und Verfassen             |
+| 01.10.2024 | Paul Stöckle      | Hinzufügen von Formalitäten                   |
+| 01.10.2024 | Maximilian Rodler | Anpassung an Feedback nach "Go/No-Go" Meeting |
+| 07.10.2024 | Simon Blum        | Aktualisierung von Formalitäten               |
+| 11.10.2024 | Ben Oeckl         | Finalisierung zur Abgabe                      |
 
-- Initiale Erstellung und Verfassung
+#### Distribution List
 
-**01.10.2024 | Paul Stöckle**
-
-- Hinzufügen von Formalitäten
-
-**01.10.2024 | Maximilian Rodler**
-
-- Anpassung an Feedback nach "Go/No-Go" Meeting
-
-**07.10.2024 | Simon Blum**
-
-- Aktualisierung von Formalitäten
-
-### Distribution List
-
-- Simon Blum
-- Ben Oeckl
-- Maximilian Rodler
-- Paul Stöckle
+- [Simon Blum](@DefinitelyNotSimon13)
+- [Ben Oeckl](@benoeckl)
+- [Maximilian Rodler](@DosKobold)
+- [Paul Stöckle](@MaxRodler)
 
 ---
 
