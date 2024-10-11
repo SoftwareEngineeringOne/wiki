@@ -4,7 +4,7 @@
 
 #### Metadaten
 
-- Projekt: SPOMA (Software Project Overview and Management Application)
+- Projekt: Projekt Episko
 - Autor: Simon Blum
 - Datum: 01.10.2024
 - Zuletzt geändert

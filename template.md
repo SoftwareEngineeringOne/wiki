@@ -2,31 +2,33 @@
 
 ---
 
-#### Metadaten
+#### Übersicht
 
-- Projekt: SPOMA (Software Project Overview and Management Application)
-- Autor:
-- Datum:
-- Zuletzt geändert
-  - von:
-  - am:
-- Version: 1
-- Prüfer:
-- Letzte Freigabe:
-  - durch:
-  - am:
+_Projekt_: Projekt Episkos
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_:
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_:
+_Autor_:
+_Datum_:
+_Zuletzt geändert_:
+&nbsp;&nbsp;&nbsp;&nbsp;_von_:
+&nbsp;&nbsp;&nbsp;&nbsp;_am_:
+_Version_: 1
+_Prüfer_:
+_Letzte Freigabe_:
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_:
+&nbsp;&nbsp;&nbsp;&nbsp;_am_:
 
 #### Changelog
 
-**XX.XX.XXXX | ?**
-
-- Initiale Erstellung und Verfassung
+| Datum      | Verfasser | Kurzbeschreibung                  |
+| ---------- | --------- | --------------------------------- |
+| XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
 
 #### Distribution List
 
-- Simon Blum
-- Ben Oeckl
-- Maximilian Rodler
-- Paul Stöckle
+- [Simon Blum](@DefinitelyNotSimon13)
+- [Ben Oeckl](@benoeckl)
+- [Maximilian Rodler](@DosKobold)
+- [Paul Stöckle](@MaxRodler)
 
 ---
