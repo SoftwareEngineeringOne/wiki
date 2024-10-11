@@ -2,22 +2,22 @@
 
 ---
 
-#### Übersicht
+### Übersicht
 
-_Projekt_: Projekt Episkos
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektinitialisierung
-_Autor_: Simon Blum
-_Datum_: 01.10.2024
-_Zuletzt geändert_:
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024
-_Version_: 4
-_Letzte Freigabe_:
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum
+**Projekt**: Projekt Episkos \
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektinitialisierung \
+**Autor**: Simon Blum \
+**Datum**: 01.10.2024 \
+**Zuletzt geändert**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024 \
+**Version**: 4 \
+**Letzte Freigabe**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024
 
-#### Changelog
+### Changelog
 
 | Datum      | Verfasser         | Kurzbeschreibung                              |
 | ---------- | ----------------- | --------------------------------------------- |
@@ -27,12 +27,12 @@ _Letzte Freigabe_:
 | 07.10.2024 | Simon Blum        | Aktualisierung von Formalitäten               |
 | 11.10.2024 | Ben Oeckl         | Finalisierung zur Abgabe                      |
 
-#### Distribution List
+### Distribution List
 
-- [Simon Blum](@DefinitelyNotSimon13)
-- [Ben Oeckl](@benoeckl)
-- [Maximilian Rodler](@DosKobold)
-- [Paul Stöckle](@MaxRodler)
+- Simon Blum <simon21.blum@gmail.com>
+- Ben Oeckl <ben@oeckl.com>
+- Maximilian Rodler <maximilianreinerrodler@gmail.com>
+- Paul Stöckle <paul.stoeckle@t-online.de>
 
 ---
 
