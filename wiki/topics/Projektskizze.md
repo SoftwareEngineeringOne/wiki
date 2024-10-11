@@ -2,7 +2,7 @@
 
 ---
 
-#### Übersicht
+### Übersicht
 
 **Projekt**: Projekt Episkos \
 &nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
@@ -15,9 +15,9 @@
 **Version**: 4 \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024 \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024
 
-#### Changelog
+### Changelog
 
 | Datum      | Verfasser         | Kurzbeschreibung                              |
 | ---------- | ----------------- | --------------------------------------------- |
@@ -27,12 +27,12 @@
 | 07.10.2024 | Simon Blum        | Aktualisierung von Formalitäten               |
 | 11.10.2024 | Ben Oeckl         | Finalisierung zur Abgabe                      |
 
-#### Distribution List
+### Distribution List
 
-- [Simon Blum](@DefinitelyNotSimon13)
-- [Ben Oeckl](@benoeckl)
-- [Maximilian Rodler](@DosKobold)
-- [Paul Stöckle](@MaxRodler)
+- Simon Blum <simon21.blum@gmail.com>
+- Ben Oeckl <ben@oeckl.com>
+- Maximilian Rodler <maximilianreinerrodler@gmail.com>
+- Paul Stöckle <paul.stoeckle@t-online.de>
 
 ---
 

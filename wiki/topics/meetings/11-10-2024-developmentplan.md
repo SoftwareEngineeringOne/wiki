@@ -1,14 +1,33 @@
-# Planning Meeting
+# Entwicklungsplan Meeting
 
-- Teilnehmer: Paul Stöckle, Maximilian Rodler, Ben Oeckl, Simon Blum
-- Datum, Ort: 11.10.2024, DHBW Friedrichshafen
-- Ziel: Fertigstellung des Entwicklungsplans
-- Diskussionspunkte:
-  - Genauer Aufbau der Vorgehensweise
-  - Aufgabenverteilung
-  - Struktur UML-Diagramms/Vorgehensmodell
-- Ergebnis:
-  - Inhaltliche Fertigstellung des Entwicklunsplans
-- Aktionen:
-  - Diagramm formalisieren - Simon
-  - Plan selbst formalisieren - Max
+---
+
+### Übersicht
+
+**Projekt**: Projekt Episkos \
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektinitialisierung \
+**Datum, Ort**: 11.10.2024, DHBW Friedrichshafen\
+**Teilnehmer**: Simon Blum, Ben Oeckl, Paul Stoeckle, Max Rodler\
+**Moderation**: Max Rodler\
+**Diskussionspunkte**: \
+
+- Genauer Aufbau der Vorgehensweise
+- Aufgabenverteilung
+- Struktur UML-Diagramms/Vorgehensmodell
+
+**Ergebnisse**: \
+
+- Inhaltliche Fertigstellung des Entwicklunsplans
+
+**Aktionen**:
+| Aktion | Verantwortlich | Deadline |
+| ----------- | -------------- | -------- |
+| Diagramme formalisieren | Simon Blum | 11.10.2024 |
+| Formales dokument erstellen | Max Rodler | 18.10.2024 |
+
+### Relevante Dokumente
+
+- [Entwicklungsplan](../Entwicklungsplan.md)
+
+---

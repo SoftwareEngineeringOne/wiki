@@ -2,7 +2,7 @@
 
 ---
 
-#### Übersicht
+### Übersicht
 
 **Projekt**: Projekt Episkos \
 &nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: \
@@ -18,17 +18,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: \
 
-#### Changelog
+### Changelog
 
 | Datum      | Verfasser | Kurzbeschreibung                  |
 | ---------- | --------- | --------------------------------- |
 | XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
 
-#### Distribution List
+### Distribution List
 
-- [Simon Blum](@DefinitelyNotSimon13)
-- [Ben Oeckl](@benoeckl)
-- [Maximilian Rodler](@DosKobold)
-- [Paul Stöckle](@MaxRodler)
+- Simon Blum <simon21.blum@gmail.com>
+- Ben Oeckl <ben@oeckl.com>
+- Maximilian Rodler <maximilianreinerrodler@gmail.com>
+- Paul Stöckle <paul.stoeckle@t-online.de>
 
 ---
