@@ -18,6 +18,6 @@ RUN tlmgr install xcolor pgf grffile fancyhdr parskip babel-english units lastpa
 # Create directory whlere content will be stored
 RUN mkdir -p /var/doc
 
-COPY build.sh /var/
+COPY build.sh packages.tex /var/
 
 WORKDIR /var/build

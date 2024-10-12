@@ -51,11 +51,11 @@ jobs:
       - name: Expose GitHub Runtime
         uses: crazy-max/ghaction-github-runtime@v3
 
-      # - name: Build Docker image
-      #   run: |
-      #     docker buildx build -t "md-to-pdf" \
-      #         --cache-to type=gha \
-      #         --cache-from type=gha pdfGen
+      - name: Build Docker image
+        run: |
+          docker buildx build -t "md-to-pdf" \
+              --cache-to type=gha \
+              --cache-from type=gha util
 
       - name: Git config
         run: |
@@ -72,12 +72,13 @@ jobs:
 
       - name: Build PDFs
         run: |
-          docker run -v $PWD/tmp:/var/doc definitlynotsimon/md-to-pdf /var/build.sh
+          docker run -v $PWD/tmp:/var/doc md-to-pdf /var/build.sh
 
       - name: Cleanup dir
         run: |
           shopt -s globstar
 
+          rm pdfs -rf
           mkdir pdfs
           mv tmp/**/*.pdf pdfs -f
           rm tmp -rf
