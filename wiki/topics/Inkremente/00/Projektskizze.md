@@ -20,7 +20,7 @@
 ### Changelog
 
 | Datum      | Verfasser         | Kurzbeschreibung                              |
-| ---------- | ----------------- | --------------------------------------------- |
+|------------|-------------------|-----------------------------------------------|
 | 01.10.2024 | Simon Blum        | Initiales Erstellen und Verfassen             |
 | 01.10.2024 | Paul Stöckle      | Hinzufügen von Formalitäten                   |
 | 01.10.2024 | Maximilian Rodler | Anpassung an Feedback nach "Go/No-Go" Meeting |
@@ -62,9 +62,9 @@
 - Projektinterne Entwickler
 - Auftraggeber (Dozent)
 - Kunden:
-  - Professionelle Entwickler
-  - Hobbyentwickler
-  - Studentische Entwickler
+    - Professionelle Entwickler
+    - Hobbyentwickler
+    - Studentische Entwickler
 
 ## Randbedingungen
 
