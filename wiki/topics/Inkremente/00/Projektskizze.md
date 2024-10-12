@@ -4,7 +4,7 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektinitialisierung \
 **Autor**: Simon Blum \

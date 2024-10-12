@@ -21,10 +21,11 @@
 - Inhaltliche Fertigstellung des Entwicklunsplans
 
 **Aktionen**:
-| Aktion | Verantwortlich | Deadline |
-| ----------- | -------------- | -------- |
-| Diagramme formalisieren | Simon Blum | 11.10.2024 |
-| Formales dokument erstellen | Max Rodler | 18.10.2024 |
+
+| Aktion                      | Verantwortlich | Deadline   |
+|-----------------------------|----------------|------------|
+| Diagramme formalisieren     | Simon Blum     | 11.10.2024 |
+| Formales dokument erstellen | Max Rodler     | 18.10.2024 |
 
 ### Relevante Dokumente
 

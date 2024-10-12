@@ -112,7 +112,7 @@ Im Rahmen eines Inkrementes werden folgende Dokumente erstellt:
 ## Diagramme
 
 ```plantuml
-@startuml Vorgehensmodell
+@startuml 
 title Vorgehensmodell
 start
 
@@ -144,7 +144,7 @@ stop
 ---
 
 ```plantuml
-@startuml Initialisierung
+@startuml 
 title Initialisierung
 start
 :Übersicht verschaffen;
@@ -174,7 +174,7 @@ stop
 ---
 
 ```plantuml
-@startuml Inkrement
+@startuml 
 title Inkrement
 |Alle|
 start
@@ -215,7 +215,7 @@ caption <i>Mehrere Arbeitspakete können parallel laufen</i>
 ---
 
 ```plantuml
-@startuml Qualitätsprüfung
+@startuml 
 title Qualitätsprüfung
 |Arbeitspaketbeauftragte|
 start
