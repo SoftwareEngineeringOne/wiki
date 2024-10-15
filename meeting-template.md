@@ -19,9 +19,10 @@
 - $Platzhalter$
 
 **Aktionen**:
-| Aktion | Verantwortlich | Deadline |
-| ----------- | -------------- | -------- |
-| Platzhalter | | |
+
+| Aktion      | Verantwortlich | Deadline |
+|-------------|----------------|----------|
+| Platzhalter |                |          |
 
 ### Relevante Dokumente
 
