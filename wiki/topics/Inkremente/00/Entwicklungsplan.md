@@ -46,7 +46,7 @@ Diese Iterativ-Inkrementelle Arbeitsweise beinhaltet agile Elemente:
 - Hier können die Ziele/der Zeitraum eines Inkrements angepasst werden, falls nötig.
 - Es können parallel mehrere Arbeitspakete in einem Inkrement durchgeführt werden.
 
-Eine genauere Übersicht kann unter "[](Entwicklungsplan.md#diagramme)" gefunden werden.
+Eine genauere Übersicht kann unter "[Diagramme](Entwicklungsplan.md#diagramme)" gefunden werden.
 
 ## Teamzusammensetzung
 
