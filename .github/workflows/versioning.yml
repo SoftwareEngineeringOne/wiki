@@ -1,23 +1,41 @@
-name: Semantic versioning
+# Info on the action
+name: Automatic Release
+run-name: ${{ github.actor }} is automatically releasing 🚀
 
 on:
+  # Run automatically on main pushes
   push:
     branches:
       - main
 
-  pull_request:
-    branches:
-      - main
-
 jobs:
-  run:
+  # As per https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/ci-configurations/github-actions.md
+  release:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: "Generate token"
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.BOT_APP_ID }}
+          private_key: ${{ secrets.BOT_PRIVATE_KEY }}
+      # Check out the code to be able to deploy
+      - name: "Checking out code"
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ steps.generate_token.outputs.token }}
+      # Setting up Node, 18 is LTS
+      - name: "Setting up Node"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      # Make sure all the dependencies are ok and installed
+      - name: "Installing dependencies"
+        run: npm ci
 
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
+      # Install semantic release
+      - name: "Releasing via Semantic Release"
+        run: npx semantic-release@21
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
