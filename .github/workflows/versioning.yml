@@ -1,4 +1,4 @@
-name: Build documentation
+name: Semantic versioning
 
 on:
   push:
