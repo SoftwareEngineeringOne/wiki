@@ -86,4 +86,4 @@ jobs:
         run: |
           git add pdfs
           git commit -m "pdf generation - $(date)"
-          git push -u pdf
+          git push -u origin main:pdf
