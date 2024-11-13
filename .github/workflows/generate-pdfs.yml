@@ -85,8 +85,12 @@ jobs:
           mv tmp/**/*.pdf pdfs -f
           rm tmp -rf
 
+          echo "On: ${{ github.ref }}"
+
       - name: Push PDFs
+        if: github.ref == 'refs/heads/main'
         run: |
           git add pdfs
           git commit -m "pdf generation - $(date)"
           git push -u origin main:pdf
+

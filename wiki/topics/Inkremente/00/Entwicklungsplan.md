@@ -179,7 +179,7 @@ title Inkrement
 |Alle|
 start
 
-:Anforderungsanalyse;
+:Spezifische Anforderungsanalyse;
 note left
     Anforderungskatalog
     ----
