@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/SoftwareEngineeringOne/wiki/compare/v0.1.1...v0.1.2) (2024-11-13)
+
+
+### Bug Fixes
+
+* move meeting file to correct location ([11c3895](https://github.com/SoftwareEngineeringOne/wiki/commit/11c3895c74b750c76b3dee4c2120568f6f7fafd1))
+
 ## [0.1.1](https://github.com/SoftwareEngineeringOne/wiki/compare/v0.1.0...v0.1.1) (2024-11-11)
 
 
