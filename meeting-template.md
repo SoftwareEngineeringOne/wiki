@@ -4,7 +4,7 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Datum, Ort**: \
