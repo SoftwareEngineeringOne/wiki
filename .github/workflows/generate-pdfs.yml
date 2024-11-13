@@ -63,6 +63,8 @@ jobs:
 
       - name: Prepare files
         run: |
+          git pull origin pdf
+          rm pdfs -rf
 
           shopt -s globstar
 
