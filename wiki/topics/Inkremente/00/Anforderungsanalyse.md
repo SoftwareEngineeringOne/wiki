@@ -350,7 +350,7 @@ stop
 @startuml
 left to right direction
 
-"Datei serialisieren BAUM" as (Use)
+"Datei serialisieren ⋔" as (Use)
 package Typisch {
     :Nutzer: --> (Gibt Datei manuell an)
     (Gibt Datei manuell an) --> (Use)
@@ -369,7 +369,7 @@ package Alternativ {
 start
 :Datei öffnen;
 if(Metadaten mit selber Id in Cache vorhanden) then(ja)
-:Checksumme für Manifest erstellen BAUM;
+:Checksumme für Manifest erstellen ⋔;
 if(Checksumme stimmt mit gespeicherter überein) then(ja)
 :Daten aus Cache laden;
 note: F2.2.1
@@ -380,7 +380,7 @@ else (nein)
 endif
 :Daten aus Manifestdatei laden;
 note: F2.2.1
-:Caching BAUM;
+:Caching ⋔;
 stop
 
 @enduml
@@ -442,7 +442,7 @@ if(Gecached Daten vorhanden?) then (ja)
         :Laden eines Eintrags;
         note: F3.1.1
         if(Projekt in gespeicherten Verzeichnis auffindbar?) then (ja)
-            :Checksumme erstellen BAUM;
+            :Checksumme erstellen ⋔;
             if(Checksum stimmt überein) then (ja)
                 :Laden der gespeicherten Daten;
             else (nein)
@@ -589,7 +589,7 @@ _Die Art und Weise wie eine Checksumme erstellt wird, wird im Laufe des Projekte
 
 start
 :Nutzer öffnet Anwendung;
-:Metadaten werden geladen BAUM;
+:Metadaten werden geladen ⋔;
 if(existieren <= 1 Projekte) then(ja)
 :Statistiken und Analysen aus gecachten Daten erstellen;
 else (nein)
@@ -638,7 +638,7 @@ stop
 
 start
 :Nutzer öffnet Anwendung;
-:Metadaten werden geladen BAUM;
+:Metadaten werden geladen ⋔;
 :Nutzer setzt Suche/Filter;
 :Gecachte Daten werden gefiltert/sortiert;
 :Passende Daten werden dem Nutzer angezeigt;
