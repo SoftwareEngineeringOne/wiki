@@ -40,5 +40,7 @@
 | Manifest(datei) | Repräsentierung von Metadaten in einer Datei. Die genaue Struktur wird im Laufe des ersten Inkrements festgelegt                                                       |
 | Inkrement       | Zeitraum in dem festgelegte Arbeitspakete bearbeitet werden. Abschluss dieser kann auch als Meilenstein bezeichnet werden                                              |
 | Meilenstein     | Abschluss eines Inkrementes                                                                                                                                            |
+| Kritikalität | Im Rahmen des Projektes kann die Kritikalität verschiedener ???? folgendermaßgen angegeben werden: 0 - Absolut unabdingbar, 1 - Sehr wichtig, 2 - Normal 3 - Unwichtig |
+| Serialisieren |
 
 
