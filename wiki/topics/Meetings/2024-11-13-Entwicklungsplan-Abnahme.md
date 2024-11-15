@@ -1,4 +1,4 @@
-# Abnhame Entwicklungsplan
+# Abnahme Entwicklungsplan
 ---
 
 ### Übersicht
@@ -21,9 +21,9 @@
 
 **Aktionen**:
 
-| Aktion                                          | Verantwortlich | Deadline |
-|-------------------------------------------------|----------------|----------|
-| Begriff Anforderungsanalyse im Inkrement ändern | Simon Blum     | ---      |
+| Aktion                                          | Verantwortlich | Deadline   |
+|-------------------------------------------------|----------------|------------|
+| Begriff Anforderungsanalyse im Inkrement ändern | Simon Blum     | 15.11.2024 |
 
 ### Relevante Dokumente
 
