@@ -9,7 +9,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Anforderungsanalyse \
 **Autor**: Simon Blum \
 **Datum**: 13.11.2024 \
-**Zuletzt geändert**: 15.11.2024 \
+**Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 15.11.2024 \
 **Version**: 1 \
