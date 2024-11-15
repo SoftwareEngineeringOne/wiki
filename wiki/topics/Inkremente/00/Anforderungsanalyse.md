@@ -601,7 +601,7 @@ stop
 @enduml
 ```
 
-## U3.4
+## U3.4 Suchen und filtern
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -651,45 +651,19 @@ stop
 
 ## Funktionale Requirements
 
-F0.1.1: Die Manifestdateien müssen von Menschen, als auch von Maschinen lesbar sein.
+F1.1.1: Das System muss dem Nutzer die Möglichkeit bieten, eine neue Manifestdatei anzulegen.
 
-F1.1.1: Der Nutzer muss über die graphische Anwendung eine Manifestdatei erstellen können. Hierbei werden die Daten in einer Datenbank gecached.
+F1.2.1: Das System muss dem Nutzer die Möglichkeit bieten, Metadaten eines Projektes zu bearbeiten.
 
-F1.1.2: Der Nutzer muss über eine interaktive Konsolenanwendung eine neue Manifestdatei erstellen können.
+F1.3.1: Das System muss dem Nutzer die Möglichkeit bieten, eine Manifestdatei zu löschen.
 
-F1.1.3: Der Nutzer wird über die Konsolenanwendung zu Skriptingzwecken auch mithilfe von Parametern und einem nicht interaktiven Modus eine Manifestdatei erstellen können.
+F2.1.1: Das System muss dem Nutzer die Möglichkeit bieten, eine Manifestdatei zur Verarbeitung anzugeben.
 
-F1.1.4: Eine, über die Konsolenanwendung erstellte, Datei muss in der graphischen Anwendung geladen werden können und wird hier dann auch in der Datenbank gecached.
+F2.1.2: Das System muss dem Nutzer die Möglichkeit bieten, einen Pfad anzugeben, in welchem Manifestdateien gefunden werden müssen.
 
-F1.2.1: Der Nutzer muss über die graphische Anwendung Metadaten bearbeiten können. Durch die Bearbeitung wird auch der Cache aktualisiert.
+F3.3.1: Das System wird dem Nutzer die Möglichkeit bieten, Statistiken über seine Projekte einzusehen.
 
-F1.2.2: Die Manifestdatei muss manuell durch den Nutzer mit einem Texteditor bearbeitet werden können. Wird diese Datei vorher gecached, wird die graphische Anwendung Änderungen erkennen und diese erneut cachen.
-
-F1.3.1: Der Nutzer muss über die graphische Anwendung Metadaten eines Projektes löschen können. Dies führt zu der Löschung der Manifestdatei und der Löschung des Eintrages in der Datenbank/dem Cache.
-
-F1.3.2: Der Nutzer muss die Manifestdatei löschen können. Wurde diese vorher gecached, wird die graphische Anwendung dies erkenne und entfernt den Eintrag aus der Datenbank.
-
-F2.1.1: Der Nutzer muss in der graphische Oberfläche eine Manifestdatei angeben können, welche dann weiterverarbeitet wird.
-
-F2.1.2: Der Nutzer muss in der graphische Oberfläche einen Pfad angeben können. In diesem Pfad werden rekursiv alle Manifestdateien aufgefunden und weiterverarbeitet.
-
-F2.1.3: Durch den Nutzer angebene Pfade und Dateien müssen persistiert werden.
-
-F2.1.4: Beim Starten der graphischen Anwendung müssen persitierte Pfade und Dateien automatisch durchsucht werden.
-
-F2.2.1: Die graphische Anwendung muss in der Lage sein Manifestdateien zu serialisieren und mit den darin vorhandenen Daten weiterzuarbeiten.
-
-F3.1.1: Beim Aufruf der graphischen Anwendung werden zunächst alle Daten aus dem Cache geladen. Hierbei wird geprüft ob Dateien noch an ihren gegebenen Pfaden existieren und ob die Checksum mit diesen übereinstimmt.
-
-F3.1.2: Hat sich die Checksum einer Datei verändert wird diese erneut serialisiert und der Cache geupdated.
-
-F3.1.3: Existiert eine Datei nicht mehr an ihrem gegebenen Pfad, wird der Eintrag aus dem Cache gelöscht und wird dem Nutzer nicht mehr angezeigt.
-
-F3.2.1: Anhand der Metadaten in jeder Manifestdatei wird eine einzige Checksumme erstellt anhand welcher Änderungen erkennbar sind.
-
-F3.3.1: Anhand der Metadaten aller geladenen Projekte werden beim Programmstart oder auf Wunsch des Nutzers verschiedene Übersichten und Statistiken erstellt, die vom Nutzer eingesehen werden können.
-
-F3.4.1: Der Nutzer wird in der graphischen Oberfläche innerhalb aller geladenen Projekte anhand verschiedener Eigenschaften suchen und filtern.
+F3.4.1: Das System wird dem Nutzer die Möglichkeit bieten, seine Projekte anhand verschiedener Eigenschaften zu suchen und zu filtern.
 
 ## Nicht-funktionale Requirements
 
@@ -706,6 +680,8 @@ N2.4: Für die Anwendung sollen die Frameworks "Tauri v2.0+" für das Backend un
 N2.5: Für die Datenbank soll SQLite verwendet werden.
 
 N2.6: Die Anwendung muss für die Prozessorarchitektur x86_64 ausgelegt sein.
+
+N2.7: Die Manifestdateien müssen von Menschen, als auch von Maschinen lesbar sein.
 
 N3.1: Das Projekt muss bis zum Ende der Theoriephase im Quartal 1 im Jahr 2025 abgeschlossen sein. Ein exaktes Datum hierfür folgt.
 
