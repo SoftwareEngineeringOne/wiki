@@ -1,3 +1,41 @@
+# Anforderungsanalyse
+
+---
+
+### Übersicht
+
+**Projekt**: Projekt Episkos \
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Anforderungsanalyse \
+**Autor**: Simon Blum \
+**Datum**: 13.11.2024 \
+**Zuletzt geändert**: 15.11.2024 \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+**Version**: 1 \
+**Prüfer**: Paul Stöckle \
+**Letzte Freigabe**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 15.11.2024 \
+
+### Changelog
+
+| Datum      | Verfasser | Kurzbeschreibung                  |
+| ---------- | --------- | --------------------------------- |
+| 13.11.2024 | Simon Blum | Initialer Meeting-Mitschrieb |
+| 13.11.2024 | Ben Oeckl | Ergänzung von Requirements in Use Cases |
+| 13.11.2024 | Paul Stöckle | Überarbeitung von Requirements |
+| 15.11.2024 | Paul Stöckle | Hinzufügen des Headers |
+
+### Distribution List
+
+- Simon Blum <simon21.blum@gmail.com>
+- Ben Oeckl <ben@oeckl.com>
+- Maximilian Rodler <maximilianreinerrodler@gmail.com>
+- Paul Stöckle <paul.stoeckle@t-online.de>
+
+---
+
 # Inhaltsverzeichnis
 
 - [Inhaltsverzeichnis](#inhaltsverzeichnis)
