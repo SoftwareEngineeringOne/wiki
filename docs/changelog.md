@@ -1,3 +1,10 @@
+## [0.2.1](https://github.com/SoftwareEngineeringOne/wiki/compare/v0.2.0...v0.2.1) (2024-11-15)
+
+
+### Bug Fixes
+
+* replace symbol ([85dff0d](https://github.com/SoftwareEngineeringOne/wiki/commit/85dff0d6af24a749a29d06b9ec3a26106ed46f8f))
+
 # [0.2.0](https://github.com/SoftwareEngineeringOne/wiki/compare/v0.1.3...v0.2.0) (2024-11-15)
 
 
