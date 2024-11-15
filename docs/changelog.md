@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/SoftwareEngineeringOne/wiki/compare/v0.1.3...v0.2.0) (2024-11-15)
+
+
+### Features
+
+* add usecases and requirements ([#16](https://github.com/SoftwareEngineeringOne/wiki/issues/16)) ([ff29e04](https://github.com/SoftwareEngineeringOne/wiki/commit/ff29e04311cc73f6dd8e126028ae5c42a5313c4c))
+
 ## [0.1.3](https://github.com/SoftwareEngineeringOne/wiki/compare/v0.1.2...v0.1.3) (2024-11-13)
 
 
