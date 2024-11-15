@@ -653,15 +653,15 @@ stop
 
 F1.1.1: Das System muss dem Nutzer die Möglichkeit bieten, eine neue Manifestdatei anzulegen.
 
-F1.2.1: Das System muss dem Nutzer die Möglichkeit bieten, Metadaten eines Projektes zu bearbeiten.
+F1.2.1: Nach Anlegen einer Manifestdatei, muss das System dem Nutzer die Möglichkeit bieten, die Metadaten dieser zu bearbeiten.
 
-F1.3.1: Das System muss dem Nutzer die Möglichkeit bieten, eine Manifestdatei zu löschen.
+F1.3.1: Nach Anlegen einer Manifestdatei, muss das System dem Nutzer die Möglichkeit bieten, diese zu löschen.
 
 F2.1.1: Das System muss dem Nutzer die Möglichkeit bieten, eine Manifestdatei zur Verarbeitung anzugeben.
 
 F2.1.2: Das System muss dem Nutzer die Möglichkeit bieten, einen Pfad anzugeben, in welchem Manifestdateien gefunden werden müssen.
 
-F3.3.1: Das System wird dem Nutzer die Möglichkeit bieten, Statistiken über seine Projekte einzusehen.
+F3.3.1: Nach Anlegen mindestens eines Projektes, wird das System dem Nutzer die Möglichkeit bieten, Statistiken über seine Projekte einzusehen.
 
 F3.4.1: Das System wird dem Nutzer die Möglichkeit bieten, seine Projekte anhand verschiedener Eigenschaften zu suchen und zu filtern.
 
