@@ -37,48 +37,6 @@
 
 ---
 
-# Inhaltsverzeichnis
-
-- [Inhaltsverzeichnis](#inhaltsverzeichnis)
-- [UseCases](#usecases)
-  - [Paket 1](#paket-1)
-    - [U1.1 Metadaten anlegen](#u11-metadaten-anlegen)
-      - [UseCase Diagramm](#usecase-diagramm)
-      - [Ablaufdiagramme](#ablaufdiagramme)
-    - [U1.2 Metadaten bearbeiten](#u12-metadaten-bearbeiten)
-      - [UseCase Diagramm](#usecase-diagramm-1)
-      - [Ablaufdiagramme](#ablaufdiagramme-1)
-    - [U1.3 Metadaten löschen](#u13-metadaten-löschen)
-      - [UseCase Diagramm](#usecase-diagramm-2)
-      - [Ablaufdiagramme](#ablaufdiagramme-2)
-  - [Paket 2](#paket-2)
-    - [U2.1 Manifeste rekursiv auffinden](#u21-manifeste-rekursiv-auffinden)
-      - [UseCase Diagramm](#usecase-diagramm-3)
-      - [Ablaufdiagramm](#ablaufdiagramm)
-    - [U2.2 Manifeste serialisieren](#u22-manifeste-serialisieren)
-      - [UseCase Diagramm](#usecase-diagramm-4)
-      - [Ablaufdiagramm](#ablaufdiagramm-1)
-  - [Paket 3](#paket-3)
-    - [U3.1 Daten cachen](#u31-daten-cachen)
-      - [Usecase Diagramm](#usecase-diagramm-5)
-      - [Ablaufdiagramme](#ablaufdiagramme-3)
-        - [Caching bei Anwendungsaufruf](#caching-bei-anwendungsaufruf)
-        - [Verfeinerung für Lokales Suchen](#verfeinerung-für-lokales-suchen)
-        - [Verfeinerung für Erstellen/Aktualisieren](#verfeinerung-für-erstellenaktualisieren)
-        - [Verfeinerung für Entfernen](#verfeinerung-für-entfernen)
-    - [U3.2 Checksum erstellen](#u32-checksum-erstellen)
-      - [UseCase Diagramm](#usecase-diagramm-6)
-      - [Ablaufdiagramm](#ablaufdiagramm-2)
-    - [U3.3 Analysen und Statistiken](#u33-analysen-und-statistiken)
-      - [UseCase Diagramm](#usecase-diagramm-7)
-      - [Ablaufdiagramm](#ablaufdiagramm-3)
-    - [U3.4](#u34)
-      - [UseCase Diagramm](#usecase-diagramm-8)
-      - [Ablaufdiagramm](#ablaufdiagramm-4)
-- [Requirements](#requirements)
-  - [Funktionale Requirements](#funktionale-requirements)
-  - [Nicht-funktionale Requirements](#nicht-funktionale-requirements)
-
 # UseCases
 
 ## U1.1 Metadaten anlegen
