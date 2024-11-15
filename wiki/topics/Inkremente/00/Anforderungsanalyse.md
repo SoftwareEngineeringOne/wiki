@@ -1,3 +1,42 @@
+# Anforderungsanalyse
+
+---
+
+### Übersicht
+
+**Projekt**: Projekt Episkos \
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Anforderungsanalyse \
+**Autor**: Simon Blum \
+**Datum**: 13.11.2024 \
+**Zuletzt geändert**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 15.11.2024 \
+**Version**: 1 \
+**Prüfer**: Paul Stöckle \
+**Letzte Freigabe**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 15.11.2024
+
+### Changelog
+
+| Datum      | Verfasser | Kurzbeschreibung                  |
+| ---------- | --------- | --------------------------------- |
+| 13.11.2024 | Simon Blum | Initialer Meeting-Mitschrieb |
+| 13.11.2024 | Ben Oeckl | Ergänzung von Requirements in Use Cases |
+| 13.11.2024 | Paul Stöckle | Überarbeitung von Requirements |
+| 15.11.2024 | Paul Stöckle | Hinzufügen des Headers |
+| 15.11.2024 | Max Rodler | Fehlerbehebung |
+
+### Distribution List
+
+- Simon Blum <simon21.blum@gmail.com>
+- Ben Oeckl <ben@oeckl.com>
+- Maximilian Rodler <maximilianreinerrodler@gmail.com>
+- Paul Stöckle <paul.stoeckle@t-online.de>
+
+---
+
 # Inhaltsverzeichnis
 
 - [Inhaltsverzeichnis](#inhaltsverzeichnis)
@@ -42,9 +81,7 @@
 
 # UseCases
 
-## Paket 1
-
-### U1.1 Metadaten anlegen
+## U1.1 Metadaten anlegen
 
 | Metadaten anlegen               | Iteration |                                                                                                                                                                                             |
 | ------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,7 +102,7 @@
 | Funktionale Anforderungen       | 4         | F0.1.1, F1.1.1 - F1.1.4                                                                                                                                                                      |
 | Nicht-funktionale Anforderungen | 4         |                                                                                                                                                                                             |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -87,7 +124,7 @@ c <.up. (Erstellt Metadaten über CLI ⋔) : <<includes>>
 @enduml
 ```
 
-#### Ablaufdiagramme
+### Ablaufdiagramme
 
 ```plantuml
 @startuml
@@ -118,7 +155,7 @@ end
 @enduml
 ```
 
-### U1.2 Metadaten bearbeiten
+## U1.2 Metadaten bearbeiten
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -139,7 +176,7 @@ end
 | Funktionale Anforderungen       | 4         | F0.1.1, F1.2.1, F1.2.2    |
 | Nicht-funktionale Anforderungen | 4         |     |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -161,7 +198,7 @@ c <.up. (Bearbeitet Metadaten manuell ⋔) : <<includes>>
 @enduml
 ```
 
-#### Ablaufdiagramme
+### Ablaufdiagramme
 
 ```plantuml
 @startuml
@@ -187,7 +224,7 @@ end
 @enduml
 ```
 
-### U1.3 Metadaten löschen
+## U1.3 Metadaten löschen
 
 
 | Schritt                         | Iteration |                                                                                                                                               |
@@ -209,7 +246,7 @@ end
 | Funktionale Anforderungen       | 4         | F1.3.1, F1.3.2                                                                                                                                              |
 | Nicht-funktionale Anforderungen | 4         |                                                                                                                                               |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -231,7 +268,7 @@ c <.up. (Löscht Metadaten manuell ⋔) : <<includes>>
 @enduml
 ```
 
-#### Ablaufdiagramme
+### Ablaufdiagramme
 
 ```plantuml
 @startuml
@@ -255,9 +292,7 @@ end
 @enduml
 ```
 
-## Paket 2
-
-### U2.1 Manifeste rekursiv auffinden
+## U2.1 Manifeste rekursiv auffinden
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -278,7 +313,7 @@ end
 | Funktionale Anforderungen       | 4         |  F2.1.1 - F2.1.4   |
 | Nicht-funktionale Anforderungen | 4         |     |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -290,7 +325,7 @@ left to right direction
 @enduml
 ```
 
-#### Ablaufdiagramm
+### Ablaufdiagramm
 
 ```plantuml
 @startuml
@@ -330,7 +365,7 @@ stop
 @enduml
 ```
 
-### U2.2 Manifeste serialisieren
+## U2.2 Manifeste serialisieren
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -351,7 +386,7 @@ stop
 | Funktionale Anforderungen       | 4         | F0.1.1, F2.2.1    |
 | Nicht-funktionale Anforderungen | 4         |     |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -369,7 +404,7 @@ package Alternativ {
 @enduml
 ```
 
-#### Ablaufdiagramm
+### Ablaufdiagramm
 
 ```plantuml
 @startuml
@@ -393,9 +428,7 @@ stop
 @enduml
 ```
 
-## Paket 3
-
-### U3.1 Daten cachen
+## U3.1 Daten cachen
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -416,7 +449,7 @@ stop
 | Funktionale Anforderungen       | 4         | F3.1.1 - F3.1.3    |
 | Nicht-funktionale Anforderungen | 4         | N1.1, N2.5    |
 
-#### Usecase Diagramm
+### Usecase Diagramm
 
 ```plantuml
 @startuml
@@ -437,9 +470,9 @@ c <.up. (Löscht Metadaten ⋔) : <<includes>>
 @enduml
 ```
 
-#### Ablaufdiagramme
+### Ablaufdiagramme
 
-##### Caching bei Anwendungsaufruf
+#### Caching bei Anwendungsaufruf
 
 ```plantuml
 @startuml
@@ -471,7 +504,7 @@ stop
 @enduml
 ```
 
-##### Verfeinerung für Lokales Suchen
+#### Verfeinerung für Lokales Suchen
 
 ```plantuml
 @startuml
@@ -497,7 +530,7 @@ stop
 @enduml
 ```
 
-##### Verfeinerung für Erstellen/Aktualisieren
+#### Verfeinerung für Erstellen/Aktualisieren
 
 ```plantuml
 @startuml
@@ -513,7 +546,7 @@ stop
 @enduml
 ```
 
-##### Verfeinerung für Entfernen
+#### Verfeinerung für Entfernen
 
 ```plantuml
 @startuml
@@ -528,7 +561,7 @@ stop
 ```
 
 
-### U3.2 Checksum erstellen
+## U3.2 Checksum erstellen
 
 | Name des Use Case               | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -549,7 +582,7 @@ stop
 | Funktionale Anforderungen       | 4         | F3.2.1    |
 | Nicht-funktionale Anforderungen | 4         |     |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -557,11 +590,11 @@ stop
 @enduml
 ```
 
-#### Ablaufdiagramm
+### Ablaufdiagramm
 
 _Die Art und Weise wie eine Checksumme erstellt wird, wird im Laufe des Projektes determiniert._
 
-### U3.3 Analysen und Statistiken
+## U3.3 Analysen und Statistiken
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -570,7 +603,7 @@ _Die Art und Weise wie eine Checksumme erstellt wird, wird im Laufe des Projekte
 | Autor                           | 1         |     |
 | Version                         | 1         |  0.4   |
 | Kurzbeschreibung                | 1         |  Dem Nutzer werden in der graphischen Anwendung verschiedene Statistiken und Analysen zu seinen Projekten bereitgestellt   |
-| Beteiligte Akteure              | 1         |  Nuter, Anwendung   |
+| Beteiligte Akteure              | 1         |  Nutzer, Anwendung   |
 | Fachverantwortlicher            | 1         |     |
 | Referenzen                      | 2         |     |
 | Vorbedingungen                  | 2         | Es existiert mindestens ein Projekt dessen Metadaten über die graphische Anwendung serialisert wurden    |
@@ -582,7 +615,7 @@ _Die Art und Weise wie eine Checksumme erstellt wird, wird im Laufe des Projekte
 | Funktionale Anforderungen       | 4         | F3.3.1    |
 | Nicht-funktionale Anforderungen | 4         |     |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -591,7 +624,7 @@ _Die Art und Weise wie eine Checksumme erstellt wird, wird im Laufe des Projekte
 @enduml
 ```
 
-#### Ablaufdiagramm
+### Ablaufdiagramm
 
 ```plantuml
 @startuml
@@ -610,7 +643,7 @@ stop
 @enduml
 ```
 
-### U3.4
+## U3.4
 
 | Schritt                         | Iteration |     |
 | ------------------------------- | --------- | --- |
@@ -631,7 +664,7 @@ stop
 | Funktionale Anforderungen       | 4         |  F3.4.1   |
 | Nicht-funktionale Anforderungen | 4         |     |
 
-#### UseCase Diagramm
+### UseCase Diagramm
 
 ```plantuml
 @startuml
@@ -640,7 +673,7 @@ stop
 @enduml
 ```
 
-#### Ablaufdiagramm
+### Ablaufdiagramm
 
 ```plantuml
 @startuml
