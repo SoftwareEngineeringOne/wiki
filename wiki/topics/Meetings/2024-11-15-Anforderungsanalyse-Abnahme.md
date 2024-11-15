@@ -28,8 +28,8 @@
 
 | Aktion      | Verantwortlich | Deadline |
 |-------------|----------------|----------|
-| Funktionale Requirements umformulieren | Paul Stöckle | ---         |
-| Use-Cases überarbeiten (abstrahieren) | Simon Blum | ---         |
+| Funktionale Requirements umformulieren | Paul Stöckle | 19.11.2024         |
+| Use-Cases überarbeiten (abstrahieren) | Simon Blum | 19.11.2024         |
 
 ### Relevante Dokumente
 - [Anforderungsanalyse](../Inkremente/00/Anforderungsanalyse.md)
