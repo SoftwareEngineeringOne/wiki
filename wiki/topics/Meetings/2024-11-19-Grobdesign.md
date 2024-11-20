@@ -17,7 +17,7 @@
 - Objekte und Klassen
 - Klassendiagramm
 
-**Ergebnisse**: \
+**Ergebnisse**:
 
 - Liste an Klassen
 - Klassendiagramm
