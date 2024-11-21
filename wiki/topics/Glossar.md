@@ -42,5 +42,9 @@
 | Meilenstein     | Abschluss eines Inkrementes                                                                                                                                            |
 | Kritikalität | Im Rahmen des Projektes kann die Kritikalität verschiedener ???? folgendermaßgen angegeben werden: 0 - Absolut unabdingbar, 1 - Sehr wichtig, 2 - Normal 3 - Unwichtig |
 | Serialisieren |
+| Deserialisieren | |
+| Gecachete Date | Metadaten welche in einer Datenbank zwichengespeichert sind um das wiederholte deserialiseren von Manifestdateien zu vermeiden |
+| Lokale Daten | Metadaten welche sich in Manifestdateien befinden und nicht gecached sind |
+| Cache | Der Begriff Cache deutet im Rahmen des Projektes auf einen persistenten Cache in Form einer Datenbank hin. Diese ist nur ein "Cache" da die Manifeste die "single source of thruth" sind. |
 
 
