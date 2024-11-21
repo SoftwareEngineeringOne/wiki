@@ -2,6 +2,8 @@
 
 ---
 
+## Dokumentdaten
+
 ### Übersicht
 
 **Projekt**: Projekt Episkos \
@@ -12,7 +14,7 @@
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 15.11.2024 \
-**Version**: 1 \
+**Version**: 6 \
 **Prüfer**: Paul Stöckle \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler \
@@ -20,13 +22,14 @@
 
 ### Changelog
 
-| Datum      | Verfasser | Kurzbeschreibung                  |
-| ---------- | --------- | --------------------------------- |
-| 13.11.2024 | Simon Blum | Initialer Meeting-Mitschrieb |
-| 13.11.2024 | Ben Oeckl | Ergänzung von Requirements in Use Cases |
-| 13.11.2024 | Paul Stöckle | Überarbeitung von Requirements |
-| 15.11.2024 | Paul Stöckle | Hinzufügen des Headers |
-| 15.11.2024 | Max Rodler | Fehlerbehebung |
+| Datum      | Verfasser    | Kurzbeschreibung                             |
+| ---------- | ------------ | -------------------------------------------- |
+| 13.11.2024 | Simon Blum   | Initialer Meeting-Mitschrieb                 |
+| 13.11.2024 | Ben Oeckl    | Ergänzung von Requirements in Use Cases      |
+| 13.11.2024 | Paul Stöckle | Überarbeitung von Requirements               |
+| 15.11.2024 | Paul Stöckle | Hinzufügen des Headers                       |
+| 15.11.2024 | Max Rodler   | Fehlerbehebung                               |
+| 21.11.2024 | Simon Blum   | Aktualisierung von UseCases und Requirements |
 
 ### Distribution List
 
@@ -37,654 +40,664 @@
 
 ---
 
-# UseCases
+## UseCases
 
-## U1.1 Metadaten anlegen
+### Erläuterung Pakete
 
-| Metadaten anlegen               | Iteration |                                                                                                                                                                                             |
-| ------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nummer                          | 1         | 1.1                                                                                                                                                                                         |
-| Paket                           | 2         | P1                                                                                                                                                                                          |
-| Autor                           | 1         |                                                                                                                                                                                             |
-| Version                         | 1         | 0.4                                                                                                                                                                                         |
-| Kurzbeschreibung                | 1         | Der Nutzer kann über die Graphische Oberfläche oder die Konsolenanwendung Metadaten für ein Projekt neu erstellen.                                                                          |
-| Beteiligte Akteure              | 1         | Nutzer                                                                                                                                                                                      |
-| Fachverantwortlicher            | 1         |                                                                                                                                                                                             |
-| Referenzen                      | 2         | Dateiformat Doku                                                                                                                                                                            |
-| Vorbedingungen                  | 2         | Es muss ein Verzeichnis für das Projekt existieren , in dem sich keine andere Manifestdatei befindet                                                                                        |
-| Nachbedingungen                 | 2         | Es existiert eine Manifestdatei in dem gewählten Ordner. Wurde das Projekt über die Graphisch Anwendung erstellt, erscheint dieses hier und die Metadaten wurden in der Datenbank gecached. |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |  s. Ablaufdiagramm                                                          |
-| Kritikalität                    | 3         | 0                                                                                                                                                                                           |
-| Verknüpfungen                   | 2         | Bei GUI: U3.1, 3.2 Anwendung                                                                                                                                    |
-| Funktionale Anforderungen       | 4         | F0.1.1, F1.1.1 - F1.1.4                                                                                                                                                                      |
-| Nicht-funktionale Anforderungen | 4         |                                                                                                                                                                                             |
+Die UseCases sind in 3 Pakete aufgeteilt.
 
-### UseCase Diagramm
+#### Paket 1 - Create, Read, Update, Delete
+
+Bei den UseCases in Paket 1 geht es primäre um die atomare manipulation von
+Daten.
+
+#### Paket 2 - Manifest interaktion
+
+Bei den UseCases in Paket 2 geht es vor allem um die Interaktionen mit dem
+lokalen Dateisystem und sich dort befindende Manifestdateien
+
+#### Paket 3 - Funktionalitäten
+
+Paket 3 umfasst UseCases welche erweiterte Funktionalitäten des Systems darstellen.
+
+### UC1.1 Anwendung starten
+
+|                                 | Iteration |                                                            |
+| ------------------------------- | --------- | ---------------------------------------------------------- |
+| Id                              | 1         | UC1.1                                                      |
+| Paket                           | 2         | 1                                                          |
+| Autor                           | 1         |                                                            |
+| Version                         | 1         | 4                                                          |
+| Kurzbeschreibung                | 1         | Der Nutzer kann die Anwendung starten                      |
+| Beteiligte Akteure              | 1         | Nutzer                                                     |
+| Fachverantwortlicher            | 1         |                                                            |
+| Referenzen                      | 2         |                                                            |
+| Vorbedingungen                  | 2         | Die Anwendung ist auf einem kompatiblen System installiert |
+| Nachbedingungen                 | 2         | Die Anwendung ist gestartet und nutzungsbereit             |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                          |
+| Alternative Abläufe             | 3         | -                                                          |
+| Kritikalität                    | 3         | 0                                                          |
+| Verknüpfungen                   | 2         | UC2.1, U2.2                                                |
+| Funktionale Anforderungen       | 4         | FA1.1.1, FA1.1.2, FA2.1.5, FA2.2.5                         |
+| Nicht-funktionale Anforderungen | 4         | NA2                                                        |
+
+#### UC1.1 UseCase Diagramm
+
+```plantuml
+@startuml
+left to right direction
+"Startet Anwendung" as (Use)
+:Nutzer: --> (Use)
+(**UC2.1** Datei angeben) .up.> (Use) : <<includes>>
+(**UC2.2** Verzeichnis angeben) .up.> (Use) : <<includes>>
+@enduml
+```
+
+#### UC1.1 Ablaufdiagramm
+
+```plantuml
+@startuml
+start
+:Anwendung öffnen;
+:Cache laden ⋔;
+note: F1.1.1
+:Lokale Manifeste laden ⋔;
+note
+    F2.1.5
+    F2.2.5
+end note
+
+stop
+@enduml
+```
+
+### UC1.2 Metadaten anlegen
+
+| Metadaten anlegen               | Iteration |                                                                                                                                                     |
+| ------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Id                              | 1         | UC1.2                                                                                                                                               |
+| Paket                           | 2         | P1                                                                                                                                                  |
+| Autor                           | 1         |                                                                                                                                                     |
+| Version                         | 1         | 5                                                                                                                                                   |
+| Kurzbeschreibung                | 1         | Der Nutzer kann mithilfe der Anwendung oder manuelle eine Manifestdatei mit Metadaten erstellen                                                     |
+| Beteiligte Akteure              | 1         | Nutzer                                                                                                                                              |
+| Fachverantwortlicher            | 1         |                                                                                                                                                     |
+| Referenzen                      | 2         | Dateiformat Doku                                                                                                                                    |
+| Vorbedingungen                  | 2         | Es muss ein Verzeichnis für das Projekt existieren , in dem sich keine andere Manifestdatei befindet                                                |
+| Nachbedingungen                 | 2         | Es existiert eine Manifestdatei in dem gewählten Ordner. Wurde das Projekt über die Anwendung erstellt, wurden die Daten in der Datenbank gecached. |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                                                                                   |
+| Alternative Abläufe             | 3         | s. Ablaufdiagramm                                                                                                                                   |
+| Kritikalität                    | 3         | 0                                                                                                                                                   |
+| Verknüpfungen                   | 2         |                                                                                                                                                     |
+| Funktionale Anforderungen       | 4         | FA1.2.1, FA1.2.2, FA1.2.3                                                                                                                           |
+| Nicht-funktionale Anforderungen | 4         |                                                                                                                                                     |
+
+#### UC1.2 UseCase Diagramm
 
 ```plantuml
 @startuml
 left to right direction
 
 actor Nutzer as u
-usecase "Caching ⋔" as c
 
 package typisch {
-u --> (Erstellt Metadaten über GUI ⋔)
+u --> (Erstellt Metadaten über Anwendung)
 }
 
 package alternativ {
-u --> (Erstellt Metadaten über CLI ⋔)
+u --> (Erstellt Manifestdatei manuell)
 }
 
-c <.up. (Erstellt Metadaten über GUI ⋔) : <<includes>>
-c <.up. (Erstellt Metadaten über CLI ⋔) : <<includes>>
 @enduml
 ```
 
-### Ablaufdiagramme
+#### UC1.2 Ablaufdiagramme
 
 ```plantuml
 @startuml
 start
-fork
+split
 partition Typisch {
-    :Öffnen der GUI;
-    :Aufruf des Menüs zum Erstellen;
-    note: F1.1.1
-    :Graphische Eingabe von Daten;
+    :Eingabe von Daten;
+    note: FA1.2.1
+    if(Manifest existiert in spezifizierten Verzeichnis) then(ja)
+        end
+        note: FA1.2.2
+    else(nein)
+        :Datei speichern;
+    endif
     :Caching der Daten ⋔;
-    note: F1.1.1.
+    note: FA1.2.3
 }
-fork again
+split again
 partition Alternativ {
-    :Erstellung über CLI;
-    fork
-    :Angabe von Daten über Parameter;
-    note left: F1.1.3
-    fork again
-    :Interaktive Angabe der Daten;
-    note right: F1.1.2
-    end fork { oder }
+    :Manifest manuell erstellen;
 }
-end fork { oder }
-end
+end split
+stop
 
 @enduml
 ```
 
-## U1.2 Metadaten bearbeiten
+### UC1.3 Metadaten bearbeiten
 
-| Schritt                         | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         | 1.2    |
-| Paket                           | 2         | P1    |
-| Autor                           | 1         |     |
-| Version                         | 1         | 0.4    |
-| Kurzbeschreibung                | 1         | Der Nutzer kann die Metadaten eines Projektes bearbeiten.    |
-| Beteiligte Akteure              | 1         | Nutzer    |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         | Dateiformat Doku     |
-| Vorbedingungen                  | 2         | Es muss eine Manifestdatei existieren die bearbeitet werden kann.     |
-| Nachbedingungen                 | 2         | Die angepasste Manifestdatei wird gespeichert. Wurde die Datei über die GUI verändert, werden die Änderungen gecached    |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |  s. Ablaufdiagramm                                                          |
-| Kritikalität                    | 3         |  1   |
-| Verknüpfungen                   | 2         | Bei GUI: 3.1, 3.2   |
-| Funktionale Anforderungen       | 4         | F0.1.1, F1.2.1, F1.2.2    |
-| Nicht-funktionale Anforderungen | 4         |     |
+| Schritt                         | Iteration |                                                                                                                             |
+| ------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Id                              | 1         | UC1.3                                                                                                                       |
+| Paket                           | 2         | P1                                                                                                                          |
+| Autor                           | 1         |                                                                                                                             |
+| Version                         | 1         | 5                                                                                                                           |
+| Kurzbeschreibung                | 1         | Der Nutzer kann die Metadaten eines Projektes über die Anwendung oder manuell in der Datei bearbeiten.                      |
+| Beteiligte Akteure              | 1         | Nutzer                                                                                                                      |
+| Fachverantwortlicher            | 1         |                                                                                                                             |
+| Referenzen                      | 2         | Dateiformat Doku                                                                                                            |
+| Vorbedingungen                  | 2         | Es muss eine Manifestdatei existieren die bearbeitet werden kann.                                                           |
+| Nachbedingungen                 | 2         | Die angepasste Manifestdatei wird gespeichert. Wurde die Datei über die Anwendung geändert, werden die Änderungen gecached. |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                                                           |
+| Alternative Abläufe             | 3         | s. Ablaufdiagramm                                                                                                           |
+| Kritikalität                    | 3         | 1                                                                                                                           |
+| Verknüpfungen                   | 2         |                                                                                                                             |
+| Funktionale Anforderungen       | 4         | FA1.3.1, FA1.3.2, FA1.3.3                                                                                                   |
+| Nicht-funktionale Anforderungen | 4         |                                                                                                                             |
 
-### UseCase Diagramm
+#### UC1.3 UseCase Diagramm
 
 ```plantuml
 @startuml
 left to right direction
 
 actor Nutzer as u
-usecase "Caching ⋔" as c
 
 package typisch {
-u --> (Bearbeitet Metadaten über GUI ⋔)
+u --> (Bearbeitet Metadaten über Anwendung) 
 }
 
 package alternativ {
-u --> (Bearbeitet Metadaten manuell ⋔)
+u --> (Bearbeitet Manifestdatei manuell)
 }
 
-c <.up. (Bearbeitet Metadaten über GUI ⋔) : <<includes>>
-c <.up. (Bearbeitet Metadaten manuell ⋔) : <<includes>>
 @enduml
 ```
 
-### Ablaufdiagramme
+#### UC1.3 Ablaufdiagramme
 
 ```plantuml
 @startuml
 start
-fork
+split
 partition Typisch {
-    :Öffnen der GUI;
     :Aufruf eines Projektes zur Bearbeitung;
-    note: F1.2.1
-    :Graphische Änderung von Daten;
+    note: FA1.3.1
+    :Änderung von Daten;
     :Anpassung des Caches ⋔;
-    note: F1.2.1
+    note: FA1.3.2
 }
-fork again
+split again
 partition Alternativ {
     :Öffnen der Manifestdatei in Texteditor;
     :Anpassen von Feldern der Datei;
-    note right: F1.2.2
+    :Anwendung erkennt Änderungen bei Aufruf ⋔;
+    note right: FA1.3.3
 }
-end fork { oder }
-end
+end split
+stop
 
 @enduml
 ```
 
-## U1.3 Metadaten löschen
-
+### UC1.4 Metadaten löschen
 
 | Schritt                         | Iteration |                                                                                                                                               |
 | ------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nummer                          | 1         | 1.3                                                                                                                                           |
+| Id                              | 1         | UC1.4                                                                                                                                         |
 | Paket                           | 2         | P1                                                                                                                                            |
 | Autor                           | 1         |                                                                                                                                               |
-| Version                         | 1         | 0.4                                                                                                                                           |
+| Version                         | 1         | 5                                                                                                                                             |
 | Kurzbeschreibung                | 1         | Der Nutzer kann die Metadaten für ein Projekt löschen                                                                                         |
 | Beteiligte Akteure              | 1         | Nutzer                                                                                                                                        |
 | Fachverantwortlicher            | 1         |                                                                                                                                               |
 | Referenzen                      | 2         |                                                                                                                                               |
 | Vorbedingungen                  | 2         | Es existiert eine valide Manifestdatei die gelöscht werden kann                                                                               |
 | Nachbedingungen                 | 2         | Es existiert keine Manifestdatei mehr. Bei manueller Löschung wird der Cache im nachhinein, beim nächsten Starten der Anwendung aktualisiert. |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |  s. Ablaufdiagramm                                                          |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                                                                             |
+| Alternative Abläufe             | 3         | s. Ablaufdiagramm                                                                                                                             |
 | Kritikalität                    | 3         | 1                                                                                                                                             |
 | Verknüpfungen                   | 2         | Beim löschen über die Anwendung UseCase 3.1                                                                                                   |
-| Funktionale Anforderungen       | 4         | F1.3.1, F1.3.2                                                                                                                                              |
+| Funktionale Anforderungen       | 4         | FA1.4.1, FA1.4.2, FA1.4.3                                                                                                                     |
 | Nicht-funktionale Anforderungen | 4         |                                                                                                                                               |
 
-### UseCase Diagramm
+#### UC1.4 UseCase Diagramm
 
 ```plantuml
 @startuml
 left to right direction
 
 actor Nutzer as u
-usecase "Caching ⋔" as c
 
 package typisch {
-u --> (Löscht Metadaten über GUI ⋔)
+u --> (Löscht Metadaten über Anwendung)
 }
 
 package alternativ {
-u --> (Löscht Metadaten manuell ⋔)
+u --> (Löscht Metadaten manuell)
 }
 
-c <.up. (Löscht Metadaten über GUI ⋔) : <<includes>>
-c <.up. (Löscht Metadaten manuell ⋔) : <<includes>>
 @enduml
 ```
 
-### Ablaufdiagramme
+#### UC1.4 Ablaufdiagramme
 
 ```plantuml
 @startuml
 start
-fork
+split
 partition Typisch {
-    :Öffnen der GUI;
     :Löschen eines Projektes;
-    note: F1.3.1
+    note: FA1.4.1
     :Entfernen aus dem Cache ⋔;
-    note: F1.3.1
+    note: FA1.4.2
 }
-fork again
+split again
 partition Alternativ {
-    :Manuelle Löschung der Datei;
-    note right: F1.3.2
+    :Manuelles Löschen der Datei;
+    :Anwendung erkennt Löschung bei Aufruf ⋔;
+    note right: FA1.4.3
 }
-end fork { oder }
+end split
 end
 
 @enduml
 ```
 
-## U2.1 Manifeste rekursiv auffinden
+### UC2.1 Datei angeben
 
-| Schritt                         | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         | 2.1    |
-| Paket                           | 2         | P2    |
-| Autor                           | 1         |     |
-| Version                         | 1         |  0.4   |
-| Kurzbeschreibung                | 1         | Die Anwendung ist in der Lage in einem von Nutzer angegeben Verzeichnis, rekursiv nach Manifestdateien zu suchen    |
-| Beteiligte Akteure              | 1         | Nutzer, Anwendung (wenn eingerichtet, bei Start)   |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         |     |
-| Vorbedingungen                  | 2         | Der Nutzer gibt mindestens ein Verzeichnis an, welches durchsucht werden soll    |
-| Nachbedingungen                 | 2         | Metadaten gefundener Manifestdateien, werden in der Anwendung angezeigt   |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |   -                                                       |
-| Kritikalität                    | 3         |  2  |
-| Verknüpfungen                   | 2         |  UseCase 2.2 bei gefundenen Dateien  |
-| Funktionale Anforderungen       | 4         |  F2.1.1 - F2.1.4   |
-| Nicht-funktionale Anforderungen | 4         |     |
+|                                 | Iteration |                                                                                                                                                                                                            |
+| ------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Id                              | 1         | UC2.1                                                                                                                                                                                                      |
+| Paket                           | 2         | 2                                                                                                                                                                                                          |
+| Autor                           | 1         |                                                                                                                                                                                                            |
+| Version                         | 1         | 4                                                                                                                                                                                                          |
+| Kurzbeschreibung                | 1         | Der Nutzer kann den Pfad zu einer Manifestdatei angeben, welche dann deserialisiert wird. Der Pfad der Datei kann gespeichert werden und beim nächsten Starten der Anwendung erneut deserialisiert werden. |
+| Beteiligte Akteure              | 1         | Nutzer                                                                                                                                                                                                     |
+| Fachverantwortlicher            | 1         |                                                                                                                                                                                                            |
+| Referenzen                      | 2         | -                                                                                                                                                                                                          |
+| Vorbedingungen                  | 2         | Es existiert eine valide Manifestdatei welche der Nutzer angeben kann.                                                                                                                                     |
+| Nachbedingungen                 | 2         | Die Datei wurde deserialisiert und die Daten können weiterverarbeitet werden.                                                                                                                              |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                                                                                                                                          |
+| Alternative Abläufe             | 3         | -                                                                                                                                                                                                          |
+| Kritikalität                    | 3         | 0                                                                                                                                                                                                          |
+| Verknüpfungen                   | 2         | U1.1                                                                                                                                                                                                       |
+| Funktionale Anforderungen       | 4         | FA2.1.1, FA2.1.2, FA2.1.3, FA2.1.4, FA2.1.5                                                                                                                                                                |
+| Nicht-funktionale Anforderungen | 4         |                                                                                                                                                                                                            |
 
-### UseCase Diagramm
+#### UC2.1 UseCase Diagramm
 
 ```plantuml
-@startuml
 left to right direction
+@startuml
+"Gibt Dateipfad an" as (Use)
+:Nutzer: --> (Use)
 
-"Verzeichnis rekursiv durchsuchen ⋔" as (Use)
-:Nutzer: --> (Use): Nutzer gibt Pfad vorher an
-
+(Anwendung starten) .up.> (Use): <<extends>>
 @enduml
 ```
 
-### Ablaufdiagramm
+#### UC2.1 Ablaufdiagramm
 
 ```plantuml
 @startuml
 start
-:Suche wird ausgelöst;
-note left: Manuell oder durch\nAnwendungsstart
-note right: F2.1.4
-repeat
-if(Verzeichnis beinhaltet Manifestdatei) then(ja)
-:Manifestdatei serialisieren ⋔;
-if(Ist niedrigstes Level?) then(ja)
-stop
-else(nein)
-:Ein Verzeichnis zurück gehen;
-endif
-
+:Dateipfad angeben;
+note: FA2.1.1
+if(Nutzer will Dateipfad speichern) then(yes)
+    :Dateipfad speichern;
+    note: FA2.1.4
 else (nein)
-if(Verzeichnis hat ungeprüfte Unterverzeichnisse)then(ja)
-else(nein)
-if(Ist niedrigstes Level?) then(ja)
+endif
+:Datei deserialisieren;
+note: FA2.1.2
+:Cachen der Daten ⋔;
+note: FA2.1.3
 stop
-else(nein)
-:Ein Verzeichnis zurück gehen;
-endif
-endif
-
-endif
-
-:In nächstes ungeprüftes Verzeichnis gehen;
-repeat while (solch ein Verzeichnis existiert)
-
-:Alle gefundenen Manifeste wurden geladen;
-note right: F2.1.2
-stop
-
-
 @enduml
 ```
 
-## U2.2 Manifeste serialisieren
+```plantuml
+@startuml 
+title Ablauf bei Start der Anwendung
+start
+if(Existieren gespeicherte Dateipfade?) then(ja)
+    :Dateien deserialisieren;
+    note 
+        FA2.1.2
+        FA2.1.5
+    end note
+    :Caching ⋔;
+    note: FA2.1.3
+    stop
+else(nein)
+stop
+endif
+@enduml
+```
 
-| Schritt                         | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         | 2.2    |
-| Paket                           | 2         |  P2   |
-| Autor                           | 1         |     |
-| Version                         | 1         |  0.4   |
-| Kurzbeschreibung                | 1         |  Manifestdatein können eingelesen werden und die darin befindlichen Daten verarbeitet   |
-| Beteiligte Akteure              | 1         |  Nutzer, Anwendung (bei rekursiver Suche)   |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         | Aufbau Manifestdatei    |
-| Vorbedingungen                  | 2         | Der Nutzer gibt eine valide Manifestdatei an / Eine valide Manifestdatei wurde gefunden    |
-| Nachbedingungen                 | 2         | Die eingelesen Daten sind in der Anwendung sichtbar und werden gecached    |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |  s. Ablaufdiagramm                                                          |
-| Kritikalität                    | 3         | 0    |
-| Verknüpfungen                   | 2         | UseCase 2.1, UseCase 3.1    |
-| Funktionale Anforderungen       | 4         | F0.1.1, F2.2.1    |
-| Nicht-funktionale Anforderungen | 4         |     |
+### UC2.2 Verzeichnis angeben
 
-### UseCase Diagramm
+|                                 | Iteration |                                                                                                                                                                                                     |
+| ------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Id                              | 1         | UC2.2                                                                                                                                                                                               |
+| Paket                           | 2         | 2                                                                                                                                                                                                   |
+| Autor                           | 1         |                                                                                                                                                                                                     |
+| Version                         | 1         | 4                                                                                                                                                                                                   |
+| Kurzbeschreibung                | 1         | Der Nutzer kann einen Pfad angeben, welcher rekursiv nach Manifesten durchsucht wird. Angegebene Pade können gespeichert werden und beim nächsten Ausführen der Anwendung wieder durchsucht werden. |
+| Beteiligte Akteure              | 1         | Nutzer                                                                                                                                                                                              |
+| Fachverantwortlicher            | 1         |                                                                                                                                                                                                     |
+| Referenzen                      | 2         |                                                                                                                                                                                                     |
+| Vorbedingungen                  | 2         | Es existiert ein Verzeichnis welches der Nutzer angeben kann.                                                                                                                                       |
+| Nachbedingungen                 | 2         | Wenn in dem Verzeichnis Manifeste liegen, wurden diese deserialisiert.                                                                                                                              |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                                                                                                                                   |
+| Alternative Abläufe             | 3         | s. Ablaufdiagramm                                                                                                                                                                                   |
+| Kritikalität                    | 3         |                                                                                                                                                                                                     |
+| Verknüpfungen                   | 2         | U1.1                                                                                                                                                                                                |
+| Funktionale Anforderungen       | 4         | FA2.2.1, FA2.2.2, FA2.2.3, FA2.2.4, FA2.2.5                                                                                                                                                         |
+| Nicht-funktionale Anforderungen | 4         |                                                                                                                                                                                                     |
+
+#### UC2.2 UseCase Diagramm
 
 ```plantuml
-@startuml
 left to right direction
+@startuml
+"Gibt Verzeichnis an" as (Use)
+:User: --> (Use)
 
-"Datei serialisieren ⋔" as (Use)
-package Typisch {
-    :Nutzer: --> (Gibt Datei manuell an)
-    (Gibt Datei manuell an) --> (Use)
-}
-package Alternativ {
-    (Datei wird bei Suche gefunden) --> (Use)
-}
-
+(Anwendung starten) .up.> (Use): <<extends>>
 @enduml
 ```
 
-### Ablaufdiagramm
+#### UC2.2 Ablaufdiagramm
 
 ```plantuml
 @startuml
 start
-:Datei öffnen;
-if(Metadaten mit selber Id in Cache vorhanden) then(ja)
-:Checksumme für Manifest erstellen ⋔;
-if(Checksumme stimmt mit gespeicherter überein) then(ja)
-:Daten aus Cache laden;
-note: F2.2.1
-stop
+:Verzeichnis angeben;
+note: FA2.2.1
+if(Nutzer will Verzeichnis speichern) then(yes)
+    :Verzeichnis speichern;
+    note: FA2.2.4
 else (nein)
 endif
-else (nein)
-endif
-:Daten aus Manifestdatei laden;
-note: F2.2.1
-:Caching ⋔;
+:Verzeichnis verarbeiten ⋔;
+note
+    FA2.2.2
+    FA2.2.3
+end note
 stop
-
 @enduml
 ```
 
-## U3.1 Daten cachen
-
-| Schritt                         | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         | 3.1    |
-| Paket                           | 2         |  P3   |
-| Autor                           | 1         |     |
-| Version                         | 1         |   0.4  |
-| Kurzbeschreibung                | 1         | Metadaten können in einer lokalen Datenbank gecached werden um eine responsivere Anwendung zu ermöglichen    |
-| Beteiligte Akteure              | 1         | Anwendung    |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         | Sqlite    |
-| Vorbedingungen                  | 2         | Manifestdateien sind/werden über die graphische Angewenden eingelesen |
-| Nachbedingungen                 | 2         | In der Datenbanktabelle existieren Einträge für die Metadaten einzelner Projekte    |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |  s. Ablaufdiagramm                                                          |
-| Kritikalität                    | 3         | 3    |
-| Verknüpfungen                   | 2         | U1.1, U1.2, U1.3, U2.1, U2.2, U3.2    |
-| Funktionale Anforderungen       | 4         | F3.1.1 - F3.1.3    |
-| Nicht-funktionale Anforderungen | 4         | N1.1, N2.5    |
-
-### Usecase Diagramm
-
 ```plantuml
 @startuml
-left to right direction
-
-actor Nutzer as u
-usecase "Caching ⋔" as c
-
-u --> (Caching bei Anwendungsaufruf)
-u --> (Lokales suchen ⋔)
-u --> (Erstellt Metadaten ⋔)
-u --> (Bearbeitet Metadaten ⋔)
-u --> (Löscht Metadaten ⋔)
-c <.up. (Lokales suchen ⋔): <<includes>>
-c <.up. (Erstellt Metadaten ⋔) : <<includes>>
-c <.up. (Bearbeitet Metadaten ⋔) : <<includes>>
-c <.up. (Löscht Metadaten ⋔) : <<includes>>
-@enduml
-```
-
-### Ablaufdiagramme
-
-#### Caching bei Anwendungsaufruf
-
-```plantuml
-@startuml
+title Ablauf bei Start der Anwendung
 start
-:Aufruf der Anwendung;
-:Lokale Datenbank wird geöffnet;
-if(Gecached Daten vorhanden?) then (ja)
-    repeat
-        :Laden eines Eintrags;
-        note: F3.1.1
-        if(Projekt in gespeicherten Verzeichnis auffindbar?) then (ja)
-            :Checksumme erstellen ⋔;
-            if(Checksum stimmt überein) then (ja)
-                :Laden der gespeicherten Daten;
-            else (nein)
-                :Laden der Daten über Manifestdatei;
-                note: F3.1.2
-            endif
-        else (nein)
-            :Eintrag aus Datenbank löschen;
-            note: F3.1.3
-        endif
-    repeat while (Mehr Einträge vorhanden?) is (ja) not (no)
-
-else (nein)
-endif
-:Lokale suche ⋔;
+if(Existieren gespeicherte Verzeichnisse?) then(ja)
+    :Verzeichnis verarbeiten ⋔;
+    note
+        FA2.2.2
+        FA2.2.3
+        FA2.2.5
+    end note
+    stop
+else(nein)
 stop
-@enduml
-```
-
-#### Verfeinerung für Lokales Suchen
-
-```plantuml
-@startuml
-start
-if(Eintrag für Metadaten existiert) then (ja)
-    :Checksum erstellen ⋔;
-    if(Checksum stimmt mit gespeicherter überein) then(ja) 
-        :Überspringen;
-        end
-
-    else (nein)
-
-    endif
-else (nein)
-
 endif
-:Laden der Manifestdatei ⋔;
-:Eintrag erstellen;
-:Neue Checksum erstellen ⋔;
-:Checksum abspeichern;
-stop
-
 @enduml
 ```
 
-#### Verfeinerung für Erstellen/Aktualisieren
+### UC3.1 Projekte suchen
+
+| Schritt                         | Iteration |                                                                                       |
+| ------------------------------- | --------- | ------------------------------------------------------------------------------------- |
+| Id                              | 1         | UC3.1                                                                                 |
+| Paket                           | 2         | P3                                                                                    |
+| Autor                           | 1         |                                                                                       |
+| Version                         | 1         | 6                                                                                     |
+| Kurzbeschreibung                | 1         | Der Nutzer kann seine Projekte nach verschiedenen Eigenschaften durchsuchen           |
+| Beteiligte Akteure              | 1         | Nutzer                                                                                |
+| Fachverantwortlicher            | 1         |                                                                                       |
+| Referenzen                      | 2         |                                                                                       |
+| Vorbedingungen                  | 2         | Die Anwendung ist gestartet und gecachete und lokale Daten wurden geladen.            |
+| Nachbedingungen                 | 2         | Dem Nutzer werden die Projekte angezeigt, die den gegebenen Eigenschaften entsprechen |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                     |
+| Alternative Abläufe             | 3         | -                                                                                     |
+| Kritikalität                    | 3         | 3                                                                                     |
+| Verknüpfungen                   | 2         | -                                                                                     |
+| Funktionale Anforderungen       | 4         | FA3.1.1, FA3.1.2, FA3.1.3                                                             |
+| Nicht-funktionale Anforderungen | 4         |                                                                                       |
+
+#### UC3.1 UseCase Diagramm
 
 ```plantuml
 @startuml
-start
-if(Metadaten(id) exitieren in Datenbank) then (ja)
-    :Eintrag aktualisieren;
-else (nein)
-    :Eintrag erstellen;
-endif
-:Neue Checksum erstellen ⋔;
-:Checksum abspeichern;
-stop
+"Suche eingeben" as (Use)
+:Nutzer: --> (Use)
 @enduml
 ```
 
-#### Verfeinerung für Entfernen
-
-```plantuml
-@startuml
-start
-if(Metadaten(id) exitieren in Datenbank) then (ja)
-    :Eintrag löschen;
-else (nein)
-    :[noop];
-endif
-stop
-@enduml
-```
-
-
-## U3.2 Checksum erstellen
-
-| Name des Use Case               | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         |  3.2   |
-| Paket                           | 2         |  P3   |
-| Autor                           | 1         |     |
-| Version                         | 1         |  0.4   |
-| Kurzbeschreibung                | 1         |  Für Manifestdateien wird eine Checksum erstellt, welche dazu genutzt werden kann Änderungen zu erkennen   |
-| Beteiligte Akteure              | 1         | Anwendung    |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         | Was auch immer wir dann nutzen    |
-| Vorbedingungen                  | 2         | Es wurden die Metadaten von mind. 1 Projekt durch die graphische Anwendung eingelesen    |
-| Nachbedingungen                 | 2         | Die Checksum für das relevante Projekt wird in der Datenbank gespeichert   |
-| Typischer Ablauf                | 2         | -    |
-| Alternative Abläufe             | 3         | -    |
-| Kritikalität                    | 3         | 3    |
-| Verknüpfungen                   | 2         | U1.1, U1.2, U3.1    |
-| Funktionale Anforderungen       | 4         | F3.2.1    |
-| Nicht-funktionale Anforderungen | 4         |     |
-
-### UseCase Diagramm
-
-```plantuml
-@startuml
-"Checksumme erstellen" as (Use)
-@enduml
-```
-
-### Ablaufdiagramm
-
-_Die Art und Weise wie eine Checksumme erstellt wird, wird im Laufe des Projektes determiniert._
-
-## U3.3 Analysen und Statistiken
-
-| Schritt                         | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         | 3.3    |
-| Paket                           | 2         |  P3   |
-| Autor                           | 1         |     |
-| Version                         | 1         |  0.4   |
-| Kurzbeschreibung                | 1         |  Dem Nutzer werden in der graphischen Anwendung verschiedene Statistiken und Analysen zu seinen Projekten bereitgestellt   |
-| Beteiligte Akteure              | 1         |  Nutzer, Anwendung   |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         |     |
-| Vorbedingungen                  | 2         | Es existiert mindestens ein Projekt dessen Metadaten über die graphische Anwendung serialisert wurden    |
-| Nachbedingungen                 | 2         | Der Nutzer kann die bereitgestellen Statistiken in der graphischen Anwendung einsehen    |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         | -    |
-| Kritikalität                    | 3         | 3    |
-| Verknüpfungen                   | 2         |     |
-| Funktionale Anforderungen       | 4         | F3.3.1    |
-| Nicht-funktionale Anforderungen | 4         |     |
-
-### UseCase Diagramm
-
-```plantuml
-@startuml
-"Analysen und Statistiken bereitstellen" as (Use)
-:Nutzer: --> (Use): Öffnet dzgh. Seite
-@enduml
-```
-
-### Ablaufdiagramm
+#### UC3.1 Ablaufdiagramm
 
 ```plantuml
 @startuml
 
 start
-:Nutzer öffnet Anwendung;
-:Metadaten werden geladen ⋔;
-if(existieren <= 1 Projekte) then(ja)
-:Statistiken und Analysen aus gecachten Daten erstellen;
-else (nein)
-end
-endif
-:Daten sind auf der dzgh. Seite einsehbar;
-note: F3.3.1
-stop
-@enduml
-```
-
-## U3.4 Suchen und filtern
-
-| Schritt                         | Iteration |     |
-| ------------------------------- | --------- | --- |
-| Nummer                          | 1         | 3.4    |
-| Paket                           | 2         | P3    |
-| Autor                           | 1         |     |
-| Version                         | 1         | 0.4    |
-| Kurzbeschreibung                | 1         | Der Nutzer kann seine Projekte nach verschiedenen Eigenschaften suchen bzw. filtern    |
-| Beteiligte Akteure              | 1         |  Nutzer   |
-| Fachverantwortlicher            | 1         |     |
-| Referenzen                      | 2         |     |
-| Vorbedingungen                  | 2         | Es existiert mind. 1 Projekt dessen Metadaten über die graphische Anwendung eingelesen wurden    |
-| Nachbedingungen                 | 2         | Dem Nutzer werden die Projekte angezeigt, die den gegebenen Bedingungen entsprechen    |
-| Typischer Ablauf                | 2         |  s. Ablaufdiagramm      |
-| Alternative Abläufe             | 3         |  -   |
-| Kritikalität                    | 3         |  3   |
-| Verknüpfungen                   | 2         |  -   |
-| Funktionale Anforderungen       | 4         |  F3.4.1   |
-| Nicht-funktionale Anforderungen | 4         |     |
-
-### UseCase Diagramm
-
-```plantuml
-@startuml
-"Analysen und Statistiken bereitstellen" as (Use)
-:Nutzer: --> (Use): Öffnet dzgh. Seite
-@enduml
-```
-
-### Ablaufdiagramm
-
-```plantuml
-@startuml
-
-start
-:Nutzer öffnet Anwendung;
-:Metadaten werden geladen ⋔;
-:Nutzer setzt Suche/Filter;
-:Gecachte Daten werden gefiltert/sortiert;
+:Nutzer gibt Suche ein;
+note: FA3.1.2
+:Gecachte Daten werden entsprechend durchsucht;
+note: FA3.1.1
 :Passende Daten werden dem Nutzer angezeigt;
-note: 3.4.1
+note: FA3.1.3
 stop
 @enduml
 ```
 
-# Requirements
+### UC3.2 Projekte filtern
 
-## Funktionale Requirements
+| Schritt                         | Iteration |                                                                                   |
+| ------------------------------- | --------- | --------------------------------------------------------------------------------- |
+| Id                              | 1         | UC3.2                                                                             |
+| Paket                           | 2         | P3                                                                                |
+| Autor                           | 1         |                                                                                   |
+| Version                         | 1         | 6                                                                                 |
+| Kurzbeschreibung                | 1         | Der Nutzer kann seine Projekte nach verschiedenen Kriterien filtern               |
+| Beteiligte Akteure              | 1         | Nutzer                                                                            |
+| Fachverantwortlicher            | 1         |                                                                                   |
+| Referenzen                      | 2         |                                                                                   |
+| Vorbedingungen                  | 2         | Die Anwendung ist gestartet und gecachete und lokale Daten wurden geladen.        |
+| Nachbedingungen                 | 2         | Dem Nutzer werden die Projekte angezeigt, die den gegebenen Kriterien entsprechen |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                 |
+| Alternative Abläufe             | 3         | -                                                                                 |
+| Kritikalität                    | 3         | 3                                                                                 |
+| Verknüpfungen                   | 2         | -                                                                                 |
+| Funktionale Anforderungen       | 4         | FA3.2.1, FA3.2.2, FA3.2.3                                                         |
+| Nicht-funktionale Anforderungen | 4         |                                                                                   |
 
-F1.1.1: Das System muss dem Nutzer die Möglichkeit bieten, eine neue Manifestdatei anzulegen.
+#### UC3.2 UseCase Diagramm
 
-F1.2.1: Nach Anlegen einer Manifestdatei, muss das System dem Nutzer die Möglichkeit bieten, die Metadaten dieser zu bearbeiten.
+```plantuml
+@startuml
+"Filter einstellen" as (Use)
+:Nutzer: --> (Use)
+@enduml
+```
 
-F1.3.1: Nach Anlegen einer Manifestdatei, muss das System dem Nutzer die Möglichkeit bieten, diese zu löschen.
+#### UC3.2 Ablaufdiagramm
 
-F2.1.1: Das System muss dem Nutzer die Möglichkeit bieten, eine Manifestdatei zur Verarbeitung anzugeben.
+```plantuml
+@startuml
 
-F2.1.2: Das System muss dem Nutzer die Möglichkeit bieten, einen Pfad anzugeben, in welchem Manifestdateien gefunden werden müssen.
+start
+:Nutzer setzt Filter;
+note: FA3.2.2
+:Gecachte Daten werden entsprechend gefiltert;
+note: FA3.2.1
+:Gefilterte Daten werden dem Nutzer angezeigt;
+note: FA3.2.3
+stop
+@enduml
+```
 
-F3.3.1: Nach Anlegen mindestens eines Projektes, wird das System dem Nutzer die Möglichkeit bieten, Statistiken über seine Projekte einzusehen.
+### UC3.3 Statistiken
 
-F3.4.1: Das System wird dem Nutzer die Möglichkeit bieten, seine Projekte anhand verschiedener Eigenschaften zu suchen und zu filtern.
+| Schritt                         | Iteration |                                                                                                                         |
+| ------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Id                              | 1         | UC3.3                                                                                                                   |
+| Paket                           | 2         | P3                                                                                                                      |
+| Autor                           | 1         |                                                                                                                         |
+| Version                         | 1         | 5                                                                                                                       |
+| Kurzbeschreibung                | 1         | Dem Nutzer werden in der graphischen Anwendung verschiedene Statistiken und Analysen zu seinen Projekten bereitgestellt |
+| Beteiligte Akteure              | 1         | Nutzer                                                                                                                  |
+| Fachverantwortlicher            | 1         |                                                                                                                         |
+| Referenzen                      | 2         |                                                                                                                         |
+| Vorbedingungen                  | 2         | Die Anwendung ist gestartet und gecachete und lokale Daten wurden geladen.                                              |
+| Nachbedingungen                 | 2         | Der Nutzer kann die bereitgestellten Statistiken in der graphischen Anwendung einsehen                                  |
+| Typischer Ablauf                | 2         | s. Ablaufdiagramm                                                                                                       |
+| Alternative Abläufe             | 3         | -                                                                                                                       |
+| Kritikalität                    | 3         | 3                                                                                                                       |
+| Verknüpfungen                   | 2         |                                                                                                                         |
+| Funktionale Anforderungen       | 4         | FA3.3.1, FA3.3.2                                                                                                        |
+| Nicht-funktionale Anforderungen | 4         |                                                                                                                         |
 
-## Nicht-funktionale Requirements
+#### UC3.3 UseCase Diagramm
 
-N1.1: Die Anwendung soll schnellst möglich dem Nutzer nach dem Start zur Bedienung bereit stehen.
+```plantuml
+@startuml
+"Öffnet Statistik Seite" as (Use)
+:Nutzer: --> (Use)
+@enduml
+```
 
-N1.2: Die Anwendung soll möglichst responsiv und nutzerfreundlich sein.
+#### UC3.3 Ablaufdiagramm
 
-N2.2: Die Anwendung muss in den Betriebssystem Microsoft Windows 10, Microsoft Windows 11, und Linux (insb. in Ubuntu und Debian) funktionieren.
+```plantuml
+@startuml
 
-N2.3: Die Anwendung soll in Rust und Typscript verfasst sein.
+start
+:Statistiken und Analysen aus gecachten Daten erstellen;
+note: FA3.3.1
+:Nutzer öffnet Statistik Seite;
+:Statistiken werden angezeigt;
+note: FA3.3.2
+stop
+@enduml
+```
 
-N2.4: Für die Anwendung sollen die Frameworks "Tauri v2.0+" für das Backend und "SvelteKit v2.8+" für das Frontend genutzt werden.
+## Anforderungen
 
-N2.5: Für die Datenbank soll SQLite verwendet werden.
+### Funktionale Anforderungen
 
-N2.6: Die Anwendung muss für die Prozessorarchitektur x86_64 ausgelegt sein.
+FA1.1.1 Beim Starten soll das System gecachte Daten laden.
 
-N2.7: Die Manifestdateien müssen von Menschen, als auch von Maschinen lesbar sein.
+FA1.1.2: Das System muss Manifestdateien aus dem lokalen Datensystem deserialiseren.
 
-N3.1: Das Projekt muss bis zum Ende der Theoriephase im Quartal 1 im Jahr 2025 abgeschlossen sein. Ein exaktes Datum hierfür folgt.
+FA1.2.1 Das System muss dem Nutzer die Möglichkeit bieten eine Manifestdatei mit Metadaten zu erstellen.
 
-N3.2: Alle Meetings müssen in Meetingprotokollen festgehalten werden.
+FA1.2.2 Beim Erstellen muss das System prüfen, ob in dem relevanten Verzeichnis bereits eine Manifestdatei existiert.
 
-N3.3: Es muss eine Entwicklerdokumentation angefertigt werden.
+FA1.2.3 Nach Erstellen soll das System die Metadaten im Cache speichern.
+
+FA1.3.1 Das System soll dem Nutzer die Möglichkeit bieten Metadaten anzupassen.
+
+FA1.3.2 Bei Änderungen soll das System relevante Metadaten automatisch im Cache aktualisieren.
+
+FA1.3.3 Bei manuellen Änderungen an der Datei muss das System diese erkennen und dementsprechende Anpassungen im Cache
+vornehmen.
+
+FA1.4.1 Das System muss dem Nutzer die Möglichkeit bieten Metadaten zu löschen.
+
+FA1.4.2 Bei Löschung soll das System die relevanten Daten automatisch aus dem Cache entfernen.
+
+FA1.4.3 Bei manueller Löschung muss das System dies erkennen und den relevanten Eintrag aus dem Cache entfernen.
+
+FA2.1.1 Das System muss dem Nutzer die Möglichkeit bieten den Pfad zu einer einzelnen Manifestdatei anzugeben.
+
+FA2.1.2 Gibt der Nutzer den Pfad zu einer valide Datei ein, muss das System in der Lage sein diese zu deserialisieren.
+
+FA2.1.3 Nach der Deserialisierung soll das System die Daten im Cache speichern.
+
+FA2.1.4 Das System soll dem Nutzer die Möglichkeit bieten Dateipfade für zukünftiges deserialisieren zu speichern.
+
+FA2.1.5 Wenn gespeicherte Dateipfade existieren soll, das System beim Starten diese automatisch deserialisieren.
+
+FA2.2.1 Das System soll dem Nutzer die Möglichkeit bieten ein Verzeichnis anzugeben, welches rekursiv nach
+Manifestdateien durchsucht wird.
+
+FA2.2.2 Wenn in diesem Verzeichnis Manifeste existieren soll das System diese serialisieren.
+
+FA2.2.3 Wenn das System ein Manifest aus einem Verzeichnis serialisiert hat, soll es bei Abweichungen den Cache
+aktualisieren.
+
+FA2.2.4 Das System soll dem Nutzer die Möglichkeit bieten Verzeichnisse für zukünftiges durchsuchen zu speichern.
+
+FA2.2.5 Wenn gespeicherte Verzeichnisse existieren, soll das System beim Starten diese automatisch durchsuchen.
+
+FA3.1.1 Das System soll gecachte Metadaten auf verschiedene Eigenschaften durchsuchen können.
+
+FA3.1.2 Das System soll dem Nutzer die Möglichkeit bieten die Suche anzupassen.
+
+FA3.1.3 Das System soll dem Nutzer die Möglichkeit bieten auf Suchergebnisse zugreifen zu können.
+
+FA3.2.1 Das System soll gecachte Metadaten nach verschieden Kriterien filtern können.
+
+FA3.2.2 Das System soll dem Nutzer die Möglichkeit bieten den Filter anzupassen.
+
+FA3.2.3 Das System soll dem Nutzer die Möglichkeit bieten auf den gefilterten Datensatz zugreifen zu können.
+
+FA3.3.1 Das System soll Statistiken aus gecachten Metadaten erstellen können.
+
+FA3.3.2 Das System soll dem Nutzer die Möglichkeit bieten auf diese Statistiken zugreifen zu können.
+
+### Nicht funktionale Anforderungen
+
+NA1: Die Manifestdateien müssen von Menschen, als auch von Maschinen lesbar sein.
+
+NA1.1: Die in der Manifestdatei zu findenden Metadaten sollen dem Nutzer nützliche Informationen über das dazugehörige
+Projekt bieten.
+
+NA2: Die Anwendung soll schnellstmöglich dem Nutzer nach dem Start zur Bedienung bereitstehen.
+
+NA3: Die Anwendung soll möglichst responsiv und nutzerfreundlich sein.
+
+NA4: Die Anwendung muss in den Betriebssystemen Microsoft Windows 10, Microsoft Windows 11, und Linux funktionieren.
+
+NA4.1: Für Linux sollen Pakete in den Formaten für die Distributionen/Paketsystem Debian/Ubuntu (apt), Arch (pacman) und
+Nix (nixpkgs).
+
+NA5: Die Anwendung soll in Rust und Typescript verfasst sein.
+
+NA5.1: Für die Anwendung sollen die Frameworks "Tauri v2.0+" für das Backend und "SvelteKit v2.8+" für das Frontend
+genutzt werden.
+
+NA6: Der "Cache" der Anwendung soll als persistenter Cache mithilfe einer SQLite Datenbank implementiert werden.
+
+NA6.1: Bei der Implementierung der Datenbank muss darauf geachtet werden, dass diese vor SQL-Injektionen ausreichend
+gesichert ist.
+
+NA7: Für relevante Subsysteme müssen Unittests verfasst werden.
+
+NA8: Die Anwendung muss für die Prozessorarchitektur x86_64 ausgelegt sein.
+
+NA9: Die Anwendung muss Barrierefrei konstruiert werden um bspw. die Nutzung von Screenreadern zu erlauben.
+
+> Da die Anwendung mithilfe von Webtechnologien gebaut werden soll mehr Informationen
+> bspw. [hier](https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreie-website)
+
+NA10: Die Anwendung soll zunächst mit der Oberflächensprache Deutsch oder Englisch gebaut werden.
+
+NA10.1: Texte in der Oberfläche sollen so eingebaut, um zukünftig die Implementierung neuer Sprachen einfach zu
+gestalten.
+
+NA11: Das Projekt muss bis zum Ende der Theoriephase im Quartal 1 im Jahr 2025 abgeschlossen sein. Ein exaktes Datum
+hierfür folgt.
+
+NA12: Alle Meetings müssen in Meetingprotokollen festgehalten werden.
+
+NA13: Es muss eine Entwicklerdokumentation angefertigt werden.
