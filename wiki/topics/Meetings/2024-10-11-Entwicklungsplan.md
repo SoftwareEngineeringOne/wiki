@@ -26,9 +26,10 @@
 |-----------------------------|----------------|------------|
 | Diagramme formalisieren     | Simon Blum     | 11.10.2024 |
 | Formales dokument erstellen | Max Rodler     | 18.10.2024 |
+| Link zu Dokument reparieren | Simon Blum     | 21.11.2024 | 
 
 ### Relevante Dokumente
 
-- [Entwicklungsplan](../Inkremente/00/Entwicklungsplan2)
+- [](Entwicklungsplan.md)
 
 ---

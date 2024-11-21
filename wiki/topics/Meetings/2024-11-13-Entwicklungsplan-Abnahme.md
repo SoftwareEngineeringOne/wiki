@@ -9,12 +9,12 @@
 **Datum, Ort**: 13.11.2024, DHBW-Friedrichshafen \
 **Teilnehmer**: Simon Blum, Ben Oeckl, Paul Stoeckle, Max Rodler, Sascha Wanninger \
 **Moderation**: Sascha Wanninger\
-**Diskussionspunkte**: 
+**Diskussionspunkte**:
 
 - Vorstellung Engtwicklungsplan
 - Abnahme Entwicklungsplan
 
-**Ergebnisse**: 
+**Ergebnisse**:
 
 - Begriff Anforderungsanalyse ändern
 - Enwicklungsplan abgenommen
@@ -24,7 +24,8 @@
 | Aktion                                          | Verantwortlich | Deadline   |
 |-------------------------------------------------|----------------|------------|
 | Begriff Anforderungsanalyse im Inkrement ändern | Simon Blum     | 15.11.2024 |
+| Link zu Dokument reparieren                     | Simon Blum     | 21.11.2024 |
 
 ### Relevante Dokumente
 
-- [Entwicklungsplan](../Inkremente/00/Entwicklungsplan.md)
+- [](Entwicklungsplan.md)
