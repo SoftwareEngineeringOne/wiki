@@ -7,9 +7,13 @@
 
     <toc-element topic="Main.md"/>
     <toc-element toc-title="Meetings">
-        <toc-element topic="01-10-2024-Planung.md"/>
-        <toc-element topic="01-10-2024-Kickoff.md"/>
-        <toc-element topic="11-10-2024-Entwicklungsplan.md"/>
+        <toc-element topic="2024-10-01-Kickoff.md"/>
+        <toc-element topic="2024-10-01-Planung.md"/>
+        <toc-element topic="2024-10-11-Entwicklungsplan.md"/>
+        <toc-element topic="2024-11-08-Use-Cases.md"/>
+        <toc-element topic="2024-11-13-Entwicklungsplan-Abnahme.md"/>
+        <toc-element topic="2024-11-13-Use-Cases-Definition.md"/>
+        <toc-element topic="2024-11-15-Anforderungsanalyse-Abnahme.md"/>
     </toc-element>
     <toc-element toc-title="Inkremente">
         <toc-element topic="Inkremente.md"/>
