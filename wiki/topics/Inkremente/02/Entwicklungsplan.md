@@ -5,8 +5,8 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektentwicklungsplan \
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 2 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 2.1/2.2 \
 **Autor**: Maximilian Rodler \
 **Datum**: 11.10.2024 \
 **Zuletzt geändert**: \
