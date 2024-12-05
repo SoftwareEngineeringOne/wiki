@@ -1,11 +1,11 @@
-# Initialisierung Inkrement 3
+# Initialisierung Inkrement 1
 
 ---
 
 ### Übersicht
 
 **Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 3\
+&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 1\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: - \
 **Autor**: Max Rodler \
 **Datum**: XX.10.2024 \
@@ -34,36 +34,24 @@
 ---
 
 ## Veranwortliche
--- Bin mir unsicher, gibt es spezielle Iterationsverantwortliche oder ist das
+-- Bin mir unsicher, gibt es spezielle Iterationsverantwortliche oder ist das 
 -- immer Max???
 
 ## Zeitplan
-- Beginn: 30.10.2024
-- Ende: 22.11.2024
+- Beginn: 01.10.2024
+- Ende: 18.10.2024
 
 ## Arbeitspakete
 Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
-### A3.1 UseCases anhand Schablone finden
--- BLA BLA BLA
-
-**Verantwortlich**: Max Rodler
-**Beauftragte**: Ben Oeckl, Paul Stöckle, Max Rodler
-
-### A3.2 UseCase- und Ablaufdiagramme erstellen
--- BLA BLA BLA
-
-**Verantwortlich**: Simon Blum
-**Beauftragte**: Simon Blum, Ben Oeckl
-
-### A3.3 Requirements aus UseCases ableiten
+### A1.1 Erstellen einer Projektskizze
+Im Laufe der Iteration soll eine Projektskizze entstehen.
 
 **Verantwortlich**: Paul Stöckle
-**Beauftragte**: Simon Blum, Paul Stöckle
-
+**Beauftragte**: Simon Blum, Ben Oeckl, Paul Stöckle, Max Rodler
 
 ## Besonderheiten
 BLABLABLA
--- Ich würde hier irgendwie anmerken, dass die Struktur der Iteration, ggf. leicht
+-- Ich würde hier irgendwie anmerken, dass die Struktur der Iteration, ggf. leicht 
 -- angepasst ist, da es basically noch zur Projektinitialisierung gehört
 
 -- Keine Designpaper, etc etc etc

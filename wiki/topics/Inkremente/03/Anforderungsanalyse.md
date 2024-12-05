@@ -22,14 +22,15 @@
 
 ### Changelog
 
-| Datum      | Verfasser    | Kurzbeschreibung                             |
-| ---------- | ------------ | -------------------------------------------- |
-| 13.11.2024 | Simon Blum   | Initialer Meeting-Mitschrieb                 |
-| 13.11.2024 | Ben Oeckl    | Ergänzung von Requirements in Use Cases      |
-| 13.11.2024 | Paul Stöckle | Überarbeitung von Requirements               |
-| 15.11.2024 | Paul Stöckle | Hinzufügen des Headers                       |
-| 15.11.2024 | Max Rodler   | Fehlerbehebung                               |
-| 21.11.2024 | Simon Blum   | Aktualisierung von UseCases und Requirements |
+| Datum      | Verfasser    | Kurzbeschreibung                                |
+| ---------- | ------------ | ----------------------------------------------- |
+| 13.11.2024 | Simon Blum   | Initialer Meeting-Mitschrieb                    |
+| 13.11.2024 | Ben Oeckl    | Ergänzung von Requirements in Use Cases         |
+| 13.11.2024 | Paul Stöckle | Überarbeitung von Requirements                  |
+| 15.11.2024 | Paul Stöckle | Hinzufügen des Headers                          |
+| 15.11.2024 | Max Rodler   | Fehlerbehebung                                  |
+| 21.11.2024 | Simon Blum   | Aktualisierung von UseCases und Requirements    |
+| 05.12.2024 | Simon Blum   | Fehlerbehebung Serialisieren -> Deserialisieren |
 
 ### Distribution List
 
@@ -209,7 +210,7 @@ left to right direction
 actor Nutzer as u
 
 package typisch {
-u --> (Bearbeitet Metadaten über Anwendung) 
+u --> (Bearbeitet Metadaten über Anwendung)
 }
 
 package alternativ {
@@ -363,12 +364,12 @@ stop
 ```
 
 ```plantuml
-@startuml 
+@startuml
 title Ablauf bei Start der Anwendung
 start
 if(Existieren gespeicherte Dateipfade?) then(ja)
     :Dateien deserialisieren;
-    note 
+    note
         FA2.1.2
         FA2.1.5
     end note
@@ -630,9 +631,9 @@ FA2.1.5 Wenn gespeicherte Dateipfade existieren soll, das System beim Starten di
 FA2.2.1 Das System soll dem Nutzer die Möglichkeit bieten ein Verzeichnis anzugeben, welches rekursiv nach
 Manifestdateien durchsucht wird.
 
-FA2.2.2 Wenn in diesem Verzeichnis Manifeste existieren soll das System diese serialisieren.
+FA2.2.2 Wenn in diesem Verzeichnis Manifeste existieren soll das System diese deserialisieren.
 
-FA2.2.3 Wenn das System ein Manifest aus einem Verzeichnis serialisiert hat, soll es bei Abweichungen den Cache
+FA2.2.3 Wenn das System ein Manifest aus einem Verzeichnis deserialisiert hat, soll es bei Abweichungen den Cache
 aktualisieren.
 
 FA2.2.4 Das System soll dem Nutzer die Möglichkeit bieten Verzeichnisse für zukünftiges durchsuchen zu speichern.
