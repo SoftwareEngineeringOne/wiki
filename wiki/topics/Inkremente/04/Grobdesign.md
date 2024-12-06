@@ -143,9 +143,6 @@ class DatabaseHandler {
     +get_metadata_by_id(id: Uuid) : Result<Option<Metadata>>
     +update_entry(metadata: Metadata): Result<Metadata>
     +delete_entry(id: Uuid): Result<Uuid>
-
-    +load_config(): Result<Config>
-    +save_config(config: Config): void
 }
 
 class FileSystemHandler {
