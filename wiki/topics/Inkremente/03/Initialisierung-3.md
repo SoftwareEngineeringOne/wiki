@@ -23,6 +23,8 @@
 | Datum      | Verfasser  | Kurzbeschreibung                  |
 |------------|------------|-----------------------------------|
 | 30.10.2024 | Max Rodler | Initiales Erstellen und Verfassen |
+| 21.11.2024 | Max Rodler | Vorläufiges Review formulieren    |
+| 22.11.2024 | Max Rodler | Endgültiges Review ergänzen       |
 
 ### Distribution List
 
