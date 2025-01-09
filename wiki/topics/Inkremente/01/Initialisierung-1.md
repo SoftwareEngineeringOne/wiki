@@ -11,7 +11,7 @@
 **Datum**: 01.10.2024 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 18.10.2024 \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 29.10.2024 \
 **Version**: 1 \
 **Prüfer**: Simon Blum \
 **Letzte Freigabe**: \
@@ -22,7 +22,7 @@
 
 | Datum      | Verfasser  | Kurzbeschreibung                  |
 |------------|------------|-----------------------------------|
-| 18.10.2024 | Max Rodler | Initiales Erstellen und Verfassen |
+| 29.10.2024 | Max Rodler | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
