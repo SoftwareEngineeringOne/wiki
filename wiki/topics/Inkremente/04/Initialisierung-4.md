@@ -6,14 +6,14 @@
 
 **Projekt**: Projekt Episkos \
 &nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 4\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: - \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: Max Rodler \
-**Datum**: XX.10.2024 \
+**Datum**: 22.11.2024 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 06.12.2024\
 **Version**: 1 \
-**Prüfer**: ?????\
+**Prüfer**: Ben Oeckl\
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: \
@@ -22,7 +22,8 @@
 
 | Datum      | Verfasser  | Kurzbeschreibung                  |
 |------------|------------|-----------------------------------|
-| XX.XX.2024 | Max Rodler | Initiales Erstellen und Verfassen |
+| 22.11.2024 | Max Rodler | Initiales Erstellen und Verfassen |
+| 06.12.2024 | Max Rodler | Ergänzen des Reviews              |
 
 ### Distribution List
 
@@ -33,10 +34,6 @@
 
 ---
 
-## Veranwortliche
--- Bin mir unsicher, gibt es spezielle Iterationsverantwortliche oder ist das
--- immer Max???
-
 ## Zeitplan
 - Beginn: 22.11.2024
 - Ende: 06.12.2024
@@ -44,39 +41,35 @@
 ## Arbeitspakete
 Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
 ### A4.1 Klassendiagramm erstellen
--- BLA BLA BLA
+- Klassendiagramm zur Strukturierung des Programms planen. (Dient als Vorbereitung zur späteren Umsetzung)
 
 **Verantwortlich**: Simon Blum
 **Beauftragte**: Simon Blum, Ben Oeckl, Paul Stöckle, Max Rodler
 
 ### A3.2 Sequenzdiagramm erstellen
--- BLA BLA BLA
+- Sequenzdiagramme zur Veranschaulichung von Abläufen.
 
 **Verantwortlich**: Simon Blum
 **Beauftragte**: Simon Blum
 
 ### A3.3 Tracing erstellen
--- BLA BLA BLA
+- Anforderungstracing ausarbeiten.
 
 **Verantwortlich**: Ben Oeckl
 **Beauftragte**: Ben Oeckl, Paul Stöckle
 
 ### 4.4 Bessere Strukturierung von Inkrementen
--- BLA BLA BLA Zusatz iwie ka, schön schreiben - wurde halt in nem Review von uns
--- beschlossen oder so - irgendwie schön verpacken dass das passt
+- Strukturierung der Inkremente überarbeiten (Entwicklungsplan beachten)
 
 **Verantwortlich**: Max Rodler
 **Beauftragte**: Max Rodler
 
 
 ## Besonderheiten
-BLABLABLA
--- Ich würde hier irgendwie anmerken, dass die Struktur der Iteration, ggf. leicht
--- angepasst ist, da es basically noch zur Projektinitialisierung gehört
+- Da dieses Inkrement noch Vorbereitende Arbeitspakete enthält, existieren hierzu noch nicht alle notwendigen Dokumente. (Der Anforderungskatalog, das Designpaper, die Entwicklerdokumentation und ein ausführlicher Abschlussreport werden aufgrund mangelnder Notwendigkeit / Sinnhaftigkeit weggelassen.)
+- Das Review erfolgt in diesem Inkrement im Rahmen der Vorstellung des Grobdesigns.
 
--- Keine Designpaper, etc etc etc
-
-### TODO und oder so
-- Reviews sollte es trotzdem geben!!
+### Review-Ergebnis
+- Das Grobdesign ist abgenommen. Somit sind alle vorbereitenden Maßnahmen abgschlossenen und es kann mit der Implementierung der Vorbereitungen begonnen werden.
 
 
