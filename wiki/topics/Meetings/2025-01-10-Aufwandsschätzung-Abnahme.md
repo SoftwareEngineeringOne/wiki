@@ -8,7 +8,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 5\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Datum, Ort**: 10.01.2025, DHBW Friedrichshafen\
-**Teilnehmer**: Simon Blum, Ben Oeckl, Paul Stoeckle, Max Rodler, Sascha Wanninger\
+**Teilnehmer**: Ben Oeckl, Paul Stöckle, Max Rodler, Sascha Wanninger\
 **Moderation**: Sascha Wanninger \
 **Diskussionspunkte**: 
 
