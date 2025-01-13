@@ -54,7 +54,7 @@ Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
 **Beauftragte**: Simon Blum, Ben Oeckl
 
 ### A3.3 Requirements aus UseCases ableiten
-- Zu den definierten UseCases werden nach forgegebenem Schema Requrements formultiert.
+- Zu den definierten UseCases werden nach vorgegebenem Schema Requrements formultiert.
 - 
 **Verantwortlich**: Paul Stöckle
 **Beauftragte**: Simon Blum, Paul Stöckle
@@ -65,6 +65,6 @@ Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
 - Das Review erfolgt in diesem Inkrement im Rahmen der Vorstellung der UseCases und der dazugehörigen Diagramme. 
 
 ### Review Ergebnis
-- Nach Anpassen einiger Details der UseCases und Umformulieren der Nichtfunktionalen Requirements ist das Arbeitspaket abgeschlossen und es kann mit den Ergebnisssen weiter gearbeitet werden. 
+- Nach Anpassen einiger Details der UseCases und Umformulieren der nichtfunktionalen Requirements ist das Arbeitspaket abgeschlossen und es kann mit den Ergebnisssen weiter gearbeitet werden. 
 
 
