@@ -37,6 +37,7 @@
 - Beginn: 20.01.2025
 - Ende: 27.01.2025
 
+
 ## Arbeitspakete
 Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
