@@ -7,11 +7,11 @@
 **Projekt**: Projekt Episkos \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Y\
-**Autor**: \
-**Datum**: \
+**Autor**: Paul Stöckle\
+**Datum**: 20.01.2025\
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 20.01.2025\
 **Version**: 1 \
 **Prüfer**: \
 **Letzte Freigabe**: \
@@ -22,7 +22,7 @@
 
 | Datum      | Verfasser | Kurzbeschreibung                  |
 | ---------- | --------- | --------------------------------- |
-| XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
+| 20.01.2025 | Paul Stöckle  | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
@@ -34,3 +34,9 @@
 ---
 
 ## Bewertung relevanter Requirements und UseCases
+### FA1.2.1 Das System muss dem Nutzer die Möglichkeit bieten eine Manifestdatei mit Metadaten zu erstellen.
+Es wird ein CLI-Programm benötigt mit welchem der Nutzer interaktiv und nicht interaktiv seine Daten angeben kann und anschließend eine Manifestdatei mit ihnen erstellt wird.
+### FA1.4.1 Das System muss dem Nutzer die Möglichkeit bieten Metadaten zu löschen.
+Das CLI-Programm kann mit einer Dateiangabe diese löschen und die zugehörigen Informationen aus dem System entfernen.
+### FA2.1.1 Das System muss dem Nutzer die Möglichkeit bieten den Pfad zu einer einzelnen Manifestdatei anzugeben.
+Beim Erstellen einer neuen Manifestdatei soll der Nutzer angeben, ob diese auch im Programm aufgenommen wird.
