@@ -34,6 +34,3 @@
 ---
 
 ## Bewertung relevanter Requirements und UseCases
-
-## Designpaper
-_Was sind die Ziele, des Arbeitspaketes, welche druch die Requirements/UseCases gegeben werden und wie sollen diese erfüllt werden?_

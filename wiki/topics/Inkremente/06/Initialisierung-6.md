@@ -34,15 +34,32 @@
 ---
 
 ## Zeitplan
-- Beginn: XX.XX.2025
-- Ende: XX.XX.2025
+- Beginn: 20.01.2025
+- Ende: 27.01.2025
 
 ## Arbeitspakete
 Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
-### AX.1
+### A6.1 Backend - Manifestdatei einlesen und generieren
 
-**Verantwortlich**:
-**Beauftragte**:
+**Verantwortlich**: Simon Blum
+**Beauftragte**: Simon Blum
 
 #### Relevante UseCases/Requirements
+- FA1.1.2, FA1.2.2, NA1
+
+### A6.2 Frontend - Basic GUI Interface
+
+**Verantwortlich**: Ben Oeckl
+**Beauftragte**: Max Rodler, Ben Oeckl
+
+#### Relevante UseCases/Requirements
+- FA1.2.1, FA1.3.1, FA1.4.1, FA2.1.1, NA3, NA9, NA10, NA10.1
+
+### A6.3 Frontend - Basic CLI Interface
+
+**Verantwortlich**: Paul Stöckle
+**Beauftragte**: Paul Stöckle
+
+#### Relevante UseCases/Requirements
+- FA1.2.1, FA1.4.1, FA2.1.1
