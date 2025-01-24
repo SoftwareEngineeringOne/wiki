@@ -10,8 +10,8 @@
 **Autor**: Max Rodler \
 **Datum**: 10.01.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 10.01.2025 \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 24.01.2025 \
 **Version**: 1 \
 **Prüfer**: Simon Blum\
 **Letzte Freigabe**: \
@@ -23,6 +23,7 @@
 | Datum      | Verfasser  | Kurzbeschreibung                  |
 | ---------- | ---------- | --------------------------------- |
 | 10.01.2025 | Max Rodler | Initiales Erstellen und Verfassen |
+| 24.01.2025 | Paul Stöckle | Faktor und Stunden hinzugefügt |
 
 ### Distribution List
 
@@ -68,3 +69,6 @@ Summe: 152
 | Summe der Einflussfaktoren (FE)                   | 16     |                                                                 |
 | Faktor der Einflussbewertung (FE)                 | 0,86   |                                                                 |
 | Gewichtete Funktion-Points                        | 130,72 |                                                                 |
+
+Stunden pro Function-Point: 2
+Gesamtstunden: 261
