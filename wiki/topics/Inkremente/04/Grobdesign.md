@@ -5,13 +5,13 @@
 ### Übersicht
 
 **Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 4 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 4 \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: - \
 **Autor**: Simon Blum, Ben Oeckl, Paul Stöckle\
 **Datum**: 05.12.2024\
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Simon Blum\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 24.01.2025\
 **Version**: 1 \
 **Prüfer**: Max Rodler\
 **Letzte Freigabe**: \
@@ -20,9 +20,10 @@
 
 ### Changelog
 
-| Datum       | Verfasser  | Kurzbeschreibung                  |
-|-------------|------------| --------------------------------- |
-| 05.12..2024 | Simon Blum | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser  | Kurzbeschreibung                  |
+| ---------- | ---------- | --------------------------------- |
+| 05.12.2024 | Simon Blum | Initiales Erstellen und Verfassen |
+| 24.01.2024 | Simon Blum | Hinzufügen von Paketen/Modulen    |
 
 ### Distribution List
 
@@ -50,154 +51,175 @@ legend bottom right
 By default are parameters are classified
 as "in".
 
+The data/logic/frontend packages do seem like they could resemble a
+classic model/view/controller architecture. However, since they are
+not implemented as such the wording has been purposefully avoided.
+
 end legend
 
-'!CHANGE LOADED TO CACHED
-class Metadata {
-     +uuid : Uuid
-     +directory : Path
-     +title : String
-     +description : String
-     +repository_url: String
-     +created : DateTime
-     +updated : DateTime
-     --
-     --Metadata will be constructed using a MetadataBuilder
-       which has been left out for clarity
-'         {static} +builder() : MetadataBuilder
-'         +update() : MetadataBuilder
+package data {
+    class Metadata {
+        +uuid : Uuid
+        +directory : Path
+        +title : String
+        +description : String
+        +repository_url: String
+        +created : DateTime
+        +updated : DateTime
+        --
+        --Metadata will be constructed using a MetadataBuilder
+        which has been left out for clarity
+    '         {static} +builder() : MetadataBuilder
+    '         +update() : MetadataBuilder
+    }
+
+    class Category {
+        +id: i32
+        +name: String
+    }
+    Metadata "*"-->"0..5" Category: +categories
+
+    class Language {
+        +id: i32
+        +name: String
+        +version: String
+    }
+
+    Metadata "*"-->"*" Language: +languages
+
+    class IDE {
+        +id: i32
+        +name: String
+    }
+
+
+    Metadata "*"-->"1" IDE: +preferred_ide
+
+    class BuildSystem {
+        +id: i32
+        +name: String
+        +version: String
+    }
+
+    Metadata "*"-->"*" BuildSystem: +build_system
+
+
+    class Config {
+        +directories_to_load: List<Path>
+        +files_to_load: List<Path>
+        +database_directory: Path
+    }
+
 }
 
-Metadata "*"-->"0..5" Metadata: +categories
+package logic {
+    class ConfigController {
+        -config_file_location: Path
+        +load_config(): Result<Config>
+        +add_saved_file(file: Path): Result<void>
+        +add_saved_directory(dir: Path): Result<void>
+    }
 
-class Language {
-    +name: String
-    +version: String
+    ConfigController "1"-->"1" Config: -config
+
+    class MetadataHandler {
+        -cached_paths: HashSet<Path>
+        __
+        {static}+init(db_handler: DatabaseHandler): MetadataHandler
+        .. Create ..
+        +create_metadata(metadata: Metadata): Result<Metadata>
+        .. Read ..
+        +load_metadata(file: Path): Result<Metadata>
+        +search_directory(dir: Path): List<Metadata>
+        +load_cached_metadata(): Result<List<Metadata>>
+        +search_metadata(query: String): Result<List<Metadata>>
+        .. Update ..
+        +update_metadata(metadata: Metadata): Result<Metadata>
+        .. Delete ..
+        +delete_metadata(id: Uuid): Result<void>
+        --
+        --return value from load_metadata/search_directory is
+        not always needed
+    }
+
+    MetadataHandler "1"-->"1" DatabaseHandler: -db_handler
+
+
+
+    class DatabaseHandler {
+
+        -db_connection: DatabaseConnection
+
+        {static} +init(path_to_db: Path): Result<DatabaseHandler>
+        +cache_metadata(metadata: Metadata): Result<Uuid>
+        +get_all_metadata(): Result<List<Metadata>>
+        +filter_metadata(filter: Map<Any, Any>): Result<List<Metadata>>
+        +get_metadata_by_id(id: Uuid) : Result<Option<Metadata>>
+        +update_entry(metadata: Metadata): Result<Metadata>
+        +delete_entry(id: Uuid): Result<Uuid>
+    }
+
+    class FileSystemHandler {
+        +write_manifest(file: Path): Result<Void>
+        +read_manifest(file: Path): Result<Metadata>
+        +delete_manifest(file: Path): Result<Uuid>
+        ..
+        +search_directory(dir: Path): Result<List<Path>>
+    }
+
+    MetadataHandler "1"-->"1" FileSystemHandler: -fs_handler
+
+    MetadataHandler "*"-->"1" Metadata: -cached_metadata
 }
 
-Metadata "*"-->"*" Language: +languages
+package statistics {
+    class StatisticHandler {
+        +generate_statistics(metadata: List<Metadata>): Statistics
+    }
 
-class IDE {
-    +name: String
-    +version: String
+    class Statistics {
+        +projects_by_language: Map<Language, Int>
+        +projects_by_ide: Map<Ide, Int>
+        +projects_by_category: Map<String, Int>
+        +projects_by_build_system: Map<BuildSystem, Int>
+        +number_of_projects: Int
+    }
+
+    StatisticHandler "1"-->"1" Statistics: -generated_statistics
+}
+
+package frontend{
+    class App {
+        {static} +init() : Result<App>
+        -- Exposed to frontend --
+        .. Create ...
+        +create_metadata(metadata: Metadata): Result<Metadata>
+        .. Read ..
+        -- "retrieve" from cache
+        +retrieve_all_metadata(): Result<List<Metadata>>
+        +retrieve_searched_metadata(query: String): Result<List<Metadata>>
+        +retrieve_filtered_metadata(filter: Map<Any, Any>): Result<List<Metadata>>
+        -- "load" from files
+        +search_directory(dir: Path, should_save: boolean): Result<List<Metadata>>
+        +load_file(file: Path, should_save: boolean): Result<Metadata>
+        .. Update ..
+        +update_metadata(metadata: Metadata): Result<Metadata>
+        .. Delete ..
+        +delete_metadata(id: Uuid): Result<Uuid>
+        .. Statistics ..
+        +retrieve_statistics(): Statistics
+    }
+
+    App "1" -->"1" MetadataHandler: -metadata_handler
+
+
+    App "1"-->"1" StatisticHandler: -statistics_handler
+
+    App "1"-->"1" ConfigController: -config_controller
 }
 
 
-Metadata "*"-->"1" IDE: +preferred_ide
 
-class BuildSystem {
-    +name: String
-    +version: String
-}
-
-Metadata "*"-->"*" BuildSystem: +build_system
-
-
-class Config {
-     +directories_to_load: List<Path>
-     +files_to_load: List<Path>
-     +database_directory: Path
-}
-
-class ConfigController {
-    -config_file_location: Path
-    +load_config(): Result<Config>
-    +add_saved_file(file: Path): Result<void>
-    +add_saved_directory(dir: Path): Result<void>
-}
-
-ConfigController "1"-->"1" Config: -config
-
-class MetadataController {
-    -cached_paths: HashSet<Path>
-    __
-    {static}+init(db_handler: DatabaseHandler): MetadataController
-    .. Create ..
-    +create_metadata(metadata: Metadata): Result<Metadata>
-    .. Read ..
-    +load_metadata(file: Path): Result<Metadata>
-    +search_directory(dir: Path): List<Metadata>
-    +load_cached_metadata(): Result<List<Metadata>>
-    +search_metadata(query: String): Result<List<Metadata>>
-    .. Update ..
-    +update_metadata(metadata: Metadata): Result<Metadata>
-    .. Delete ..
-    +delete_metadata(id: Uuid): Result<void>
-    --
-    --return value from load_metadata/search_directory is
-    not always needed
-}
-
-MetadataController "1"-->"1" DatabaseHandler: -db_handler
-
-
-
-class DatabaseHandler {
-
-    -db_connection: DatabaseConnection
-
-    {static} +init(path_to_db: Path): Result<DatabaseHandler>
-    +cache_metadata(metadata: Metadata): Result<Uuid>
-    +get_all_metadata(): Result<List<Metadata>>
-    +filter_metadata(filter: Map<Any, Any>): Result<List<Metadata>>
-    +get_metadata_by_id(id: Uuid) : Result<Option<Metadata>>
-    +update_entry(metadata: Metadata): Result<Metadata>
-    +delete_entry(id: Uuid): Result<Uuid>
-}
-
-class FileSystemHandler {
-    +write_manifest(file: Path): Result<Void>
-    +read_manifest(file: Path): Result<Metadata>
-    +delete_manifest(file: Path): Result<Uuid>
-    ..
-    +search_directory(dir: Path): Result<List<Path>>
-}
-
-MetadataController "1"-->"1" FileSystemHandler: -fs_handler
-
-
-class App {
-    {static} +init() : Result<App>
-    -- Exposed to frontend --
-    .. Create ...
-    +create_metadata(metadata: Metadata): Result<Metadata>
-    .. Read ..
-    -- "retrieve" from cache
-    +retrieve_all_metadata(): Result<List<Metadata>>
-    +retrieve_searched_metadata(query: String): Result<List<Metadata>>
-    +retrieve_filtered_metadata(filter: Map<Any, Any>): Result<List<Metadata>>
-    -- "load" from files
-    +search_directory(dir: Path, should_save: boolean): Result<List<Metadata>>
-    +load_file(file: Path, should_save: boolean): Result<Metadata>
-    .. Update ..
-    +update_metadata(metadata: Metadata): Result<Metadata>
-    .. Delete ..
-    +delete_metadata(id: Uuid): Result<Uuid>
-    .. Statistics ..
-    +retrieve_statistics(): Statistics
-}
-
-App "1" -->"1" MetadataController: -metadata_controller
-
-class StatisticController {
-     +generate_statistics(metadata: List<Metadata>): Statistics
-}
-
-class Statistics {
-    +projects_by_language: Map<Language, Int>
-    +projects_by_ide: Map<Ide, Int>
-    +projects_by_category: Map<String, Int>
-    +projects_by_build_system: Map<BuildSystem, Int>
-    +number_of_projects: Int
-}
-
-StatisticController "1"-->"1" Statistics: -generated_statistics
-App "1"-->"1" StatisticController: -statistics_handler
-
-' Connections
-App "1"-->"1" ConfigController: -config_controller
-
-MetadataController "*"-->"1" Metadata: -loaded_metadata
 @enduml
 ```
 
@@ -208,12 +230,12 @@ Die Sequenzdiagramme basieren auf den Use-Cases und sind dementsprechend aufgete
 ### U1.1
 ```plantuml
 @startuml U1.1 Start Application
-'!CHANGE LOADED TO CACHED
+'!CHANGE cached TO CACHED
 actor User
 boundary Gui
 participant App
 participant ConfigController
-participant MetadataController
+participant MetadataHandler
 participant FileSystemHandler
 participant DatabaseHandler
 entity ManifestFile
@@ -232,50 +254,50 @@ ConfigController --> App : db_location
 'DatabaseHandler
 App -> DatabaseHandler ** : init(dbLocation)
 DatabaseHandler --> App : DatabaseHandler
-App -> MetadataController **: init(dbHandler)
-MetadataController -> FileSystemHandler **
-MetadataController --> App: MetadataController
+App -> MetadataHandler **: init(dbHandler)
+MetadataHandler -> FileSystemHandler **
+MetadataHandler --> App: MetadataHandler
 
-App -> MetadataController ++: load_cached_metadata()
-MetadataController -> DatabaseHandler ++ : get_all_metadata()
+App -> MetadataHandler ++: load_cached_metadata()
+MetadataHandler -> DatabaseHandler ++ : get_all_metadata()
 DatabaseHandler -> Cache : select *
 Cache -> DatabaseHandler : QueryResult
-DatabaseHandler --> MetadataController --: Result<List<Metadata>>
+DatabaseHandler --> MetadataHandler --: Result<List<Metadata>>
 loop for each retrieved metadata
-    MetadataController -> MetadataController :validate ⋔:
+    MetadataHandler -> MetadataHandler :validate ⋔:
 end
 
-MetadataController -> MetadataController : loaded_metadata
-MetadataController --> App --: Result<void>
+MetadataHandler -> MetadataHandler : cached_metadata
+MetadataHandler --> App --: Result<void>
 
 App -> ConfigController: get_saved_files()
 ConfigController --> App: saved_files: List<Path>
 
 loop for each saved_file
-    App -> MetadataController ++: load_file(filePath)
+    App -> MetadataHandler ++: load_file(filePath)
     group if file_path not in cached_paths
-            MetadataController -> MetadataController : LoadFile ⋔
+            MetadataHandler -> MetadataHandler : LoadFile ⋔
     end
-    MetadataController -> App --: Result<void>
+    MetadataHandler -> App --: Result<void>
 end
 
 App -> ConfigController : get_saved_directories()
 ConfigController --> App: saved_directories: List<Path>
 
 loop for each saved_directory
-    App -> MetadataController ++: search_directory(dir)
-    MetadataController -> FileSystemHandler: search_directory(dir)
-    FileSystemHandler --> MetadataController: List<Path>
+    App -> MetadataHandler ++: search_directory(dir)
+    MetadataHandler -> FileSystemHandler: search_directory(dir)
+    FileSystemHandler --> MetadataHandler: List<Path>
     loop for each received path
         group if file_path not in cached_paths
-            MetadataController -> MetadataController : LoadFile ⋔
+            MetadataHandler -> MetadataHandler : LoadFile ⋔
         end
-        MetadataController -> App --: Result<void>
+        MetadataHandler -> App --: Result<void>
     end
 end
 
-App -> MetadataController: get_loaded_metadata()
-MetadataController --> App: List<Metadata>
+App -> MetadataHandler: get_cached_metadata()
+MetadataHandler --> App: List<Metadata>
 
 App --> Gui: List<Metadata>
 App -> App : StatisticGeneration ⋔
@@ -288,7 +310,7 @@ App -> App : StatisticGeneration ⋔
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant FileSystemHandler
 participant DatabaseHandler
 entity ManifestFile
@@ -297,22 +319,22 @@ database Cache
 User -> Gui : Create Metadata
 Gui -> App: create_metadata(..)
 
-App -> MetadataController: create_metadata(..)
+App -> MetadataHandler: create_metadata(..)
 ' Caching
-MetadataController -> DatabaseHandler : cache_metadata(..)
+MetadataHandler -> DatabaseHandler : cache_metadata(..)
 DatabaseHandler -> Cache : insert entry
-DatabaseHandler --> MetadataController : Uuid
-MetadataController -> DatabaseHandler : get_metadata_by_id(..)
+DatabaseHandler --> MetadataHandler : Uuid
+MetadataHandler -> DatabaseHandler : get_metadata_by_id(..)
 DatabaseHandler -> Cache : select with id
 Cache --> DatabaseHandler : Metadata
-DatabaseHandler --> MetadataController : Metadata
+DatabaseHandler --> MetadataHandler : Metadata
 
-MetadataController -> FileSystemHandler : write_manifest(..)
+MetadataHandler -> FileSystemHandler : write_manifest(..)
 FileSystemHandler -> ManifestFile : create file
-FileSystemHandler --> MetadataController: Result<void>
+FileSystemHandler --> MetadataHandler: Result<void>
 
 
-MetadataController --> App : Metadata
+MetadataHandler --> App : Metadata
 App --> Gui : Metadata
 Gui --> User: Display Metadata
 
@@ -328,7 +350,7 @@ App -> App : StatisticGeneration ⋔
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant FileSystemHandler
 participant DatabaseHandler
 entity ManifestFile
@@ -337,21 +359,21 @@ database Cache
 User -> Gui : Update Metadata
 Gui -> App: update_metadata(..)
 
-App -> MetadataController: update_metadata(..)
+App -> MetadataHandler: update_metadata(..)
 ' Caching
-MetadataController -> DatabaseHandler : update_entry(..)
+MetadataHandler -> DatabaseHandler : update_entry(..)
 DatabaseHandler -> Cache : update entry
-DatabaseHandler --> MetadataController : Uuid
-MetadataController -> DatabaseHandler : get_metadata_by_id(..)
+DatabaseHandler --> MetadataHandler : Uuid
+MetadataHandler -> DatabaseHandler : get_metadata_by_id(..)
 DatabaseHandler -> Cache : select with id
 Cache --> DatabaseHandler : Metadata
-DatabaseHandler --> MetadataController : Metadata
+DatabaseHandler --> MetadataHandler : Metadata
 
-MetadataController -> FileSystemHandler : write_manifest(..)
+MetadataHandler -> FileSystemHandler : write_manifest(..)
 FileSystemHandler -> ManifestFile : update file
-FileSystemHandler --> MetadataController: Result<void>
+FileSystemHandler --> MetadataHandler: Result<void>
 
-MetadataController --> App : Metadata
+MetadataHandler --> App : Metadata
 App --> Gui : Metadata
 Gui --> User: Display Metadata
 
@@ -365,7 +387,7 @@ App -> App : StatisticGeneration ⋔
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant FileSystemHandler
 participant DatabaseHandler
 entity ManifestFile
@@ -374,18 +396,18 @@ database Cache
 User -> Gui : Delete Metadata
 Gui -> App: delete_metadata(..)
 
-App -> MetadataController: delete_metadata(..)
+App -> MetadataHandler: delete_metadata(..)
 ' Caching
-MetadataController -> DatabaseHandler : delete_entry(..)
+MetadataHandler -> DatabaseHandler : delete_entry(..)
 DatabaseHandler -> Cache : delete entry
 Cache --> DatabaseHandler : Result<void>
-DatabaseHandler --> MetadataController : Result<void>
+DatabaseHandler --> MetadataHandler : Result<void>
 
-MetadataController -> FileSystemHandler : delete_manifest(..)
+MetadataHandler -> FileSystemHandler : delete_manifest(..)
 FileSystemHandler -> ManifestFile : delete file
-FileSystemHandler --> MetadataController: Result<void>
+FileSystemHandler --> MetadataHandler: Result<void>
 
-MetadataController --> App : Result<void>
+MetadataHandler --> App : Result<void>
 App --> Gui : Result<void>
 Gui --> User: Display Result
 
@@ -398,7 +420,7 @@ App -> App : StatisticGeneration ⋔
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant ConfigController
 entity ConfigFile
 
@@ -406,15 +428,15 @@ User -> Gui : Enter FilePath
 Gui -> User : Save?
 User --> Gui : should_save
 Gui -> App : load_file(filePath, should_save)
-App -> MetadataController: load_metadata(filePath)
-MetadataController -> MetadataController : load_file ⋔
+App -> MetadataHandler: load_metadata(filePath)
+MetadataHandler -> MetadataHandler : load_file ⋔
 group if should_save
-    MetadataController -> ConfigController : add_saved_file(filePath)
+    MetadataHandler -> ConfigController : add_saved_file(filePath)
     ConfigController -> ConfigFile : save_config()
-    ConfigController --> MetadataController : Result<void>
+    ConfigController --> MetadataHandler : Result<void>
 end
 
-MetadataController --> App: Result<Metadata>
+MetadataHandler --> App: Result<Metadata>
 App --> Gui : Result<Metadata>
 Gui --> User : Display Metadata
 
@@ -427,7 +449,7 @@ App -> App : StatisticGeneration ⋔
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant ConfigController
 participant FileSystemHandler
 participant DatabaseHandler
@@ -439,19 +461,19 @@ User -> Gui : Enter Directory
 Gui -> User : Save?
 User --> Gui : should_save
 Gui -> App : search_directory(directory, should_save)
-App -> MetadataController: search_metadata(directory)
-MetadataController -> FileSystemHandler : search_directory(directory)
-FileSystemHandler --> MetadataController : Result<List<Path>>
+App -> MetadataHandler: search_metadata(directory)
+MetadataHandler -> FileSystemHandler : search_directory(directory)
+FileSystemHandler --> MetadataHandler : Result<List<Path>>
 loop for each path received
-    MetadataController -> MetadataController: LoadFile ⋔
+    MetadataHandler -> MetadataHandler: LoadFile ⋔
 end
 group if should_save
-    MetadataController -> ConfigController : add_saved_directory(directory)
+    MetadataHandler -> ConfigController : add_saved_directory(directory)
     ConfigController -> ConfigFile : save_config()
-    ConfigController --> MetadataController : Result<void>
+    ConfigController --> MetadataHandler : Result<void>
 end
 
-MetadataController --> App: Result<List<Metadata>>
+MetadataHandler --> App: Result<List<Metadata>>
 App --> Gui : Result<<Metadata>>
 Gui --> User : Display Metadata
 
@@ -464,20 +486,20 @@ App -> App : StatisticGeneration ⋔
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant DatabaseHandler
 database Cache
 
 User -> Gui : enter search
 Gui -> App : retrieve_searched_metadata(query)
-App -> MetadataController : search_metadata(query)
-MetadataController -> MetadataController : create filter with query
-MetadataController -> DatabaseHandler : search_metadata(filter)
+App -> MetadataHandler : search_metadata(query)
+MetadataHandler -> MetadataHandler : create filter with query
+MetadataHandler -> DatabaseHandler : search_metadata(filter)
 DatabaseHandler -> Cache : select where filter applies
 Cache --> DatabaseHandler : QueryResult
-DatabaseHandler --> MetadataController : Result<List<Metadata>>
-MetadataController --> App : Result<List<MetadataController>>
-App --> Gui : Result<List<MetadataController>>
+DatabaseHandler --> MetadataHandler : Result<List<Metadata>>
+MetadataHandler --> App : Result<List<MetadataHandler>>
+App --> Gui : Result<List<MetadataHandler>>
 Gui --> User : display result
 @enduml
 ```
@@ -487,19 +509,19 @@ Gui --> User : display result
 actor User
 boundary Gui
 participant App
-participant MetadataController
+participant MetadataHandler
 participant DatabaseHandler
 database Cache
 
 User -> Gui : select filters
 Gui -> App : retrieve_filtered_metadata(query)
-App -> MetadataController : filter_metadata(query)
-MetadataController -> DatabaseHandler : search_metadata(filter)
+App -> MetadataHandler : filter_metadata(query)
+MetadataHandler -> DatabaseHandler : search_metadata(filter)
 DatabaseHandler -> Cache : select where filter applies
 Cache --> DatabaseHandler : QueryResult
-DatabaseHandler --> MetadataController : Result<List<Metadata>>
-MetadataController --> App : Result<List<MetadataController>>
-App --> Gui : Result<List<MetadataController>>
+DatabaseHandler --> MetadataHandler : Result<List<Metadata>>
+MetadataHandler --> App : Result<List<MetadataHandler>>
+App --> Gui : Result<List<MetadataHandler>>
 Gui --> User : display result
 @enduml
 ```
@@ -509,22 +531,22 @@ Gui --> User : display result
 actor User
 boundary Gui
 participant App
-participant MetadataController
-participant StatisticController
+participant MetadataHandler
+participant StatisticHandler
 
 User -> Gui : start application
 Gui -> App: U1.1 ⋔
 group StatisticGeneration
-    App -> MetadataController : get_loaded_metadata()
-    MetadataController --> App: loaded_metadata
-    App -> StatisticController: generate_statistics(loadedMetadata)
-    StatisticController --> StatisticController : generated_statistics
+    App -> MetadataHandler : get_cached_metadata()
+    MetadataHandler --> App: cached_metadata
+    App -> StatisticHandler: generate_statistics(cachedMetadata)
+    StatisticHandler --> StatisticHandler : generated_statistics
 end
 
 User -> Gui: open statistics page
 Gui -> App: retrieve_statistics()
-App -> StatisticController : get_generated_statistics()
-StatisticController --> App : generated_statistics
+App -> StatisticHandler : get_generated_statistics()
+StatisticHandler --> App : generated_statistics
 App -> Gui: Statistics
 Gui -> User: display statistics
 @enduml
@@ -546,7 +568,7 @@ UC1.1 -> FA1.1.1 -> App.retrieve_all_metadata()
 
 UC1.1 -> FA1.1.2 -> FileSystemHandler.read_manifest()
 
-UC1.2 -> FA1.2.1 -> App.create_metadata(), MetadataController.create_metadata(), DatabaseHandler.update_entry() FileSystemHandler.write_manifest()
+UC1.2 -> FA1.2.1 -> App.create_metadata(), MetadataHandler.create_metadata(), DatabaseHandler.update_entry() FileSystemHandler.write_manifest()
 
 UC1.2 -> FA1.2.2 -> FileSystemHandler.write_manifest()
 
@@ -554,15 +576,15 @@ UC1.2 -> FA1.2.3 -> DatabaseHandler.cache_metadata()
 
 UC1.3 -> FA1.3.1 -> App.update_metadata()
 
-UC1.3 -> FA1.3.2 -> MetadataController.update_metadata(), DatabaseHandler.update_entry()
+UC1.3 -> FA1.3.2 -> MetadataHandler.update_metadata(), DatabaseHandler.update_entry()
 
-UC1.3 -> FA1.3.3 -> MetadataController.load_metadata(), MetadataController.search_directory(), FileSystemHandler.read_manifest()
+UC1.3 -> FA1.3.3 -> MetadataHandler.load_metadata(), MetadataHandler.search_directory(), FileSystemHandler.read_manifest()
 
-UC1.4 -> FA1.4.1 -> App.delete_metadata, MetadataController.delete_metadata, FileSystemHandler.delete_manifest()
+UC1.4 -> FA1.4.1 -> App.delete_metadata, MetadataHandler.delete_metadata, FileSystemHandler.delete_manifest()
 
 UC1.4 -> FA1.4.2 -> DatabaseHandler.delete_entry(),
 
-UC1.4 -> FA1.4.3 -> Metadata_Controller.load_metadata(), MetadataController.search_directory(), MetadataController.delete_metadata, DatabaseHandler.delete_entry()
+UC1.4 -> FA1.4.3 -> metadata_handler.load_metadata(), MetadataHandler.search_directory(), MetadataHandler.delete_metadata, DatabaseHandler.delete_entry()
 
 UC2.1 -> FA2.1.1 -> App.loadFile, ConfigController.add_saved_file()
 
@@ -572,25 +594,25 @@ UC2.1 -> FA2.1.3 -> siehe FA1.2.3
 
 UC2.1 -> FA2.1.4 -> App.search_directory(), ConfigController.add_saved_directory()
 
-UC2.1 -> FA2.1.5 ->  MetadataController.search_directory(), FileSystemHandler.search_directory()
+UC2.1 -> FA2.1.5 ->  MetadataHandler.search_directory(), FileSystemHandler.search_directory()
 
 UC2.2 -> FA2.2.1 -> Siehe FA2.1.4
 
 UC2.2 -> FA2.2.2 -> Siehe FA2.1.5
 
-UC2.2 -> FA2.2.3 -> MetadataController.load_metadata(), MetadataController.update_metadata(), DatabaseHandler.update_entry()
+UC2.2 -> FA2.2.3 -> MetadataHandler.load_metadata(), MetadataHandler.update_metadata(), DatabaseHandler.update_entry()
 
 UC2.2 -> FA2.2.4 -> Siehe FA2.1.5
 
 UC2.2 -> FA2.2.5 -> Siehe FA2.1.5
 
-UC3.1 -> FA3.1.1 -> MetadataController.search_metadata()
+UC3.1 -> FA3.1.1 -> MetadataHandler.search_metadata()
 
 UC3.1 -> FA3.1.2 -> App.retrieve_searched_metadata() - Input der Methode stellt Nutzereingabe da
 
 UC3.1 -> FA3.1.3 -> App.retrieve_searched_metadata() - Output Methode wird nutzer angezeigt
 
-UC3.2 -> FA3.2.1 -> MetadataController.filter_metadata()
+UC3.2 -> FA3.2.1 -> MetadataHandler.filter_metadata()
 
 UC3.2 -> FA3.2.2 -> App.retrieve_filtered_metadata() - Input der Methode stellt Nutzereingabe da
 
