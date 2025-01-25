@@ -6,7 +6,7 @@
 
 **Projekt**: Projekt Episkos \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Y\
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 3\
 **Autor**: Paul Stöckle\
 **Datum**: 20.01.2025\
 **Zuletzt geändert**: \
