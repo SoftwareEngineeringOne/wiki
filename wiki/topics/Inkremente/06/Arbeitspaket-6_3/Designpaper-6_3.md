@@ -1,4 +1,4 @@
-# Designpaper 6.Y
+# Designpaper 6.3
 
 ---
 
@@ -11,7 +11,7 @@
 **Datum**: 20.01.2025\
 **Zuletzt geändert**: 20.01.2025\
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 20.01.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 25.01.2025\
 **Version**: 1 \
 **Prüfer**: \
 **Letzte Freigabe**: \
@@ -23,6 +23,7 @@
 | Datum      | Verfasser | Kurzbeschreibung                  |
 | ---------- | --------- | --------------------------------- |
 | 20.01.2025 | Paul Stöckle  | Initiales Erstellen und Verfassen |
+| 25.01.2025 | Paul Stöckle  | Designänderungen |
 
 ### Distribution List
 
@@ -37,13 +38,14 @@
 Im Rahmen des Arbeitspaketes soll die grundlegende Struktur der CLI-Komponente entwickelt werden.
 ### CLI
 Es wird Clap zur Argumentübergabe verwendet.
-### Argumente und Funktionalitäten
-| Argument  | Funktion                                                                             |
-| --------- | ------------------------------------------------------------------------------------ |
-| -c        | Erstellen einer neuen Manifestdatei mithilfe von interaktiv eingegeben Daten         |
-| -n [LIST] | Erstellen einer neuen Manifestdatei mithilfe der übergebenen komma-separierten Liste |
-| -r [FILE] | Löschen der angegeben Datei und Entfernung der Informationen aus dem System          |
-| -a [FILE] | Hinzufügen der angegeben Datei zum System                                            |
+### Commands, Argumente und Funktionalitäten
+| Command                 | Funktion                                                                                                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------ |
+| create [OPTIONS]        | Erstellen einer neuen Manifestdatei. Daten können durch Flags mitgegeben werden. Alle anderen werden durch interaktiv eingegeben Daten ergänzt. |
+| create [OPTIONS mit -n] | Erstellen einer neuen Manifestdatei. Daten werden nur den Flags entnommen. Bei relevanten Daten, die fehlen wird das Programm abgebrochen.            |
+| remove <FILE>           | Löschen der angegeben Datei und Entfernung der Informationen aus dem System.                                                                          |
+| add <FILE>              | Hinzufügen der angegeben Datei zum System.                                                                                                            |
+| validate <FILE>         | Validerung auf Gültigkeit der angegeben Datei.                                                                                                        |
 
 ### Code-Isolation
-Die CLI wird in einem eigenen Paket entwickelt: "episkos_cli".
+Die CLI wird in einem eigenen Paket entwickelt: "episkos_cli". Die verschiedenen Komponenten werden auf mehrere Dateien aufgeteilt. Zur Argumentübergabe wird clap genutzt. Zur interaktiven Eingabe wird dialoguer benutzt.
