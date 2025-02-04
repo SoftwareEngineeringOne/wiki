@@ -23,6 +23,7 @@
 |------------|-------------------|--------------------------------------------|
 | 01.10.2024 | Maximilian Rodler | Vorgehensmodell entwickeln uns ausarbeiten |
 | 12.10.2024 | Simon Blum        | Diagramme hinzufügen                       |
+| 12.10.2024 | Maximilian Rodler | Dokument Entwicklerdoku durch SDD ersetzt  |
 
 ### Distribution List
 
@@ -104,7 +105,7 @@ Im Rahmen eines Inkrementes werden folgende Dokumente erstellt:
 - Dokumente der/des Arbeitspaket/es:
     - Anforderungskatalog
     - Designpaper
-    - Entwicklerdokumentation
+    - Anpassen des jeweiligen SDD-Moduls
     - Abschlussreport
     - _Wird das Arbeitspaket in einer Iteration überarbeitet, werden diese
       Dokumente ergänzt!_
