@@ -8,7 +8,7 @@ mit allen weiteren Modulen des Projektes kommuniziert.
 ## Aufbau
 Die Library ist in die folgenden Module aufgeteilt, welche auch durch feature
 flags identifiziert werden können, aufgeteilt:
-- core
+- core 
 - files (enabled by default)
 - database (enabled by default)
 - statistics (disabled by default)

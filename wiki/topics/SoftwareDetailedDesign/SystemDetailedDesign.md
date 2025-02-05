@@ -23,6 +23,7 @@
 | Datum      | Verfasser | Kurzbeschreibung                  |
 | ---------- | --------- | --------------------------------- |
 | 27.01.2025 | Simon Blum  | Initiales Erstellen und Verfassen |
+| 03.02.2025 | Simon Blum | Hinzufügen von Datenbank Modul |
 
 ### Distribution List
 
