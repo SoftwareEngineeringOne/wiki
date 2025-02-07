@@ -11,10 +11,13 @@ Die CLI-Komponente ist ausschließlich in der Programmiersprache Rust geschriebe
 ## Verwendete Librarys
 | Library    | Zweck                                                                                 | Version |
 |------------|---------------------------------------------------------------------------------------|---------|
-| clap       | Übergabe und Verwaltung von CLI-Argumenten. Automatisch generierte Hilfe-Beschreibung |         |
-| dialoguer  | Interaktive Nutzereingaben                                                            |         | 
-| color_eyre | Optische Verbesserungen der interaktiven Nutzereingabe                                |         |
-| camino     | UTF8-Pfade zur Verwendung bei CLI-Argumenten                                          |         |
+| camino     | UTF8-Pfade zur Verwendung bei CLI-Argumenten                                          | 1.1.9   |
+| clap       | Übergabe und Verwaltung von CLI-Argumenten. Automatisch generierte Hilfe-Beschreibung | 4.5.26  |
+| color_eyre | Optische Verbesserungen der interaktiven Nutzereingabe                                | 0.6.3   |
+| dialoguer  | Interaktive Nutzereingaben                                                            | 0.11.0  |
+| tokio      | Ermöglicht asynchrone Funktionsaufrufe für die Datenbankanbindung                     | 1.43.0  |
+
+
 
 ## Modulbeschreibung
 | Modul      | Beschreibung                                                                                                                                                                                                                                  |
