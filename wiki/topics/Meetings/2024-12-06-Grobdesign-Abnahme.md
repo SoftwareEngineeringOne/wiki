@@ -5,7 +5,7 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko\
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 4\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 4\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Grobdesign\
 **Datum, Ort**: 06.12.2024, DHBW-Friedrichshafen\
 **Teilnehmer**: Simon Blum, Ben Oeckl, Paul Stoeckle, Max Rodler\
@@ -30,4 +30,4 @@
 
 ### Relevante Dokumente
 
-- [Grobdesign.md](Inkremente/04/Grobdesign.md)
+- [](Grobdesign.md)

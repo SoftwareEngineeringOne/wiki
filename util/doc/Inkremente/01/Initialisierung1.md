@@ -4,8 +4,8 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: \
+**Projekt**: Projekt Episko \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: \
 **Datum**: \

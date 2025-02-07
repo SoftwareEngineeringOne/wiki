@@ -5,14 +5,15 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 0 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 0 \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Projektinitialisierung \
 **Autor**: Simon Blum \
 **Datum**: 01.10.2024 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024 \
-**Version**: 4 \
+**Version**: 5 \
+**Prüfer**: Simon Blum \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024

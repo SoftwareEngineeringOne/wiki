@@ -5,7 +5,7 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 5\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 5\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Datum, Ort**: 10.01.2025, DHBW Friedrichshafen\
 **Teilnehmer**: Ben Oeckl, Paul Stöckle, Max Rodler, Sascha Wanninger\

@@ -4,25 +4,25 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Y\
-**Autor**: \
-**Datum**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 1\
+**Autor**: Simon Blum\
+**Datum**: 22.01.2025\
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: \
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Max Rodler\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025
 
 ### Changelog
 
-| Datum      | Verfasser | Kurzbeschreibung                  |
-| ---------- | --------- | --------------------------------- |
-| XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser  | Kurzbeschreibung                  |
+|------------|------------|-----------------------------------|
+| 21.01.2025 | Simon Blum | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
@@ -34,7 +34,7 @@
 ---
 
 ## Designpaper
-Im Rahmen des Arbeitspaket soll ein Schnitstelle entstehen welche es erlaub Manifestdateien
+Im Rahmen des Arbeitspakets soll eine Schnittstelle entstehen welche es erlaubt Manifestdateien
 zu serialisieren und zu deserialisieren.
 
 ### API Design
@@ -48,7 +48,7 @@ zu serialisieren und zu deserialisieren.
 - SideEffects: Datei wird gelesen
 
 ### Code Aufbau
-Für das Erstellen der Schnitstelle wird ein Modul in der "episko_lib" erstellt, welches
+Für das Erstellen der Schnittstelle wird ein Modul in der "episko_lib" erstellt, welches
 sowohl für die Cli als auch für das Gui Backend zur Verfügung steht.
 
 ### Referenz Klassendiagramm
@@ -62,6 +62,6 @@ Im Bezug auf das Klassendiagramm werden folgende Klassen als "structs" entstehen
 
 ### Referenz Sequenzdiagramme
 In diesem Arbeitspaket sollen Abschnitte aus folgenden den Sequenzdiagrammen behandelt werden:
-- zu U1.2 (Sequenz zwichen MetadataController und FileSystemHandler, mit Schnitstelle zu App)
+- zu U1.2 (Sequenz zwischen MetadataController und FileSystemHandler, mit Schnittstelle zu App)
 
 

@@ -1,17 +1,14 @@
-Datenbank
----------
+# Datenbank
 
-Die Datenbank dient im Kontext des Projektes als persistenter Cache. Hier werden Metadaten und alle dazugehörigen Relationen zwichengespeichert um ein performantes und responsives nutzen der Gui Anwendung zu ermöglichen.
+Die Datenbank dient im Kontext des Projektes als persistenter Cache. Hier werden Metadaten und alle dazugehörigen Relationen zwischengespeichert um ein performantes und responsives nutzen der Gui Anwendung zu ermöglichen.
 
-Datenbanktechnologie
---------------------
+## Datenbanktechnologie
 
 Als Datenbank wird sqlite als lokale Lösung genutzt. Diese ist simpel performant und erfüllt somit alle unsere Anforderungen an eine Speicherlösung.
 
-ERM Diagramm
-------------
+## ERM Diagramm
 
-```puml
+```plantuml
 @startuml
 
 skinparam linetype polyline
@@ -75,8 +72,7 @@ metadata "n" -- "1" ide : preferred_ide
 @enduml
 ```
 
-Datadictionary
---------------
+## Datadictionary
 
 ### metadata
 

@@ -4,9 +4,9 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 3\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
+**Projekt**: Projekt Episko \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 3\
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
 **Autor**: Max Rodler \
 **Datum**: 30.10.2024 \
 **Zuletzt geändert**: \
@@ -15,8 +15,8 @@
 **Version**: 1 \
 **Prüfer**: Paul Stöckle\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 23.11.2024\
 
 ### Changelog
 
@@ -40,7 +40,7 @@
 - Ende: 22.11.2024
 
 ## Arbeitspakete
-Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
+Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 ### A3.1 UseCases anhand Schablone finden
 - Anhand einer gegebenen Schablone werden UseCases definiert, welche das Ergebnis zu erfüllen hat.
 

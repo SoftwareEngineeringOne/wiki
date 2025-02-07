@@ -4,7 +4,7 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: \

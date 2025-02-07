@@ -4,19 +4,19 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 4\
+**Projekt**: Projekt Episko \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 4\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: Max Rodler \
 **Datum**: 22.11.2024 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 06.12.2024\
-**Version**: 1 \
+**Version**: 2 \
 **Prüfer**: Ben Oeckl\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 06.12.2024\
 
 ### Changelog
 
@@ -39,7 +39,7 @@
 - Ende: 06.12.2024
 
 ## Arbeitspakete
-Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
+Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 ### A4.1 Klassendiagramm erstellen
 - Klassendiagramm zur Strukturierung des Programms planen. (Dient als Vorbereitung zur späteren Umsetzung)
 
@@ -66,10 +66,10 @@ Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
 
 
 ## Besonderheiten
-- Da dieses Inkrement noch Vorbereitende Arbeitspakete enthält, existieren hierzu noch nicht alle notwendigen Dokumente. (Der Anforderungskatalog, das Designpaper, die Entwicklerdokumentation und ein ausführlicher Abschlussreport werden aufgrund mangelnder Notwendigkeit / Sinnhaftigkeit weggelassen.)
+- Da dieses Inkrement noch vorbereitende Arbeitspakete enthält, existieren hierzu noch nicht alle notwendigen Dokumente. (Der Anforderungskatalog, das Designpaper, die Entwicklerdokumentation und ein ausführlicher Abschlussreport werden aufgrund mangelnder Notwendigkeit / Sinnhaftigkeit weggelassen.)
 - Das Review erfolgt in diesem Inkrement im Rahmen der Vorstellung des Grobdesigns.
 
 ### Review-Ergebnis
-- Das Grobdesign ist abgenommen. Somit sind alle vorbereitenden Maßnahmen abgschlossenen und es kann mit der Implementierung der Vorbereitungen begonnen werden.
+- Das Grobdesign ist abgenommen. Somit sind alle vorbereitenden Maßnahmen abgeschlossenen und es kann mit der Implementierung der Vorbereitungen begonnen werden.
 
 

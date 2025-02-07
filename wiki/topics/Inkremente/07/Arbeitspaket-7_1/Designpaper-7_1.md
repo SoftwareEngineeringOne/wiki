@@ -4,25 +4,25 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 7\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 1\
 **Autor**: Simon Blum\
 **Datum**: 04.02.2025\
-**Zuletzt geändert**: -\
+**Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: -\
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: -\
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Max Rodler\
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 
 
 ### Changelog
 
-| Datum      | Verfasser   | Kurzbeschreibung                  |
-| ---------- | ----------- | --------------------------------- |
-| 04.02.2025 | Simon Blum  | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser  | Kurzbeschreibung                  |
+|------------|------------|-----------------------------------|
+| 04.02.2025 | Simon Blum | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 

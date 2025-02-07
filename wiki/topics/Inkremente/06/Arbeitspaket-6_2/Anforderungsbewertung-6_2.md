@@ -1,12 +1,12 @@
-# Anforderungsbewertung 6.Y
+# Anforderungsbewertung 6.2
 
 ---
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Y\
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 2\
 **Autor**: \
 **Datum**: \
 **Zuletzt geändert**: \

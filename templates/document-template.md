@@ -1,10 +1,10 @@
-# Inkrement Initialisierung X
+# Dokumenttitel
 
 ---
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: X\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: \
@@ -21,7 +21,7 @@
 ### Changelog
 
 | Datum      | Verfasser | Kurzbeschreibung                  |
-| ---------- | --------- | --------------------------------- |
+|------------|-----------|-----------------------------------|
 | XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
 
 ### Distribution List
