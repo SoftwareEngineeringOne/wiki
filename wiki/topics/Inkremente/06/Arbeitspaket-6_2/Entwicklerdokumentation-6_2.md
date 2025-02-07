@@ -1,4 +1,4 @@
-# Anforderungsbewertung 6.Y
+# Entwicklerdokumentation 6.Y
 
 ---
 
@@ -33,7 +33,5 @@
 
 ---
 
-## Bewertung relevanter Requirements und UseCases
-
-## Designpaper
-_Was sind die Ziele, des Arbeitspaketes, welche druch die Requirements/UseCases gegeben werden und wie sollen diese erfüllt werden?_
+## Entwicklerdokumentation
+_Beschreibung wie was funktioniert/umgesetzt wurde. Ggf. sind hier auch referenzen zu existieren Doku kommentaren im Code ausreichen_
