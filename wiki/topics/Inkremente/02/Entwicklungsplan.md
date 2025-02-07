@@ -11,11 +11,11 @@
 **Datum**: 11.10.2024 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Maximilian Rodler \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024 \
-**Version**: 1 \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 29.01.2024 \
+**Version**: 3 \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 11.10.2024
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 04.02.2025
 
 ### Changelog
 
@@ -23,7 +23,7 @@
 |------------|-------------------|--------------------------------------------|
 | 01.10.2024 | Maximilian Rodler | Vorgehensmodell entwickeln uns ausarbeiten |
 | 12.10.2024 | Simon Blum        | Diagramme hinzufügen                       |
-| 12.10.2024 | Maximilian Rodler | Dokument Entwicklerdoku durch SDD ersetzt  |
+| 29.01.2024 | Maximilian Rodler | Dokument Entwicklerdoku durch SDD ersetzt  |
 
 ### Distribution List
 
