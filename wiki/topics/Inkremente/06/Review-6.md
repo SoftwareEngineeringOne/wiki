@@ -4,25 +4,25 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 1-3\
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
 **Autor**: Maximilian Rodler\
 **Datum**: 27.01.2025\
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Maximilian Rodler\
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025\
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Ben Oeckl\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025
 
 ### Changelog
 
-| Datum      | Verfasser          | Kurzbeschreibung                  |
-| ---------- | ------------------ | --------------------------------- |
-| 27.01.2025 | Maximilian Rodler  | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser         | Kurzbeschreibung                  |
+|------------|-------------------|-----------------------------------|
+| 27.01.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
@@ -63,4 +63,4 @@ Testing + Doku fehlt. Wird im nächsten Inkrement wieder aufgenommen.
 
 - Arbeitspaket 1: Abgeschlossen
 - Arbeitspaket 2: Verlängert
-- Arbietspaket 3: Teilweise verlängert
+- Arbeitspaket 3: Teilweise verlängert

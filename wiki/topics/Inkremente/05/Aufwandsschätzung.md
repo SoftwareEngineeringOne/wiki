@@ -4,26 +4,26 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 5\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
+**Projekt**: Projekt Episko \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 5\
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
 **Autor**: Max Rodler \
 **Datum**: 10.01.2025 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 24.01.2025 \
-**Version**: 1 \
+**Version**: 2 \
 **Prüfer**: Simon Blum\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 24.01.2025
 
 ### Changelog
 
-| Datum      | Verfasser  | Kurzbeschreibung                  |
-| ---------- | ---------- | --------------------------------- |
-| 10.01.2025 | Max Rodler | Initiales Erstellen und Verfassen |
-| 24.01.2025 | Paul Stöckle | Faktor und Stunden hinzugefügt |
+| Datum      | Verfasser    | Kurzbeschreibung                  |
+|------------|--------------|-----------------------------------|
+| 10.01.2025 | Max Rodler   | Initiales Erstellen und Verfassen |
+| 24.01.2025 | Paul Stöckle | Faktor und Stunden hinzugefügt    |
 
 ### Distribution List
 

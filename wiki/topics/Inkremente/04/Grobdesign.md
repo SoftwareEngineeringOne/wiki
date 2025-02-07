@@ -4,7 +4,7 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
+**Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 4 \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: - \
 **Autor**: Simon Blum, Ben Oeckl, Paul Stöckle\
@@ -12,18 +12,18 @@
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Simon Blum\
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 24.01.2025\
-**Version**: 1 \
+**Version**: 2 \
 **Prüfer**: Max Rodler\
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.12.2024 
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 24.01.2025 
 
 ### Changelog
 
 | Datum      | Verfasser  | Kurzbeschreibung                  |
-| ---------- | ---------- | --------------------------------- |
+|------------|------------|-----------------------------------|
 | 05.12.2024 | Simon Blum | Initiales Erstellen und Verfassen |
-| 24.01.2024 | Simon Blum | Hinzufügen von Paketen/Modulen    |
+| 24.01.2025 | Simon Blum | Hinzufügen von Paketen/Modulen    |
 
 ### Distribution List
 

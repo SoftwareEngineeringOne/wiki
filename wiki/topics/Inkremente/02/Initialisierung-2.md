@@ -4,19 +4,19 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episkos \
-&nbsp;&nbsp;&nbsp;&nbsp;_Iteration_: 2\
+**Projekt**: Projekt Episko \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 2\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: Max Rodler \
 **Datum**: 18.10.2024 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.10.2024\
-**Version**: 1.1 \
+**Version**: 2 \
 **Prüfer**: Paul Stöckle\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.10.2024\
 
 ### Changelog
 
@@ -39,9 +39,9 @@
 - Ende: 30.10.2024
 
 ## Arbeitspakete
-Die folgenden Arbeitspakete werden als Teil der Iteration bearbeitet:
+Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 ### A2.1 Erstellen des Projektentwicklungsplans
-Im Laufe der Iteration soll der Projektentwicklungsplan entstehen.
+Im Laufe des Inkrements soll der Projektentwicklungsplan entstehen.
 
 **Verantwortlich**: Ben Oeckl
 **Beauftragte**: Ben Oeckl, Paul Stöckle, Max Rodler
