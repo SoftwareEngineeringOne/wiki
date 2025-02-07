@@ -20,12 +20,13 @@
 
 ### Changelog
 
-| Datum      | Verfasser    | Kurzbeschreibung                  |
-|------------|--------------|-----------------------------------|
-| 27.01.2025 | Simon Blum   | Initiales Erstellen und Verfassen |
-| 01.02.2025 | Paul Stöckle | Hinzufügen von CLI Modul          |
-| 03.02.2025 | Simon Blum   | Hinzufügen von Datenbank Modul    |
-| 07.02.2025 | Simon Blum   | Hinzufügen von Links fürs Wiki    |
+| Datum      | Verfasser    | Kurzbeschreibung                              |
+|------------|--------------|-----------------------------------------------|
+| 27.01.2025 | Simon Blum   | Initiales Erstellen und Verfassen             |
+| 01.02.2025 | Paul Stöckle | Hinzufügen von CLI Modul                      |
+| 03.02.2025 | Simon Blum   | Hinzufügen von Datenbank Modul                |
+| 07.02.2025 | Simon Blum   | Hinzufügen von Links fürs Wiki                |
+| 07.02.2025 | Paul Stöckle | Aktualisierung der CLI Library-Abhängigkeiten |
 
 ### Distribution List
 
