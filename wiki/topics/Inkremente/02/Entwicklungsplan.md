@@ -25,6 +25,7 @@
 | 12.10.2024 | Simon Blum        | Diagramme hinzufügen                       |
 | 29.01.2024 | Maximilian Rodler | Dokument Entwicklerdoku durch SDD ersetzt  |
 
+
 ### Distribution List
 
 - Simon Blum <simon21.blum@gmail.com>
