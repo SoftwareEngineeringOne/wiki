@@ -7,11 +7,11 @@
 **Projekt**: Projekt Episkos \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 7\
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
-**Autor**: \
-**Datum**: \
-**Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+**Autor**: Max Rodler\
+**Datum**: 29.01.2025\
+**Zuletzt geändert**: -\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: -\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: -\
 **Version**: 1 \
 **Prüfer**: \
 **Letzte Freigabe**: \
@@ -20,9 +20,9 @@
 
 ### Changelog
 
-| Datum      | Verfasser | Kurzbeschreibung                  |
-| ---------- | --------- | --------------------------------- |
-| XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser   | Kurzbeschreibung                  |
+| ---------- | ----------- | --------------------------------- |
+| 29.01.2025 | Max Rodler  | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
@@ -34,8 +34,8 @@
 ---
 
 ## Zeitplan
-- Beginn: XX.XX.2025
-- Ende: XX.XX.2025
+- Beginn: 29.01.2025
+- Ende: 13.02.2025
 
 ## Arbeitspakete
 Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
