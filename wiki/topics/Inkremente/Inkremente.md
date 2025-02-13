@@ -9,7 +9,7 @@
 | 5   | Aufwandsschätzung     | 10.01.2025 | 20.01.2025 | 1                | Max Rodler       | (Link)[05/Initialisierung-5.md]  |
 | 6   | Fundamentale Struktur | 20.01.2025 | 27.01.2025 | 3                | Max Rodler       | (Link)[06/Initialisierung-6.md]  |
 | 7   | Datenbank Grundlagen  | 27.01.2025 | 13.02.2025 | 1 (2 übernommen) | Max Rodler       | (Link)[07/Initialisierung-7.md]  |
-| 8   | -                     | -          | -          | -                | Max Rodler       | (Link)[08/Initialisierung-8.md]  |
+| 8   | Frontend + Configs    | 13.02.2025 | 24.02.2025 | 3                | Max Rodler       | (Link)[08/Initialisierung-8.md]  |
 | 9   | -                     | -          | -          | -                | Max Rodler       | (Link)[09/Initialisierung-9.md]  |
 | 10  | -                     | -          | -          | -                | Max Rodler       | (Link)[10/Initialisierung-10.md] |
 
