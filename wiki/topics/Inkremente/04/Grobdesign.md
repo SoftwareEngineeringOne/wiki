@@ -113,7 +113,7 @@ package data {
 }
 
 package logic {
-    class ConfigController {
+    class ConfigHandler {
         -config_file_location: Path
         +load_config(): Result<Config>
         +add_saved_file(file: Path): Result<void>
