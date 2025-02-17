@@ -69,9 +69,18 @@ Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
 ### A8.3 Backend: Config-Module
 
-**Verantwortlich**:Simon Blum
-**Beauftragte**:Simon Blum, Paul Stöckle
+**Verantwortlich**: Simon Blum
+**Beauftragte**: Simon Blum, Paul Stöckle
 
 #### Relevante UseCases/Requirements
 
 - FA2.1.4, FA2.2.5
+
+### A8.4 Backend: Load saved files/directories
+
+**Verantwortlich**: Simon Blum
+**Beauftragte**: Simon Blum, Paul Stöckle
+
+#### Relevante UseCases/Requirements
+
+- 
