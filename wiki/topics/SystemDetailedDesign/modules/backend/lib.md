@@ -16,10 +16,11 @@ Der Bibliothek ist ausschließlich in der Programmiersprache Rust geschrieben.
 ## Aufbau
 Die Library ist in die folgenden Module aufgeteilt, welche auch durch feature
 flags identifiziert werden können, aufgeteilt:
-- core 
-- files (enabled by default)
-- database (enabled by default)
-- statistics (disabled by default)
+- core
+- files 
+- database 
+- statistics 
+- config
 _Im Kontext der Library stellt die Datenbank den persistenten Cache der Anwendung dar_
 
 Dokumentation der einzelnen Module kann in der oben genannten Dokumentation gefunden werden.
