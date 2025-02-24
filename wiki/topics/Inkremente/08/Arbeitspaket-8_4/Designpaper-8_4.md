@@ -1,19 +1,19 @@
-# Designpaper X.Y
+# Designpaper 8.4
 
 ---
 
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: X\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Y\
-**Autor**: \
-**Datum**: \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8\
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 4\
+**Autor**: Simon Blum\
+**Datum**: 18.02.2025\
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: \
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Max Rodler\
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 
@@ -22,7 +22,7 @@
 
 | Datum      | Verfasser | Kurzbeschreibung                  |
 | ---------- | --------- | --------------------------------- |
-| XX.XX.XXXX | ????????  | Initiales Erstellen und Verfassen |
+| 18.02.2025 | Simon Blum  | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
@@ -34,4 +34,15 @@
 ---
 
 ## Designpaper
-_Was sind die Ziele, des Arbeitspaketes, welche druch die Requirements/UseCases gegeben werden und wie sollen diese erfüllt werden?_
+Zur Bearbeitung dieses Arbeitspaketes wird der im Klassendiagramm zu
+findende MetadataHandler erstellt.
+
+Über diesen werden die nötigen Schnittstellen bereitgestellt um
+das Deserialisieren von Dateien und Pfaden zu vereinfachen.
+
+Um wiederholtes laden zu speichern werden bereits geladene Instanzen
+in einer HashMap zwichengespeichert. Dieser Schritt führt eine
+weitere Caching Ebene ein. Gegebenenfalls sollte dies aber wieder
+entfernt werden um ein doppeltes zwichenspeichern im Front- und Backend
+zu vermeiden. Bei Implementierung der Tauri-Commands sollte sich
+hiermit auseinandergesetzt werden.

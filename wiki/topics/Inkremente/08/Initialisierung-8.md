@@ -74,7 +74,7 @@ Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
 #### Relevante UseCases/Requirements
 
-- FA2.1.4, FA2.2.5
+- FA2.1.4, FA2.2.4
 
 ### A8.4 Backend: Load saved files/directories
 
@@ -83,4 +83,4 @@ Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
 #### Relevante UseCases/Requirements
 
-- 
+- FA2.1.5, FA2.2.1, FA2.2.2, FA2.2.3, FA2.2.5
