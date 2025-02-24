@@ -40,6 +40,9 @@ Die Verifikation der Software ist notwendig, um eine zuverlässige Funktion in a
 Anforderungsbereichen Sicherzustellen und Fehler zu minimieren um Kosten (in Form von Aufwand)
 gering zu halten.
 
+Im Kontext des Projektes existieren keine kritischen sicherheitsbedingten Anforderungen. Primär geht es
+beim Testen und Verifizieren dabei, eine reibungslose und zuverlässige Benutzerfahrung zu garantieren.
+
 ### Anwendungsbereich
 
 Getestet werden sollen alle Funktionen der Anwendung. Darunter fällt die Erstellung, Betrachtung und
@@ -55,7 +58,7 @@ Verwaltung von Softwareprojekten anhand eigens dafür eingeführten Manifest-Dat
 
 ### Verifikationsumgebung
 
-Hardware: x86_64 Rechner
+Hardware: x86_64 Rechner / GitHub Actions Umgebung
 Software:
 
 - Betriebssysteme: Microsoft Windows 10 + 11, Linux (Debian, Ubuntu, Arch, Nix)
