@@ -19,9 +19,10 @@
 
 ### Changelog
 
-| Datum      | Verfasser         | Kurzbeschreibung                  |
-|------------|-------------------|-----------------------------------|
-| 13.02.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser         | Kurzbeschreibung                   |
+|------------|-------------------|------------------------------------|
+| 13.02.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen  |
+| 23.03.2025 | Maximilian Rodler | Anpassen des Bearbeitungszeitraums |
 
 ### Distribution List
 
@@ -35,11 +36,11 @@
 ## Zeitplan
 
 - Beginn: 13.02.2025
-- Ende: 24.02.2025
+- Ende: 03.03.2025
 
 ## Arbeitspakete
 
-Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
+Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
 
 ### A8.1 Frontend: Create & Edit Page realisieren
 
