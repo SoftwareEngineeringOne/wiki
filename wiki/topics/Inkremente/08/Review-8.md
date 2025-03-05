@@ -22,7 +22,6 @@
 | Datum      | Verfasser         | Kurzbeschreibung                  |
 |------------|-------------------|-----------------------------------|
 | 13.02.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen |
-| 03.03.2025 | Maximilian Rodler | Formatierungsanpassungen          |
 
 ### Distribution List
 
@@ -35,18 +34,31 @@
 
 ## Bewertung Arbeitspakete
 
-### Bewertung Arbeitspaket 6.3
+### Bewertung Arbeitspaket 8.1
+
+- Metadata-Interface nochmal überarbeiten (Unterinterfaces) (eigenes Arbeitspaket)
+- Mehrfachauswahl bei Kategorien, Sprachen, Build-Systems ermöglichen
 
 Abgeschlossen
 
-### Bewertung Arbeitspaket 6.2
+### Bewertung Arbeitspaket 8.2
+
+- Alternativdarstellung über Karten versuchen
 
 Abgeschlossen
 
-### Bewertung Arbeitspaket 7.1
+### Bewertung Arbeitspaket 8.3
 
-Abgeschlossen. Tests stehen aus.
+Abgeschlossen
+
+### Bewertung Arbeitspaket 8.4
+
+- Nicht möglicher Teil wird in neuem Arbeitspaket bearbeitet
+
+Abgeschlossen
 
 ## Ergebnis
 
-Alle Arbeitspakete aus Inkrement 6 und 7 sind jetzt abgeschlossen.
+- Überbleibsel aus Arbeitspaket 1 werden als neue Arbeitspakete weiter bearbeitet
+- Alternativdarstellung für Arbeitspaket 2 als neues Arbeitspaket
+- Nicht möglicher Teil von Arbeitspaket 4 wird in neuem Arbeitspaket bearbeitet

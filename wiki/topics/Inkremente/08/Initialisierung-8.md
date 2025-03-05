@@ -19,9 +19,11 @@
 
 ### Changelog
 
-| Datum      | Verfasser         | Kurzbeschreibung                  |
-|------------|-------------------|-----------------------------------|
-| 13.02.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser         | Kurzbeschreibung                   |
+|------------|-------------------|------------------------------------|
+| 13.02.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen  |
+| 23.03.2025 | Maximilian Rodler | Anpassen des Bearbeitungszeitraums |
+
 
 ### Distribution List
 
@@ -35,11 +37,12 @@
 ## Zeitplan
 
 - Beginn: 13.02.2025
-- Ende: 24.02.2025
+- Ende: 03.03.2025
 
 ## Arbeitspakete
 
-Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
+Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
+
 
 ### A8.1 Frontend: Create & Edit Page realisieren
 
@@ -69,9 +72,19 @@ Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
 ### A8.3 Backend: Config-Module
 
-**Verantwortlich**:Simon Blum
-**Beauftragte**:Simon Blum, Paul Stöckle
+**Verantwortlich**: Simon Blum
+**Beauftragte**: Simon Blum, Paul Stöckle
 
 #### Relevante UseCases/Requirements
 
-- FA2.1.4, FA2.2.5
+- FA2.1.4, FA2.2.4
+
+### A8.4 Backend: Load saved files/directories
+
+**Verantwortlich**: Simon Blum
+**Beauftragte**: Simon Blum, Paul Stöckle
+
+#### Relevante UseCases/Requirements
+
+- FA2.1.5, FA2.2.1, FA2.2.2, FA2.2.3, FA2.2.5
+
