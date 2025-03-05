@@ -13,3 +13,4 @@ Gefüttert wird das Frontend mit Einträgen aus der Datenbank und greift somit a
 Das implementierte Frontend ist in 2 Teile aufgeteilt:
 - Unter "routes" befinden sich die verschiedenen "Seiten" der Anwendung. Hier wird der allgemeine Aufbau aller Seiten definiert, als auch der spezifische Aufbau einzelner Seiten angepasst. Diese Seiten werden größtenteils aus den Komponenten des UI-Frameworks aufgebaut.
 - Alle verwendeten Komponenten sind unter "lib" zu finden. Hier werden die Inhalte des Frameworks abgelegt und können, bei Bedarf, für die eigene Verwendung angepasst werden.
+

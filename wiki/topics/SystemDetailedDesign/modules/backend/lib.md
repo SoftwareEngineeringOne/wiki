@@ -21,6 +21,7 @@ flags identifiziert werden können, aufgeteilt:
 - database 
 - statistics 
 - config
+
 _Im Kontext der Library stellt die Datenbank den persistenten Cache der Anwendung dar_
 
 Dokumentation der einzelnen Module kann in der oben genannten Dokumentation gefunden werden.
