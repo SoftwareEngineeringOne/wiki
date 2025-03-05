@@ -9,8 +9,8 @@
 **Autor**: Max Rodler\
 **Datum**: 03.03.2025\
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 03.03.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.03.2025\
 **Version**: 1 \
 **Prüfer**: \
 **Letzte Freigabe**: \
@@ -19,9 +19,10 @@
 
 ### Changelog
 
-| Datum      | Verfasser  | Kurzbeschreibung                  |
-|------------|------------|-----------------------------------|
-| 03.03.2025 | Max Rodler | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser    | Kurzbeschreibung                  |
+|------------|--------------|-----------------------------------|
+| 03.03.2025 | Max Rodler   | Initiales Erstellen und Verfassen |
+| 05.03.2025 | Paul Stöckle | Anforderung für 9.4 hinzugefügt   |
 
 ### Distribution List
 
@@ -75,7 +76,7 @@ Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
 #### Relevante UseCases/Requirements
 
-- TBD
+- FA3.3.1
 
 ### A9.5 Fundament für Commands
 
