@@ -6,22 +6,24 @@
                   name="Projekt Episko" start-page="Main.md">
 
     <toc-element topic="Main.md"/>
-    <toc-element toc-title="Meetings">
-        <toc-element topic="2024-10-01-Kickoff.md"/>
-        <toc-element topic="2024-10-01-Planung.md"/>
-        <toc-element topic="2024-10-11-Entwicklungsplan.md"/>
-        <toc-element topic="2024-11-08-Use-Cases.md"/>
-        <toc-element topic="2024-11-13-Entwicklungsplan-Abnahme.md"/>
-        <toc-element topic="2024-11-13-Use-Cases-Definition.md"/>
-        <toc-element topic="2024-11-15-Anforderungsanalyse-Abnahme.md"/>
-        <toc-element topic="2024-11-19-Grobdesign.md"/>
-        <toc-element topic="2024-12-06-Grobdesign-Abnahme.md"/>
-        <toc-element topic="2025-01-10-Aufwandsschätzung.md"/>
-        <toc-element topic="2025-01-10-Aufwandsschätzung-Abnahme.md"/>
-        <toc-element topic="2025-01-20-Initialisierung-Inkrement-6.md"/>
-        <toc-element topic="2025-01-24-SoftwareDetailedDesign.md"/>
-        <toc-element topic="2025-01-27-Initialisierung-Inkrement-7.md"/>
+    <toc-element toc-title="System Detailed Design">
+
+        <toc-element topic="SystemDetailedDesign.md"/>
+        <toc-element toc-title="Module">
+            <toc-element toc-title="Backend">
+                <toc-element topic="database.md"/>
+                <toc-element topic="lib.md"/>
+                <toc-element topic="derive_macro.md"/>
+                <toc-element topic="gui_backend.md"/>
+            </toc-element>
+            <toc-element toc-title="Frontend">
+                <toc-element topic="cli.md"/>
+                <toc-element topic="gui_frontend.md"/>
+            </toc-element>
+        </toc-element>
     </toc-element>
+
+    <toc-element topic="Glossar.md"/>
     <toc-element toc-title="Inkremente">
         <toc-element topic="Inkremente.md"/>
         <toc-element toc-title="Inkrement 1">
@@ -69,30 +71,54 @@
             </toc-element>
         </toc-element>
         <toc-element toc-title="Inkrement 8">
-
+            <toc-element topic="Initialisierung-8.md"/>
+            <toc-element toc-title="Arbeitspaket 8.1">
+                <toc-element topic="Anforderungsbewertung-8_1.md"/>
+                <toc-element topic="Designpaper-8_1.md"/>
+            </toc-element>
+            <toc-element toc-title="Arbeitspaket 8.2">
+                <toc-element topic="Anforderungsbewertung-8_2.md"/>
+                <toc-element topic="Designpaper-8_2.md"/>
+            </toc-element>
+            <toc-element toc-title="Arbeitspaket 8.3">
+                <toc-element topic="Anforderungsbewertung-8_3.md"/>
+                <toc-element topic="Designpaper-8_3.md"/>
+            </toc-element>
+            <toc-element toc-title="Arbeitspaket 8.4">
+                <toc-element topic="Anforderungsbewertung-8_4.md"/>
+                <toc-element topic="Designpaper-8_4.md"/>
+            </toc-element>
+            <toc-element topic="Review-8.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 9">
-
+            <toc-element topic="Initialisierung-9.md"/>
+            <toc-element topic="Review-9.md"/>
         </toc-element>
     </toc-element>
-    <toc-element toc-title="System Detailed Design">
-
-        <toc-element topic="SystemDetailedDesign.md"/>
-        <toc-element toc-title="Module">
-            <toc-element toc-title="Backend">
-                <toc-element topic="database.md"/>
-                <toc-element topic="lib.md"/>
-                <toc-element topic="derive_macro.md"/>
-                <toc-element topic="gui_backend.md"/>
-            </toc-element>
-            <toc-element toc-title="Frontend">
-                <toc-element topic="cli.md"/>
-                <toc-element topic="gui_frontend.md"/>
-            </toc-element>
-        </toc-element>
+    <toc-element toc-title="Meetings">
+        <toc-element topic="2024-10-01-Kickoff.md"/>
+        <toc-element topic="2024-10-01-Planung.md"/>
+        <toc-element topic="2024-10-11-Entwicklungsplan.md"/>
+        <toc-element topic="2024-11-08-Use-Cases.md"/>
+        <toc-element topic="2024-11-13-Entwicklungsplan-Abnahme.md"/>
+        <toc-element topic="2024-11-13-Use-Cases-Definition.md"/>
+        <toc-element topic="2024-11-15-Anforderungsanalyse-Abnahme.md"/>
+        <toc-element topic="2024-11-19-Grobdesign.md"/>
+        <toc-element topic="2024-12-06-Grobdesign-Abnahme.md"/>
+        <toc-element topic="2025-01-10-Aufwandsschätzung.md"/>
+        <toc-element topic="2025-01-10-Aufwandsschätzung-Abnahme.md"/>
+        <toc-element topic="2025-01-20-Initialisierung-Inkrement-6.md"/>
+        <toc-element topic="2025-01-24-SoftwareDetailedDesign.md"/>
+        <toc-element topic="2025-01-27-Initialisierung-Inkrement-7.md"/>
+        <toc-element topic="2025-02-13-Initialisierung-Inkrement-8.md"/>
+        <toc-element topic="2025-02-14-SDD-Abnahme.md"/>
+        <toc-element topic="2025-02-14-SoftwareVerificationPlan.md"/>
+        <toc-element topic="2025-02-17-SVP-Abnahme.md"/>
+        <toc-element topic="2025-02-17-Überarbeitung-Aufwandsschätzung.md"/>
+        <toc-element topic="2025-02-28-Software-Quality-Assurance-Plan.md"/>
+        <toc-element topic="2025-02.28-SQAP-Abnahme.md"/>
+        <toc-element topic="2025-03-03-Initilaisierung-Innkrement-9.md"/>
     </toc-element>
-
-    <toc-element topic="Glossar.md"/>
 </instance-profile>
 
 
