@@ -156,6 +156,22 @@ Mehr Infos diesbezüglich sind an den relevanten Stellen im Quellcode dokumentie
 cargo nextest run --workspace
 # Alternativ
 cargo test --workspace
+
+```
+#### Generierung Coverage Report
+
+Zur Einsicht von C0 und C1 Coverage kann mithilfe von [`cargo-llvm-cov`](https://github.com/taiki-e/cargo-llvm-cov)
+ein Bericht erstellt werden.
+
+```sh
+# Generierung eines Berichts mit Konsolenausgabe
+cargo +nightly llvm-cov --all-features --workspace --branch
+
+# (Alternativ) Generierung eines html basierten Berichts
+cargo +nightly llvm-cov --all-features --workspace --branch --html
+
+# Öffnen des Berichts (beispielhaft mit Firefox)
+firefox target/llvm-cov/html/index.html
 ```
 
 #### Automatisierter Last-/Integrationstest Umgebung 3
