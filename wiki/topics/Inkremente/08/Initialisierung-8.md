@@ -24,7 +24,6 @@
 | 13.02.2025 | Maximilian Rodler | Initiales Erstellen und Verfassen  |
 | 23.03.2025 | Maximilian Rodler | Anpassen des Bearbeitungszeitraums |
 
-
 ### Distribution List
 
 - Simon Blum <simon21.blum@gmail.com>
@@ -42,7 +41,6 @@
 ## Arbeitspakete
 
 Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
-
 
 ### A8.1 Frontend: Create & Edit Page realisieren
 

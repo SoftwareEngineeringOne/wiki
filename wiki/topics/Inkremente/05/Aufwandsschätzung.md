@@ -18,7 +18,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum\
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 17.02.2025
 
-
 ### Changelog
 
 | Datum      | Verfasser    | Kurzbeschreibung                  |
@@ -26,7 +25,6 @@
 | 10.01.2025 | Max Rodler   | Initiales Erstellen und Verfassen |
 | 24.01.2025 | Paul Stöckle | Faktor und Stunden hinzugefügt    |
 | 17.02.2025 | Paul Stöckle | Function Points angepasst         |
-
 
 ### Distribution List
 
