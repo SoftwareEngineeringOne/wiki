@@ -22,6 +22,7 @@
             </toc-element>
         </toc-element>
     </toc-element>
+    <toc-element topic="SoftwareVerificationPlan.md"/>
 
     <toc-element topic="Glossar.md"/>
     <toc-element toc-title="Inkremente">
@@ -119,6 +120,7 @@
         <toc-element topic="2025-02.28-SQAP-Abnahme.md"/>
         <toc-element topic="2025-03-03-Initilaisierung-Innkrement-9.md"/>
     </toc-element>
+    <toc-element topic="SoftwareQualityAssuranceReport.md"/>
 </instance-profile>
 
 

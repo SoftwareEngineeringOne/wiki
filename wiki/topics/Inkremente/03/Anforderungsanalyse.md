@@ -688,9 +688,6 @@ NA8: Die Anwendung muss für die Prozessorarchitektur x86_64 ausgelegt sein.
 
 NA9: Die Anwendung muss Barrierefrei konstruiert werden um bspw. die Nutzung von Screenreadern zu erlauben.
 
-> Da die Anwendung mithilfe von Webtechnologien gebaut werden soll mehr Informationen
-> bspw. [hier](https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreie-website)
-
 NA10: Die Anwendung soll zunächst mit der Oberflächensprache Deutsch oder Englisch gebaut werden.
 
 NA10.1: Texte in der Oberfläche sollen so eingebaut, um zukünftig die Implementierung neuer Sprachen einfach zu

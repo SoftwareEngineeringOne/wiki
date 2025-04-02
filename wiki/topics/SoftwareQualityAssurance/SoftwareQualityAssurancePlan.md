@@ -51,6 +51,7 @@
 
 #### Svelte:
 - Code-Formatting nach Svelte-Guide-Lines via Prettier (https://github.com/sveltejs/prettier-plugin-svelte)
+- Linting in CI-Pipeline via SvelteCheck (https://svelte.dev/docs/cli/sv-check)
 
 ### Audit- und Bewertungskriterien
 

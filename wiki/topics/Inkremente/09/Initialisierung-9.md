@@ -12,10 +12,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.03.2025\
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Ben Oeckl\
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_:
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 06.03.2025
 
 ### Changelog
 
@@ -36,40 +36,23 @@
 ## Zeitplan
 
 - Beginn: 03.03.2025
-- Ende: XX.03.2025
+- Ende: 31.03.2025
 
 ## Arbeitspakete
 
-Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
+Die folgenden Arbeitspakete werden als Teil dem Inkrement bearbeitet:
 
-### A9.1
-
-**Verantwortlich**: Simon Blum
-**Beauftragte**: Simon Blum
-
-#### Relevante UseCases/Requirements
-
-- TBD
-
-### A9.2 Überarbeitung Create/Edit-Pages
+### A9.1 Überarbeitung Create/Edit-Pages
 
 **Verantwortlich**: Ben Oeckl
 **Beauftragte**: Ben Oeckl
 
-#### Relevante UseCases/Requirements
-
-- TBD
-
-### A9.3 All-Projects-Darstellung Cards
+### A9.2 All-Projects-Darstellung Cards
 
 **Verantwortlich**: Max Rodler
 **Beauftragte**: Max Rodler
 
-#### Relevante UseCases/Requirements
-
-- TBD
-
-### A9.4 Backend-Implementierung Statistiken
+### A9.3 Backend-Implementierung Statistiken
 
 **Verantwortlich**: Paul Stöckle
 **Beauftragte**: Paul Stöckle
@@ -82,4 +65,3 @@ Die folgenden Arbeitspakete werden als Teil der Inkrement bearbeitet:
 
 **Verantwortlich**: Simon Blum
 **Beauftragte**: Simon Blum
-

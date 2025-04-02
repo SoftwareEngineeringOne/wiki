@@ -117,7 +117,7 @@ Funktionen - Schnittstellen - Datenmodelle
 
 ### Frontend - Cli
 
-- [Mehr...](cli.md)
+- [Mehr …](cli.md)
 
 ## Technische Spezifikationen
 

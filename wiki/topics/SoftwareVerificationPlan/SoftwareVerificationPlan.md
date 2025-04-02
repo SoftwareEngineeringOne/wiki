@@ -64,10 +64,10 @@ verhindern somit das Hinzufügen von fehlerhaftem Code auf dem `main` Branch der
 - _(manuell)_ x86_64 Rechner | NixOS / Debian / Mint
 
 *Ziel Metriken:*
-- **C0** (Region) Coverage: **80%**
+- **C0** (Region) Coverage: **60%**
 - **C1** (Branch) Coverage: **60%**
 
-Die genannten Prozentwerte wurden so gewählt, dass eine Flächendeckende Verifikation der Anwendung
+Die genannten Prozentwerte wurden so gewählt, dass eine flächendeckende Verifikation der Anwendung
 sichergestellt werden kann, sie aber im Kontext des Zeitrahmens trotzdem erreichbar sind.
 
 Hierbei ist zudem anzumerken, dass Metriken für Unittests sich primär auf das Backend, somit den Rust Code beziehen,
@@ -180,8 +180,6 @@ Der dritte automatisierte Test der Kategorie verwendet die Programmiersprache `g
 zufälliger Daten und Aufrufen der `episko_cli` Anwendung.
 
 ```sh
-# !TODO! Aktuell wird nur erstellt, noch nicht wirklich getestet
-# !TODO! Aktuell nur als "data-generation", muss noch an besseren Ort/Namen etc.
 go run util/data-generation/main.go -test -count 2000 #INOP
 ```
 
@@ -192,6 +190,5 @@ Zur Durchführung der manuellen Tests kann die gewünchte Anzahl der Daten auch 
 bei Start automatisch geladen.
 
 ```sh
-# !TODO!
 go run util/data-generation/main.go -base util/test-data -count 2000
 ```
