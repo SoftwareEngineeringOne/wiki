@@ -66,5 +66,5 @@
 ### Dokumentation und Berichterstattung
 
 - Freigaben von Reviews erfolgen via GitHub
-- Dokumentation findet Inkrement-Dokumenten statt.
+- Dokumentation findet in Inkrement-Dokumenten statt.
 - Verweis auf SQAReport
