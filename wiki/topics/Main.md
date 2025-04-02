@@ -1,15 +1,4 @@
 # Projekt Episko
 
-_Bisschen Infos und README mäßig_
-
-## Übersicht
-### Inkremente
-
-Eine Übersicht über alle Inkremente kann hier gefunden werden: [](Inkremente.md)
-### Wichtige Dokuente
-- [](Glossar.md)
-- [](Projektskizze.md)
-- [](Entwicklungsplan.md)
-- [](Anforderungsanalyse.md)
-- [](Grobdesign.md)
-- [](SystemDetailedDesign.md)
+Eine besser strukturierte Version dieses Dokumentes kann auf [dieser Seite](https://definitelynotsimon13.github.io/wiki/main.html)
+gefunden werden.

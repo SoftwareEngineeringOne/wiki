@@ -4,7 +4,8 @@
 
 ### Übersicht
 
-**Projekt**: Projekt Episko \
+**Projekt**: Projekt Episko 
+
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 0 \
 &nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: - \
 **Autor**: Simon Blum \

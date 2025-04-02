@@ -6,8 +6,14 @@
                   name="Projekt Episko" start-page="Main.md">
 
     <toc-element topic="Main.md"/>
-    <toc-element toc-title="System Detailed Design">
 
+    <toc-element topic="Projektskizze.md"/>
+    <toc-element topic="Entwicklungsplan.md"/>
+    <toc-element topic="Anforderungsanalyse.md"/>
+    <toc-element topic="Grobdesign.md"/>
+    <toc-element topic="Aufwandsschätzung.md"/>
+
+    <toc-element toc-title="System Detailed Design">
         <toc-element topic="SystemDetailedDesign.md"/>
         <toc-element toc-title="Module">
             <toc-element toc-title="Backend">
@@ -23,29 +29,26 @@
         </toc-element>
     </toc-element>
     <toc-element topic="SoftwareVerificationPlan.md"/>
+    <toc-element topic="SoftwareQualityAssurancePlan.md"/>
+    <toc-element topic="SoftwareQualityAssuranceReport.md"/>
 
     <toc-element topic="Glossar.md"/>
     <toc-element toc-title="Inkremente">
         <toc-element topic="Inkremente.md"/>
         <toc-element toc-title="Inkrement 1">
             <toc-element topic="Initialisierung-1.md"/>
-            <toc-element topic="Projektskizze.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 2">
             <toc-element topic="Initialisierung-2.md"/>
-            <toc-element topic="Entwicklungsplan.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 3">
             <toc-element topic="Initialisierung-3.md"/>
-            <toc-element topic="Anforderungsanalyse.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 4">
             <toc-element topic="Initialisierung-4.md"/>
-            <toc-element topic="Grobdesign.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 5">
             <toc-element topic="Initialisierung-5.md"/>
-            <toc-element topic="Aufwandsschätzung.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 6">
             <toc-element topic="Initialisierung-6.md"/>
@@ -120,7 +123,6 @@
         <toc-element topic="2025-02.28-SQAP-Abnahme.md"/>
         <toc-element topic="2025-03-03-Initilaisierung-Innkrement-9.md"/>
     </toc-element>
-    <toc-element topic="SoftwareQualityAssuranceReport.md"/>
 </instance-profile>
 
 

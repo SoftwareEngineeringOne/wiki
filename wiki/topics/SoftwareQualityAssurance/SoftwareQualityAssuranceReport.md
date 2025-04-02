@@ -23,6 +23,7 @@
 | Datum      | Verfasser  | Kurzbeschreibung                  |
 |------------|------------|-----------------------------------|
 | 02.04.2025 | Simon Blum | Initiales Erstellen und Verfassen |
+| 03.04.2025 | Max Roder  | Formatierung und Korrekturen      |
 
 ### Distribution List
 
@@ -79,8 +80,8 @@
     - Keine kritischen Probleme, in Zukunft fixen
 1. Qualitätsmetriken und Leistungsbewertung
    ○ Analyse der erfassten Qualitätsmetriken (z. B. Fehlerdichte, Code-Coverage).
-    - C0: 48%
-    - C1: 56%
+    - C0: 48% - Unter Zielwert
+    - C1: 56% - Unter Zielwert
     - Clippy keine Probleme
     - SvelteCheck keine Probleme
 2. Lessons Learned und Empfehlungen
@@ -94,4 +95,6 @@
     - Architektur: Supi
     - Testabdeckung: Naja
   ○ Empfehlung für die Freigabe oder notwendige Nachbesserungen.
-    - ??
+    - Freigabe kann gegeben werden, keine kritischen Probleme
+    - Ist keine kritische Anwendung
+    - Stellenweise Verbesserungen möglich, jedoch nicht blockierend
