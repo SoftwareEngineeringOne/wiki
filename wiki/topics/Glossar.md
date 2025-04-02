@@ -9,7 +9,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 0 \
 **Autor**: Simon Blum \
 **Datum**: 11.11.2024 \
-**Zuletzt geändert**: -
+**Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.04.2025 \
 **Version**: 2 \
