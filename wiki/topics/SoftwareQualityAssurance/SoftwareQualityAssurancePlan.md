@@ -47,7 +47,7 @@
 
 #### Rust:
 - Code-Formatting nach Rust-Style-Guide (https://doc.rust-lang.org/nightly/style-guide/)
-- Linting in CI-Pipeline via Clippy (nach ["Clippy 1.0 RFC"](https://doc.rust-lang.org/clippy/lints.html)
+- Linting in CI-Pipeline via Clippy (nach ["Clippy 1.0 RFC"](https://doc.rust-lang.org/clippy/lints.html))
 
 #### Svelte:
 - Code-Formatting nach Svelte-Guide-Lines via Prettier (https://github.com/sveltejs/prettier-plugin-svelte)
