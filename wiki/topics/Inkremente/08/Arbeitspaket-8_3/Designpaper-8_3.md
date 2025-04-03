@@ -49,13 +49,13 @@ gängigen Konventionen folgen.
 Unix-like (falls eine Umgebungsvariable nicht vorhanden, das nächste):
 1. $XDG_CONFIG_HOME/episko/config.toml
 2. $HOME/.config/episko/config.toml
-Windows:
+Windows: \
 - %APPDATA%/episko/config.toml
 #### Datenbank
 Unix-like:
 1. $XDG_CACHE_HOME/episko/cache.db
 2. $HOME/.cache/cache.db
-Windows:
+Windows: \
 - %LOCALAPPDATA%/episko/cache.db
 
 ### Serialisierung/Deserialisierung
