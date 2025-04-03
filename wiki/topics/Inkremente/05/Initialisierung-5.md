@@ -5,18 +5,17 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 4\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 5 \
 **Autor**: Max Rodler \
 **Datum**: 10.01.2024 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_:\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_:\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 10.01.2025 \
 **Version**: 1 \
-**Prüfer**: Ben Oeckl\
+**Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 10.01.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 10.01.2025 \
 
 ### Changelog
 
