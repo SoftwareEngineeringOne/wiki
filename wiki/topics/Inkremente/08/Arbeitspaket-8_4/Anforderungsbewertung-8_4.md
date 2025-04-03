@@ -5,24 +5,24 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 4\
-**Autor**: Simon Blum\
-**Datum**: 18.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 4 \
+**Autor**: Simon Blum \
+**Datum**: 18.02.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 18.02.2025 \
 **Version**: 1 \
-**Prüfer**: Max Rodler\
+**Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 20.02.2025
 
 ### Changelog
 
-| Datum      | Verfasser | Kurzbeschreibung                  |
-| ---------- | --------- | --------------------------------- |
-| 18.02.2025 | Simon Blum  | Initiales Erstellen und Verfassen |
+| Datum      | Verfasser  | Kurzbeschreibung                  |
+| ---------- | ---------- | --------------------------------- |
+| 18.02.2025 | Simon Blum | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
