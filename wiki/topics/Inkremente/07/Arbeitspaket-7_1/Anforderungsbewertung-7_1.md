@@ -5,18 +5,18 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 7\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 1\
-**Autor**: Simon Blum\
-**Datum**: 04.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 7 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 1 \
+**Autor**: Simon Blum \
+**Datum**: 04.02.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: -\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: -\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 07.02.2025 \
 **Version**: 1 \
-**Prüfer**: Max Rodler\
+**Prüfer**: Max Rodler \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 07.02.2025
 
 ### Changelog
 
