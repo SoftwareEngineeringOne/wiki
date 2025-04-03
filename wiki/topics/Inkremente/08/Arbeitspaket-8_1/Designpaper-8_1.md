@@ -5,18 +5,18 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: X\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Y\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 1 \
 **Autor**: Ben Oeckl \
 **Datum**: 02.03.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.03.2025 \
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Simon Blum \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.03.2025
 
 ### Changelog
 
