@@ -7,6 +7,9 @@
 
     <toc-element topic="Main.md"/>
 
+    <toc-element topic="Glossar.md"/>
+
+
     <toc-element topic="Projektskizze.md"/>
     <toc-element topic="Entwicklungsplan.md"/>
     <toc-element topic="Anforderungsanalyse.md"/>
@@ -32,7 +35,6 @@
     <toc-element topic="SoftwareQualityAssurancePlan.md"/>
     <toc-element topic="SoftwareQualityAssuranceReport.md"/>
 
-    <toc-element topic="Glossar.md"/>
     <toc-element toc-title="Inkremente">
         <toc-element topic="Inkremente.md"/>
         <toc-element toc-title="Inkrement 1">
