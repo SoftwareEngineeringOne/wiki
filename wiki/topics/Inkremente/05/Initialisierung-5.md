@@ -15,7 +15,7 @@
 **Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 10.01.2025 \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 10.01.2025
 
 ### Changelog
 
