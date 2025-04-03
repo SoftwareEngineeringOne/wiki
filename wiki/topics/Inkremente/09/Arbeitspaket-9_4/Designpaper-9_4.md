@@ -5,18 +5,18 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 9\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 4\
-**Autor**: Paul Stöckle\
-**Datum**: 05.03.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 9 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 4 \
+**Autor**: Paul Stöckle \
+**Datum**: 05.03.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.03.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.03.2025 \
 **Version**: 1 \
-**Prüfer**: Simon Blum\
+**Prüfer**: Simon Blum \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_:
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 06.03.2025
 
 ### Changelog
 
