@@ -6,16 +6,15 @@
 
 **Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
 **Autor**: Maximilian Rodler\
 **Datum**: 27.01.2025\
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Maximilian Rodler\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Maximilian Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025 \
 **Version**: 1 \
-**Prüfer**: Ben Oeckl\
+**Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025
 
 ### Changelog
