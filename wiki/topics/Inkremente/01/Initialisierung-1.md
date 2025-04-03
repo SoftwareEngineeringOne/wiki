@@ -42,12 +42,12 @@ Die folgenden Arbeitspakete werden als Teil des Inkrement bearbeitet:
 ### A1.1 Erstellen einer Projektskizze
 Im Laufe des Inkrements soll eine Projektskizze entstehen.
 
-**Verantwortlich**: Paul Stöckle
+**Verantwortlich**: Paul Stöckle\
 **Beauftragte**: Simon Blum, Ben Oeckl, Paul Stöckle, Max Rodler
 
 ## Besonderheiten
 - Da dieses Inkrement lediglich die Initialisierung des Projekts lostritt und ein Entwicklungsplan erst zu einem späteren Zeitpunkt ausgearbeitet wird, existieren zu diesem Inkrement nicht alle notwendigen Dokumente.
-- Das Review erfolgte in diesem Inkrement im Rahmen der Vorstellung der Projektskizze.
+- Das Review erfolgt in diesem Inkrement im Rahmen der Vorstellung der Projektskizze.
 
 ### Review-Ergebnis
-- Das Go für das Projekt ist gegeben.
+- Das Projekt kann gestartet werden.
