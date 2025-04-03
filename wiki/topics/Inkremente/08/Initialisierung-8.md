@@ -47,7 +47,7 @@ Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
 - TypeScript Klasse für Metadaten erstellen
 - Löschen Button
 
-**Verantwortlich**: Ben Oeckl
+**Verantwortlich**: Ben Oeckl \
 **Beauftragte**: Ben Oeckl
 
 #### Relevante UseCases/Requirements
@@ -61,7 +61,7 @@ Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
 - Projekte nach Namen Durchsuchen
 - Bearbeiten Button
 
-**Verantwortlich**: Maximilian Rodler
+**Verantwortlich**: Maximilian Rodler \
 **Beauftragte**: Maximilian Rodler
 
 #### Relevante UseCases/Requirements
@@ -70,7 +70,7 @@ Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
 
 ### A8.3 Backend: Config-Module
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum, Paul Stöckle
 
 #### Relevante UseCases/Requirements
@@ -79,7 +79,7 @@ Die folgenden Arbeitspakete werden als Teil der Inkremente bearbeitet:
 
 ### A8.4 Backend: Load saved files/directories
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum, Paul Stöckle
 
 #### Relevante UseCases/Requirements
