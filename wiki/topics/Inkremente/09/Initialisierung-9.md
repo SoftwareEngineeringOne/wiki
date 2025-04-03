@@ -1,20 +1,20 @@
-# Inkrement Initialisierung 9
+#  Initialisierung Inkrement 9
 
 ---
 
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 9\
-**Autor**: Max Rodler\
-**Datum**: 03.03.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 9 \
+**Autor**: Max Rodler \
+**Datum**: 03.03.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.03.2025\
-**Version**: 1 \
-**Prüfer**: Ben Oeckl\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 05.03.2025 \
+**Version**: 2 \
+**Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 06.03.2025
 
 ### Changelog
