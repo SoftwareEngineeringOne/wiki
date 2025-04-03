@@ -10,8 +10,8 @@
 **Autor**: Simon Blum\
 **Datum**: 02.04.2025\
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: -\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: -\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 03.04.2025\
 **Version**: 1 \
 **Prüfer**: Paul Stöckle\
 **Letzte Freigabe**: \
@@ -33,8 +33,10 @@
 - Paul Stöckle <paul.stoeckle@t-online.de>
 
 ---
-1. Zusammenfassung der Qualitätssicherungstätigkeiten
-    ○ Überblick über durchgeführte Prüfungen, Tests und Audits.
+
+# Zusammenfassung der Qualitätssicherungstätigkeiten
+
+## Überblick Reviews
 
 | Inkrement | Ergebnis             | Kommentar                    | 
 |-----------|----------------------|------------------------------|
@@ -48,22 +50,30 @@
 | 8         | Abgenommen           | -                            |
 | 9         | Teilweise Abgenommen | Teils fehlende Dokumentation |
 
-    - Mehr Information in Dokumentation
-    - Manuelle Tests bei jedem Inkrement Review
-    - CodeReviews vor jedem Merge (Abschluss Inkrement)
+Nach der Durchführung der Inkrement Reviews wurde festgestellt, dass in der Dokumentation noch mehr Informationen
+enthalten sein sollten.
+Es wird zudem darauf hingewiesen, dass bei jedem Inkrement Review manuelle Tests durchgeführt werden, um die
+Funktionalität und Stabilität des Systems zu gewährleisten.
+Zusätzlich werden vor jedem Merge CodeReviews vorgenommen, um den Abschluss eines jeden Inkrements abzusichern.
 
-2. Konformität mit dem SQAP
-   ○ Überprüfung, ob alle geplanten Qualitätssicherungsmaßnahmen durchgeführt wurden.
-    - Automatisches Prüfen von Code-Qualität mit Clippy und SvelteCheck in Pipeline
-    - Automatisches Formatieren mit Prettier und rustfmt in Pipeline
-    - Automatische Testdurchführung in Pipeline
-3. Ergebnisse der Verifikations- und Validierungsmaßnahmen
-   ○ Testergebnisse, Fehleranalysen und Korrekturmaßnahmen.
-    - Manueller Lasttest zunächst mit schlechter Nutzerfahrung bei vielen Manifesten
-       -> Optimierung durch Pagination
-   ○ Dokumentation der Einhaltung der Abnahmekriterien.
-4. Audit- und Review-Ergebnisse
-   ○ Festgestellte Abweichungen und nicht erfüllte Anforderungen.
+# Konformität mit Software Quality Assurance Plan
+
+Im Rahmen des Projekts wird die Codequalität automatisch mithilfe von Clippy und SvelteCheck in der CI-Pipeline geprüft.
+Zudem wird der Code in der Pipeline automatisch mit Prettier und rustfmt formatiert, um einen einheitlichen Stil
+sicherzustellen.
+Des Weiteren erfolgt die Testdurchführung automatisch in der Pipeline.
+Somit wurden alle im QA-Plan vorgesehenen Maßnahmen vollständig umgesetzt.
+
+# Ergebnisse der Verifikations- und Validierungsmaßnahmen
+
+Beim manuellen Lasttest wurde zunächst festgestellt, dass die Nutzererfahrung bei einer hohen Anzahl von Manifesten
+unbefriedigend war.
+Diese Situation konnte jedoch durch die Einführung einer Pagination optimiert werden, sodass die Leistung und
+Benutzerfreundlichkeit verbessert wurden.
+
+# Audit- und Review-Ergebnisse
+
+## Festgestellte Abweichungen und nicht erfüllte Anforderungen.
 
 | Requirement | Status            | Kommentar                                                           |
 |-------------|-------------------|---------------------------------------------------------------------|
@@ -74,27 +84,42 @@
 | NA4.1       | Nicht erfüllt     | Es wird nur ein ".deb" Artifact erstellt                            |
 | NA10.1      | Nicht erfüllt     | Auf zukünftige Internationalisierung wurde keine Rücksicht genommen |
 
+## Maßnahmen zur Behebung identifizierter Probleme.
 
-   ○ Maßnahmen zur Behebung identifizierter Probleme.
-    - Aufgrund der modularen Architektur sind probleme leicht zu beheben
-    - Keine kritischen Probleme, in Zukunft fixen
-1. Qualitätsmetriken und Leistungsbewertung
-   ○ Analyse der erfassten Qualitätsmetriken (z. B. Fehlerdichte, Code-Coverage).
-    - C0: 48% - Unter Zielwert
-    - C1: 56% - Unter Zielwert
-    - Clippy keine Probleme
-    - SvelteCheck keine Probleme
-2. Lessons Learned und Empfehlungen
-   ○ Identifikation von Verbesserungspotenzialen für zukünftige Projekte.
-    - Egal
-   ○ Vorschläge zur Optimierung von Qualitätssicherungsprozessen.
-    - Frühere Implementation einer strukturierten Pipeline
-3. Schlussfolgerungen und Freigabeempfehlungen
-   ○ Gesamtbewertung der Softwarequalität.
-    - Codequalität: Supi
-    - Architektur: Supi
-    - Testabdeckung: Naja
-  ○ Empfehlung für die Freigabe oder notwendige Nachbesserungen.
-    - Freigabe kann gegeben werden, keine kritischen Probleme
-    - Ist keine kritische Anwendung
-    - Stellenweise Verbesserungen möglich, jedoch nicht blockierend
+Dank der modularen Architektur können die identifizierten Probleme relativ leicht behoben werden.
+Es wurden keine kritischen Probleme festgestellt, sodass anstehende Korrekturen in zukünftigen Releases fix umgesetzt
+werden können.
+
+# Qualitätsmetriken und Leistungsbewertung
+
+## Analyse der erfassten Qualitätsmetriken
+
+Die Analyse der Qualitätsmetriken ergab, dass die C0 Coverage bei 48 % liegt, was unter dem angestrebten Zielwert liegt.
+Ebenso beträgt die C1 Coverage 56 %, was ebenfalls unter dem Zielwert liegt.
+Positiv hervorzuheben ist, dass sowohl durch Clippy als auch durch SvelteCheck keine Probleme festgestellt wurden.
+
+# Lessons Learned und Empfehlungen
+
+## Identifikation von Verbesserungspotenzialen für zukünftige Projekte.
+
+Die Analyse zur Identifikation von Verbesserungspotenzialen für zukünftige Projekte
+muss noch weiter konkretisiert werden, um klare Ansatzpunkte für Optimierungen zu definieren.
+
+## Vorschläge zur Optimierung von Qualitätssicherungsprozessen.
+
+Es wird empfohlen, bereits in früheren Projektphasen eine strukturierte Pipeline
+zu implementieren, um die Qualitätssicherungsprozesse weiter zu optimieren und zu beschleunigen.
+
+# Schlussfolgerungen und Freigabeempfehlungen
+
+## Gesamtbewertung der Softwarequalität.
+
+Die Gesamtbewertung der Softwarequalität zeigt, dass die Codequalität
+als gut einzustufen ist und auch die zugrundeliegende Architektur den Anforderungen entspricht.
+Allerdings weist die Testabdeckung noch deutlichen Verbesserungsbedarf auf.
+
+## Empfehlung für die Freigabe oder notwendige Nachbesserungen.
+
+Aufgrund der Tatsache, dass keine kritischen Probleme vorliegen und es sich um eine nicht
+kritische Anwendung handelt, kann die Freigabe erteilt werden. Zwar sind stellenweise Verbesserungen möglich,
+diese stellen jedoch keine Blockade für die Freigabe dar.
