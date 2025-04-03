@@ -91,8 +91,6 @@ Lib .. Note
 
 ## Module
 
-Funktionen - Schnittstellen - Datenmodelle
-
 ### Backend - Datenbank
 
 - [Mehr …](database.md)
@@ -116,58 +114,3 @@ Funktionen - Schnittstellen - Datenmodelle
 ### Frontend - Cli
 
 - [Mehr …](cli.md)
-
-## Technische Spezifikationen
-
-### Sprachen/Technologien
-
-- Rust
-- Sqlite
-- toml
-- TypeScript
-- Html
-- (CSS)
-
-### Frameworks
-
-- Tauri
-- SvelteKit
-
-### Libraries
-
-Verwendet Libraries und ihre Versionen können in den einzelnen
-Modulen gefunden werden.
-
-### Algorithmen
-
-- Sha256 Hashing (verwendet, implementierung durch lib)
-
-## Qualitäts- und Sicherheitsaspekte
-
-### Qualität
-
-- Tests in Front- und Backend
-- Ci/Cd
-    - Automatisches Testen
-    - Prüfen, dass gebaut werden kann
-- Release Steps
-    - feat Branch während Inkrement
-    - alpha Branch während nächstem Inkrement
-    - beta/next bis nächster Release
-
-### Performance
-
-Performance wird in erster Stelle durch die Verwendung von Rust und
-performanten Frameworks gesichert ........
-
-### Sicherheit
-
-Für die Anwendung wurden die Manifest-Dateien als primäre mögliche Angriffsstelle
-identifiziert, da diese in öffentlichen Repositories liegen können und
-direkt von dem Program verarbeitet werden.
-Vor allem wäre hier in der Theorie eine Sql Injektion durch bösartig gesetzte
-Schlüssel denkbar. Um dies zu verhindern wird die Library [sqlx]() verwendet.
-
-- Memory Safety und so durch Rust...
-- Sonst keine Netzanbindung
-

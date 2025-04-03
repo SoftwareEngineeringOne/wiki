@@ -13,8 +13,8 @@
     <toc-element topic="Grobdesign.md"/>
     <toc-element topic="Aufwandsschätzung.md"/>
 
-    <toc-element toc-title="System Detailed Design">
-        <toc-element topic="SystemDetailedDesign.md"/>
+    <toc-element toc-title="Software Detailed Design">
+        <toc-element topic="SoftwareDetailedDesign.md"/>
         <toc-element toc-title="Module">
             <toc-element toc-title="Backend">
                 <toc-element topic="database.md"/>
@@ -52,7 +52,6 @@
         </toc-element>
         <toc-element toc-title="Inkrement 6">
             <toc-element topic="Initialisierung-6.md"/>
-            <toc-element topic="Review-6.md"/>
             <toc-element toc-title="Arbeitspaket 6.1">
                 <toc-element topic="Anforderungsbewertung-6_1.md"/>
                 <toc-element topic="Designpaper-6_1.md"/>
@@ -65,14 +64,15 @@
                 <toc-element topic="Anforderungsbewertung-6_3.md"/>
                 <toc-element topic="Designpaper-6_3.md"/>
             </toc-element>
+            <toc-element topic="Review-6.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 7">
             <toc-element topic="Initialisierung-7.md"/>
-            <toc-element topic="Review-7.md"/>
             <toc-element toc-title="Arbeitspaket 7.1">
                 <toc-element topic="Anforderungsbewertung-7_1.md"/>
                 <toc-element topic="Designpaper-7_1.md"/>
             </toc-element>
+            <toc-element topic="Review-7.md"/>
         </toc-element>
         <toc-element toc-title="Inkrement 8">
             <toc-element topic="Initialisierung-8.md"/>
