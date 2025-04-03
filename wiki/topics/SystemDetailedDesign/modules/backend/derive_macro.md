@@ -1,4 +1,4 @@
-# Episko derive
+# SDD - Episko derive
 
 Die `episko_derive` crate ist ein [proc-macro](https://doc.rust-lang.org/reference/procedural-macros.html) welches die
 Implementierung des [DatabaseObject]() traits für einfache Strukturen vereinfacht.
