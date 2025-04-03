@@ -59,6 +59,6 @@ Abgeschlossen
 
 ## Ergebnis
 
-- Überbleibsel aus Arbeitspaket 1 werden als neue Arbeitspakete weiter bearbeitet
+- Die Reste aus Arbeitspaket 1 werden als neue Arbeitspakete weiter bearbeitet
 - Alternativdarstellung für Arbeitspaket 2 als neues Arbeitspaket
 - Nicht möglicher Teil von Arbeitspaket 4 wird in neuem Arbeitspaket bearbeitet
