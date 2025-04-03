@@ -6,7 +6,6 @@
 
 **Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 2 \
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 2.1/2.2 \
 **Autor**: Maximilian Rodler \
 **Datum**: 11.10.2024 \
 **Zuletzt geändert**: \
