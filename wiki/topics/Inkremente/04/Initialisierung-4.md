@@ -43,25 +43,25 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 ### A4.1 Klassendiagramm erstellen
 - Klassendiagramm zur Strukturierung des Programms planen. (Dient als Vorbereitung zur späteren Umsetzung)
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum, Ben Oeckl, Paul Stöckle, Max Rodler
 
 ### A3.2 Sequenzdiagramm erstellen
 - Sequenzdiagramme zur Veranschaulichung von Abläufen.
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum
 
 ### A3.3 Tracing erstellen
 - Anforderungstracing ausarbeiten.
 
-**Verantwortlich**: Ben Oeckl
+**Verantwortlich**: Ben Oeckl \
 **Beauftragte**: Ben Oeckl, Paul Stöckle
 
 ### 4.4 Bessere Strukturierung von Inkrementen
 - Strukturierung der Inkremente überarbeiten (Entwicklungsplan beachten)
 
-**Verantwortlich**: Max Rodler
+**Verantwortlich**: Max Rodler \
 **Beauftragte**: Max Rodler
 
 
