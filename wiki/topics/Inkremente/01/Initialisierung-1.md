@@ -5,8 +5,7 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 1\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 1 \
 **Autor**: Max Rodler \
 **Datum**: 01.10.2024 \
 **Zuletzt geändert**: \
@@ -15,8 +14,8 @@
 **Version**: 1 \
 **Prüfer**: Simon Blum \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 31.10.2024\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 31.10.2024
 
 ### Changelog
 
@@ -42,7 +41,7 @@ Die folgenden Arbeitspakete werden als Teil des Inkrement bearbeitet:
 ### A1.1 Erstellen einer Projektskizze
 Im Laufe des Inkrements soll eine Projektskizze entstehen.
 
-**Verantwortlich**: Paul Stöckle\
+**Verantwortlich**: Paul Stöckle \
 **Beauftragte**: Simon Blum, Ben Oeckl, Paul Stöckle, Max Rodler
 
 ## Besonderheiten
