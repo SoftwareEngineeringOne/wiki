@@ -5,17 +5,17 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8\
-**Autor**: Ben Oeckl\
-**Datum**: 14.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8 \
+**Autor**: Ben Oeckl \
+**Datum**: 14.02.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 14.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Simon Blum \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.03.2025 \
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Paul Stöckle \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_:
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.04.2025
 
 ### Changelog
 
