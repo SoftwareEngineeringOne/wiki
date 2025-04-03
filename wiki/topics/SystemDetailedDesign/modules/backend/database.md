@@ -1,4 +1,4 @@
-# Datenbank
+# SDD - Datenbank
 
 Die Datenbank dient im Kontext des Projektes als persistenter Cache. Hier werden Metadaten und alle dazugehörigen Relationen zwischengespeichert um ein performantes und responsives nutzen der Gui Anwendung zu ermöglichen.
 
