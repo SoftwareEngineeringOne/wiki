@@ -44,19 +44,19 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 ### A3.1 UseCases anhand Schablone finden
 - Anhand einer gegebenen Schablone werden UseCases definiert, welche das Ergebnis zu erfüllen hat.
 
-**Verantwortlich**: Max Rodler
+**Verantwortlich**: Max Rodler \
 **Beauftragte**: Ben Oeckl, Paul Stöckle, Max Rodler
 
 ### A3.2 UseCase- und Ablaufdiagramme erstellen
 - Es werden Diagramme zur Veranschaulichung und Erläuterung der UseCases und daraus resultierenden Abläufe arstellt.
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum, Ben Oeckl
 
 ### A3.3 Requirements aus UseCases ableiten
-- Zu den definierten UseCases werden nach vorgegebenem Schema Requrements formultiert.
-- 
-**Verantwortlich**: Paul Stöckle
+- Zu den definierten UseCases werden nach vorgegebenem Schema Requirements formultiert.
+
+**Verantwortlich**: Paul Stöckle \
 **Beauftragte**: Simon Blum, Paul Stöckle
 
 
