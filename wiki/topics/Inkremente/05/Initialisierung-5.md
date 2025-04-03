@@ -35,3 +35,16 @@
 ## Zeitplan
 - Beginn: 10.01.2025
 - Ende: 20.01.2025
+
+## Arbeitspakete
+Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
+
+### Aufwandsschätzung
+- Erstellung der Aufwandsschätzung zur Zeiteinteilung
+
+## Besonderheiten
+- Da dieses Inkrement noch vorbereitende Arbeitspakete enthält, existieren hierzu noch nicht alle notwendigen Dokumente. (Der Anforderungskatalog, das Designpaper, die Entwicklerdokumentation und ein ausführlicher Abschlussreport werden aufgrund mangelnder Notwendigkeit / Sinnhaftigkeit weggelassen.)
+- Das Review erfolgt in diesem Inkrement im Rahmen der Vorstellung des Grobdesigns.
+
+### Review-Ergebnis
+- Die Aufwandsschätzung ist abgenommen. Sie muss vermutlich im Laufe der Zeit angepasst werden.
