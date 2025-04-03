@@ -5,24 +5,24 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 2\
-**Autor**: Ben Oeckl\
-**Datum**: 12.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 2 \
+**Autor**: Ben Oeckl \
+**Datum**: 12.02.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 12.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 12.02.2025 \
 **Version**: 1 \
-**Prüfer**: \
+**Prüfer**: Paul Stöckle \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 19.02.2025
 
 ### Changelog
 
 | Datum      | Verfasser | Kurzbeschreibung                  |
 | ---------- | --------- | --------------------------------- |
-| 12.02.2025 | Ben Oeckl  | Initiales Erstellen und Verfassen |
+| 12.02.2025 | Ben Oeckl | Initiales Erstellen und Verfassen |
 
 ### Distribution List
 
