@@ -5,17 +5,16 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: X\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
-**Autor**: Max Rodler\
-**Datum**: 01.04.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 9\
+**Autor**: Max Rodler \
+**Datum**: 01.04.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: -\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: -\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 01.04.2025 \
 **Version**: 1 \
-**Prüfer**: Simon Blum\
+**Prüfer**: Simon Blum \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Simon Blum \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.04.2025
 
 ### Changelog
