@@ -38,9 +38,11 @@
 
 ## Arbeitspakete
 Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
+### A5.1 Aufwandsschätzung
+Erstellung der Aufwandsschätzung zur Zeiteinteilung
 
-### Aufwandsschätzung
-- Erstellung der Aufwandsschätzung zur Zeiteinteilung
+**Verantwortlich**: Paul Stöckle \
+**Beauftragte**: Simon Blum, Ben Oeckl, Paul Stöckle, Max Rodler
 
 ## Besonderheiten
 - Da dieses Inkrement noch vorbereitende Arbeitspakete enthält, existieren hierzu noch nicht alle notwendigen Dokumente. (Der Anforderungskatalog, das Designpaper, die Entwicklerdokumentation und ein ausführlicher Abschlussreport werden aufgrund mangelnder Notwendigkeit / Sinnhaftigkeit weggelassen.)
