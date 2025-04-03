@@ -6,7 +6,7 @@ Das GUI Frontend gibt dem Nutzer die Möglichkeit, die durch die Metadateien ang
 
 Das GUI der Anwendung entspricht einer Web-Applikation, welche HTML und CSS nutzt und in Java-/ Typescript programmiert ist. Genutzt wird das [UI-Framework "Svelte" unter der Verwendung von "shadcn"](https://next.shadcn-svelte.com/), welches Grundlagen für die in der Anwendung verwendeten Komponenten bereitstellt.
 
-Gefüttert wird das Frontend mit Einträgen aus der Datenbank und greift somit ausschließlich auf die Logik des Backends (Rust) zurück.
+Das Frontend greift auf die Logik des Backends (Rust) zurück um die notwendigen Daten zu erhalten.
 
 ## Aufbau
 
