@@ -6,17 +6,16 @@
 
 **Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 2\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: \
 **Autor**: Max Rodler \
 **Datum**: 18.10.2024 \
 **Zuletzt geändert**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.10.2024\
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.10.2024 \
 **Version**: 2 \
-**Prüfer**: Paul Stöckle\
+**Prüfer**: Paul Stöckle \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.10.2024\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 30.10.2024
 
 ### Changelog
 
