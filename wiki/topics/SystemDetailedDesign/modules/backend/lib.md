@@ -1,4 +1,4 @@
-# Episko Lib
+# SDD - Episko Lib
 Die Library ist der zentrale Schlüsselpunktes des Projektes. Über sie wird
 mit allen weiteren Modulen des Projektes kommuniziert.
 
