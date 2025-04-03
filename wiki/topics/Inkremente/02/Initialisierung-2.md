@@ -43,13 +43,13 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 ### A2.1 Erstellen des Projektentwicklungsplans
 Im Laufe des Inkrements soll der Projektentwicklungsplan entstehen.
 
-**Verantwortlich**: Ben Oeckl
+**Verantwortlich**: Ben Oeckl \
 **Beauftragte**: Ben Oeckl, Paul Stöckle, Max Rodler
 
 ### A2.2 Erstellen von Diagrammen
 Für den erstellten Entwicklungsplan sollen passende Diagramme erstellt werden.
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum
 
 
