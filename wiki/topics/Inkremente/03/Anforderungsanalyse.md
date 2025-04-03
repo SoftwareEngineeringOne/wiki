@@ -2,13 +2,10 @@
 
 ---
 
-## Dokumentdaten
-
 ### Übersicht
 
 **Projekt**: Projekt Episko \
 &nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 3 \
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: Anforderungsanalyse \
 **Autor**: Simon Blum \
 **Datum**: 13.11.2024 \
 **Zuletzt geändert**: \
