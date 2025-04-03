@@ -5,17 +5,17 @@
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 3\
-**Autor**: Paul Stöckle\
-**Datum**: 20.01.2025\
-**Zuletzt geändert**: 20.01.2025\
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 25.01.2025\
-**Version**: 1 \
-**Prüfer**: Max Rodler\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 6 \
+&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: 3 \
+**Autor**: Paul Stöckle \
+**Datum**: 20.01.2025 \
+**Zuletzt geändert**: 20.01.2025 \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 25.01.2025 \
+**Version**: 2 \
+**Prüfer**: Max Rodler \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 27.01.2025
 
 ### Changelog
