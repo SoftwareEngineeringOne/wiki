@@ -22,7 +22,7 @@
 | Datum      | Verfasser    | Kurzbeschreibung                  |
 |------------|--------------|-----------------------------------|
 | 03.03.2025 | Max Rodler   | Initiales Erstellen und Verfassen |
-| 05.03.2025 | Paul Stöckle | Anforderung für 9.4 hinzugefügt   |
+| 05.03.2025 | Paul Stöckle | Anforderung für 9.3 hinzugefügt   |
 
 ### Distribution List
 
@@ -44,24 +44,24 @@ Die folgenden Arbeitspakete werden als Teil dem Inkrement bearbeitet:
 
 ### A9.1 Überarbeitung Create/Edit-Pages
 
-**Verantwortlich**: Ben Oeckl
+**Verantwortlich**: Ben Oeckl \
 **Beauftragte**: Ben Oeckl
 
 ### A9.2 All-Projects-Darstellung Cards
 
-**Verantwortlich**: Max Rodler
+**Verantwortlich**: Max Rodler \
 **Beauftragte**: Max Rodler
 
 ### A9.3 Backend-Implementierung Statistiken
 
-**Verantwortlich**: Paul Stöckle
+**Verantwortlich**: Paul Stöckle \
 **Beauftragte**: Paul Stöckle
 
 #### Relevante UseCases/Requirements
 
 - FA3.3.1
 
-### A9.5 Fundament für Commands
+### A9.4 Fundament für Commands
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum
