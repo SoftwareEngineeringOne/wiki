@@ -44,7 +44,7 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 
 ### A7.1 Datenbank Modul für Library
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum, Paul Stöckle
 
 #### Relevante UseCases/Requirements
