@@ -1,4 +1,4 @@
-# GUI Frontend
+# SDD - GUI Frontend
 
 Das GUI Frontend gibt dem Nutzer die Möglichkeit, die durch die Metadateien angelegten Projekte, übersichtlich und intuitiv anzeigen und verwalten zu können.
 
