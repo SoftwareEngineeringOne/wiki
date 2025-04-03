@@ -1,4 +1,4 @@
-# Entwicklerdokumentation: Command Line Interface (CLI)
+# SDD - Command Line Interface (CLI)
 In dieser Dokumentation wird ausschließlich die Struktur und der Aufbau des Moduls beschrieben. 
 Eine nähere Beschreibung der Komponenten befindet sich in Doc-Kommentare im Code selber.
 
