@@ -43,7 +43,7 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 
 ### A6.1 Backend - Manifestdatei einlesen und generieren
 
-**Verantwortlich**: Simon Blum
+**Verantwortlich**: Simon Blum \
 **Beauftragte**: Simon Blum
 
 #### 6.1 - Relevante UseCases/Requirements
@@ -51,7 +51,7 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 
 ### A6.2 Frontend - Basic GUI Interface
 
-**Verantwortlich**: Ben Oeckl
+**Verantwortlich**: Ben Oeckl \
 **Beauftragte**: Max Rodler, Ben Oeckl
 
 #### 6.2 - Relevante UseCases/Requirements
@@ -59,7 +59,7 @@ Die folgenden Arbeitspakete werden als Teil des Inkrements bearbeitet:
 
 ### A6.3 Frontend - Basic CLI Interface
 
-**Verantwortlich**: Paul Stöckle
+**Verantwortlich**: Paul Stöckle \
 **Beauftragte**: Paul Stöckle
 
 #### 6.3 - Relevante UseCases/Requirements
