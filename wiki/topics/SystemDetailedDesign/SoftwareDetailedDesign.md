@@ -1,22 +1,20 @@
-# System Detailed Design
+# Software Detailed Design
 
 ---
 
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: -\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
-**Autor**: Simon Blum\
-**Datum**: 27.01.2025\
+**Autor**: Simon Blum \
+**Datum**: 27.01.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Simon Blum\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 07.02.2025\
-**Version**: 3 \
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Paul Stöckle \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 07.02.2025 \
+**Version**: 5 \
 **Prüfer**: \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 04.02.2025
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 08.02.2025
 
 ### Changelog
 
@@ -107,7 +105,7 @@ Funktionen - Schnittstellen - Datenmodelle
 
 - [Mehr …](derive_macro.md)
 
-### Backend - Cli
+### Backend - Gui
 
 - [Mehr …](gui_backend.md)
 
