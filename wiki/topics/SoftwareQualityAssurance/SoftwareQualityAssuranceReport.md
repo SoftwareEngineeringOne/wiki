@@ -102,8 +102,10 @@ Positiv hervorzuheben ist, dass sowohl durch Clippy als auch durch SvelteCheck k
 
 ## Identifikation von Verbesserungspotenzialen für zukünftige Projekte.
 
-Die Analyse zur Identifikation von Verbesserungspotenzialen für zukünftige Projekte
-muss noch weiter konkretisiert werden, um klare Ansatzpunkte für Optimierungen zu definieren.
+Die retrospektive Analyse hat gezeigt, dass bestehende Prozesse stellenweise nicht ausreichend dokumentiert waren.
+Zukünftige Projekte sollten stärker auf frühzeitige Prozessanalyse und kontinuierliches Feedback setzen.
+Einzelne Schwachstellen im QA-Prozess, wie z. B. die verspätete Einführung strukturierter Tests, weisen auf
+Verbesserungspotenziale hin. Eine genauere Auswertung dieser Punkte ist für künftige Projekte sinnvoll.
 
 ## Vorschläge zur Optimierung von Qualitätssicherungsprozessen.
 
