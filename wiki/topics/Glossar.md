@@ -16,7 +16,7 @@
 **Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.04.2025 \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 02.04.2025 
 
 ### Changelog
 
@@ -43,8 +43,8 @@
 | Inkrement       | Zeitraum in dem festgelegte Arbeitspakete bearbeitet werden. Abschluss dieser kann auch als Meilenstein bezeichnet werden.                                                                |
 | Meilenstein     | Abschluss eines Inkrementes.                                                                                                                                                              |
 | Kritikalität    | Im Rahmen des Projektes kann die Kritikalität verschiedener ???? folgendermaßen angegeben werden: 0 - Absolut unabdingbar, 1 - Sehr wichtig, 2 - Normal 3 - Unwichtig                     |
-| Serialisieren   |                                                                                                                                                                                           |
-| Deserialisieren |                                                                                                                                                                                           |
+| Serialisieren   | Umwandlung der menschenlesbaren Manifestdatei (toml) in speicherbare / nutzbare Daten.                                                                                                    |
+| Deserialisieren | Umwandlung gespeicherter Daten in menschenlesbare Manifestdatei (toml).                                                                                                                   |
 | Gecachete Date  | Metadaten welche in einer Datenbank zwischengespeichert sind um das wiederholte deserialiseren von Manifest-Dateien zu vermeiden.                                                         |
 | Lokale Daten    | Metadaten welche sich in Manifest-Dateien befinden und nicht gecached sind.                                                                                                               |
 | Cache           | Der Begriff Cache deutet im Rahmen des Projektes auf einen persistenten Cache in Form einer Datenbank hin. Diese ist nur ein "Cache" da die Manifeste die "single source of thruth" sind. |
