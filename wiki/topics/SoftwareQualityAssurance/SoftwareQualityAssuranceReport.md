@@ -1,21 +1,19 @@
-# Software Quality Assurance Report
+# Software Quality Assurance - Report
 
 ---
 
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: -\
-&nbsp;&nbsp;&nbsp;&nbsp;_Arbeitspaket_: -\
-**Autor**: Simon Blum\
-**Datum**: 02.04.2025\
+**Autor**: Simon Blum \
+**Datum**: 02.04.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 03.04.2025\
-**Version**: 1 \
-**Prüfer**: Paul Stöckle\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 03.04.2025 \
+**Version**: 2 \
+**Prüfer**: Paul Stöckle \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle\
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Paul Stöckle \
 &nbsp;&nbsp;&nbsp;&nbsp;_am_: 03.04.2025
 
 ### Changelog
