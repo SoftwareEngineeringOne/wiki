@@ -16,7 +16,7 @@
 **Prüfer**: Max Rodler \
 **Letzte Freigabe**: \
 &nbsp;&nbsp;&nbsp;&nbsp;_durch_: Max Rodler \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 17.02.2025
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 20.02.2025
 
 ### Changelog
 
