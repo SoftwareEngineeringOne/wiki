@@ -1,21 +1,21 @@
-# Software Quality Assurance Plan
+# Software Quality Assurance - Plan
 
 ---
 
 ### Übersicht
 
 **Projekt**: Projekt Episko \
-&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8\
-**Autor**: Simon Blum\
-**Datum**: 28.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_Inkrement_: 8 \
+**Autor**: Simon Blum \
+**Datum**: 28.02.2025 \
 **Zuletzt geändert**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler\
-&nbsp;&nbsp;&nbsp;&nbsp;_am_: 28.02.2025\
+&nbsp;&nbsp;&nbsp;&nbsp;_von_: Max Rodler \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 28.02.2025 \
 **Version**: 1 \
-**Prüfer**: Ben Oeckl\
+**Prüfer**: Ben Oeckl \
 **Letzte Freigabe**: \
-&nbsp;&nbsp;&nbsp;&nbsp;_durch_: \
-&nbsp;&nbsp;&nbsp;&nbsp;_am_:
+&nbsp;&nbsp;&nbsp;&nbsp;_durch_: Ben Oeckl \
+&nbsp;&nbsp;&nbsp;&nbsp;_am_: 03.03.2025
 
 ### Changelog
 
