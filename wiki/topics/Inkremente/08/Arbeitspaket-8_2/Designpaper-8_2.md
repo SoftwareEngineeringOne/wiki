@@ -37,6 +37,6 @@
 
 Auf der Seite der Projektübersicht ("All Projects") sollen alle, der Anwendung hinzugefügten, Projekte übersichtlich angezeigt werden. Der Nutzer soll die Möglichkeit haben hier nach bestimmten Projekten zu suchen, oder aber Filter auf bestimmte Eigenschaften anwenden zu können. Des Weiteren sollte man von hier auf die Projektübersichtsseite gelangen, bzw. Projekte bearbeiten können.
 
-Die Übersichtlichkeit der wird mithilfe einer Tabelle sichergestellt. Diese beinhaltet als Spalten einige ausgewählte Attribute des Projekts, und lässt sich mithilfe eines Suchfeldes nach dem Titel durchsuchen.
+Die Übersichtlichkeit der Projekte wird mithilfe einer Tabelle sichergestellt. Diese beinhaltet als Spalten einige ausgewählte Attribute des Projekts, und lässt sich mithilfe eines Suchfeldes nach dem Titel durchsuchen.
 
 Befüllt wird die Tabelle mit allen Datensätzen der Datenbank, welche an anderer Stelle importiert und als Type definiert werden.
